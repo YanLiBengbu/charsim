@@ -1,5 +1,7 @@
 # CharSim
 
+Archived on Zenodo: https://doi.org/10.5281/zenodo.23696765 (release v1.0.0)
+
 Code, prompts, simulated scenes and analysis scripts for the paper
 
 > Lili Zhao and Hui Shi. *Character determines incident: director-free language model agents for testing fictional characters.* Manuscript submitted to PeerJ Computer Science.
