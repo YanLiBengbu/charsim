@@ -1,0 +1,870 @@
+{
+ "scene": "sell_the_land",
+ "seed": 105,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "cast",
+   "eldest_son",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "director",
+  "cards": "rich"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.08362846076488495,
+     "act": 0.1216670349240303,
+     "silent": 0.0013400320895016193,
+     "wait": 0.7933645248413086
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.2066354751586914
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the second son"
+    ],
+    "speech": "I have a new wife and she brings her father with her to see you and your sons. I have a good house and we live in the town. I have a great house, and I have many friends and I have a new wife and I have much money and I have my sons and my father and my wife and I have much and I have a fine house and I have my wife and I have my sons."
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"the second son\"], \"speech\": \"I have a new wife and she brings her father with her to see you and your sons. I have a good house and we live in the town. I have a great house, and I have many friends and I have a new wife and I have much money and I have my sons and my father and my wife and I have much and I have a fine house and I have my wife and I have my sons.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have a new wife and she brings her father with her to see you and your sons. I have a good house and we live in the town. I have a great house, and I have many friends and I have a new wife and I have much money and I have my sons and my father and my wife and I have much and I have a fine house and I have my wife and I have my sons.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show respect but also need to ask about selling the land without seeming disrespectful.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show respect but also need to ask about selling the land without seeming disrespectful."
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "second_son": {
+     "speak": 0.1035001203417778,
+     "act": 0.2191082388162613,
+     "silent": 0.0024265488609671593,
+     "wait": 0.6749650835990906
+    }
+   },
+   "urgency": {
+    "second_son": 0.3250349164009094
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "sells fields"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"sells fields\"}",
+   "item": {
+    "kind": "act",
+    "text": "sells fields",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You want to sell some of the best fields to fund your grain market.\"}",
+    "actor": "second_son",
+    "direction": "You want to sell some of the best fields to fund your grain market."
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.13420093059539795,
+     "act": 0.2119380533695221,
+     "silent": 0.0008488349267281592,
+     "wait": 0.653012216091156
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.346987783908844
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "shows father fields to sell"
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [], \"action\": \"shows father fields to sell\"}",
+   "item": {
+    "kind": "act",
+    "text": "shows father fields to sell",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the fields you think are best to sell and explain your plans.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the fields you think are best to sell and explain your plans."
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.1099560335278511,
+     "act": 0.16216155886650085,
+     "silent": 0.0012287120334804058,
+     "wait": 0.7266536951065063
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.27334630489349365
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Well, and this field, and this one, and this one, and this one,"
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"], \"speech\": \"Well, and this field, and this one, and this one, and this one,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and this field, and this one, and this one, and this one,",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the fields you think will bring the most money.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the fields you think will bring the most money."
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "second_son": {
+     "speak": 0.10412824153900146,
+     "act": 0.11783417314291,
+     "silent": 0.009657926857471466,
+     "wait": 0.7683796286582947
+    }
+   },
+   "urgency": {
+    "second_son": 0.23162037134170532
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "sees fields"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"sees fields\"}",
+   "item": {
+    "kind": "act",
+    "text": "sees fields",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You think of the fields as money and want to sell more to fund your grain market.\"}",
+    "actor": "second_son",
+    "direction": "You think of the fields as money and want to sell more to fund your grain market."
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.35636651515960693,
+     "act": 0.253762811422348,
+     "silent": 0.02074473537504673,
+     "wait": 0.3691258728504181
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6308741271495819
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung forgets his sons, feeling the earth in his hand."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung forgets his sons, feeling the earth in his hand.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung forgets his sons, feeling the earth in his hand.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the earth in your hands and want to stop them from selling it.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the earth in your hands and want to stop them from selling it."
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.08360297232866287,
+     "act": 0.12162118405103683,
+     "silent": 0.001725846785120666,
+     "wait": 0.7930499315261841
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.20695006847381592
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "The eldest son tells his father about the fields' value."
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"], \"gist\": \"The eldest son tells his father about the fields' value.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "The eldest son tells his father about the fields' value.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the fields' value, but feel guilty about selling them.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the fields' value, but feel guilty about selling them."
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "second_son": {
+     "speak": 0.1378006786108017,
+     "act": 0.06512541323900223,
+     "silent": 0.0036703930236399174,
+     "wait": 0.7934035658836365
+    }
+   },
+   "urgency": {
+    "second_son": 0.20659643411636353
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son"
+    ],
+    "speech": "Well, and the whole land could be sold,"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"], \"speech\": \"Well, and the whole land could be sold,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and the whole land could be sold,",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You think of the fields' value and want to sell more to fund your grain market.\"}",
+    "actor": "second_son",
+    "direction": "You think of the fields' value and want to sell more to fund your grain market."
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4095432460308075,
+     "act": 0.24843446910381317,
+     "silent": 0.0230572372674942,
+     "wait": 0.31896501779556274
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6810349822044373
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "action": "Wang Lung speaks out against selling the land."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"the eldest son\", \"the second son\"], \"action\": \"Wang Lung speaks out against selling the land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung speaks out against selling the land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the earth in your hand and remember your love for it. Do you want to stop them from selling?\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the earth in your hand and remember your love for it. Do you want to stop them from selling?"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.10310275852680206,
+     "act": 0.13242202997207642,
+     "silent": 0.002398948883637786,
+     "wait": 0.7620762586593628
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.2379237413406372
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the second son"
+    ],
+    "gist": "Eldest son tells brother about fields' value."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the second son\"] , \"gist\": \"Eldest son tells brother about fields' value.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Eldest son tells brother about fields' value.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the fields' worth, but you feel guilty for thinking of selling them.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the fields' worth, but you feel guilty for thinking of selling them."
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.10655182600021362,
+     "act": 0.08503183722496033,
+     "silent": 0.001535793300718069,
+     "wait": 0.8068805932998657
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.19311940670013428
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "Eldest son questions father about love for land."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"] ,\"action\": \"Eldest son questions father about love for land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son questions father about love for land.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to sell the fields but feel guilty; you ask if your father truly loves the land as he claims.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to sell the fields but feel guilty; you ask if your father truly loves the land as he claims."
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.40981364250183105,
+     "act": 0.15078501403331757,
+     "silent": 0.02955460548400879,
+     "wait": 0.40984678268432617
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5901532173156738
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "the eldest son"
+    ],
+    "action": "Wang Lung sits beside eldest son, feeling his hand."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"the eldest son\"] , \"action\": \"Wang Lung sits beside eldest son, feeling his hand.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung sits beside eldest son, feeling his hand.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the earth in your hand and remember it is yours, but your sons speak of selling it.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the earth in your hand and remember it is yours, but your sons speak of selling it."
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "second_son": {
+     "speak": 0.0447063148021698,
+     "act": 0.0399123840034008,
+     "silent": 0.006928938906639814,
+     "wait": 0.9084523320198059
+    }
+   },
+   "urgency": {
+    "second_son": 0.09154766798019409
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son"
+    ],
+    "speech": "I think we will sell the land and not the rice land, and the rice land we can keep. We can sell the wheat land and the land we do not need to sow."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"] , \"speech\": \"I think we will sell the land and not the rice land, and the rice land we can keep. We can sell the wheat land and the land we do not need to sow.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I think we will sell the land and not the rice land, and the rice land we can keep. We can sell the wheat land and the land we do not need to sow.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You want to sell the best fields, but you fear your father's love for the land.\"}",
+    "actor": "second_son",
+    "direction": "You want to sell the best fields, but you fear your father's love for the land."
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.09615559130907059,
+     "act": 0.08581636846065521,
+     "silent": 0.0037180741783231497,
+     "wait": 0.8143100142478943
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.1856899857521057
+   },
+   "actor": "eldest_son",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\" ,\"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "the eldest son says nothing.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to know if father truly loves the land or if his words are just memories.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to know if father truly loves the land or if his words are just memories."
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.0858612209558487,
+     "act": 0.09727621078491211,
+     "silent": 0.0022685148287564516,
+     "wait": 0.814594030380249
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.18540596961975098
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I would not sell the land even if it were needed, and even if we were to live in a house of bricks and stone and have a garden and a well and a stone gate."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"], \"speech\": \"I would not sell the land even if it were needed, and even if we were to live in a house of bricks and stone and have a garden and a well and a stone gate.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I would not sell the land even if it were needed, and even if we were to live in a house of bricks and stone and have a garden and a well and a stone gate.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to know if father truly loves the land or if his mind is still clear about its value.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to know if father truly loves the land or if his mind is still clear about its value."
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7808816432952881,
+     "act": 0.09334340691566467,
+     "silent": 0.005936106201261282,
+     "wait": 0.11983875930309296
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.880161240696907
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "Wang Lung mutters about the land."
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [], \"gist\": \"Wang Lung mutters about the land.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung mutters about the land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the earth in your hand and whisper that the land is your love and your grave.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the earth in your hand and whisper that the land is your love and your grave."
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.09828509390354156,
+     "act": 0.08583575487136841,
+     "silent": 0.0013704166049137712,
+     "wait": 0.8145086765289307
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.18549132347106934
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Eldest son asks father about love for land."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Eldest son asks father about love for land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son asks father about love for land.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to know if father truly loves the land or if he is just confused by his words.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to know if father truly loves the land or if he is just confused by his words."
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.12020856887102127,
+     "act": 0.09362267702817917,
+     "silent": 0.0021514995023608208,
+     "wait": 0.7840172052383423
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.21598279476165771
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "Eldest son questions father about love for land."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"] ,\"action\": \"Eldest son questions father about love for land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son questions father about love for land.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to know if father still remembers the land's value and if he truly loves it as he claims.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to know if father still remembers the land's value and if he truly loves it as he claims."
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6871410608291626,
+     "act": 0.12221276015043259,
+     "silent": 0.012829073704779148,
+     "wait": 0.17781703174114227
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8221829682588577
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son"
+    ],
+    "speech": "This land is not for a little bit of silver. It is not a thing to be sold for silver. It is not a thing to be sold for gold."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"] , \"speech\": \"This land is not for a little bit of silver. It is not a thing to be sold for silver. It is not a thing to be sold for gold.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "This land is not for a little bit of silver. It is not a thing to be sold for silver. It is not a thing to be sold for gold.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the earth in your hands and want to tell them how much it means to you.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the earth in your hands and want to tell them how much it means to you."
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "second_son": {
+     "speak": 0.032124053686857224,
+     "act": 0.024902228266000748,
+     "silent": 0.008074742741882801,
+     "wait": 0.9348989725112915
+    }
+   },
+   "urgency": {
+    "second_son": 0.0651010274887085
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The second son walks away silently."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"The second son walks away silently.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The second son walks away silently.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You want to sell the land, but you feel the weight of your father's words and the silence between them.\"}",
+    "actor": "second_son",
+    "direction": "You want to sell the land, but you feel the weight of your father's words and the silence between them."
+   }
+  }
+ ],
+ "opening_lines": 114,
+ "final_state": {
+  "land": "kept"
+ },
+ "transcript": [
+  "the eldest son (to the second son): \"I have a new wife and she brings her father with her to see you and your sons. I have a good house and we live in the town. I have a great house, and I have many friends and I have a new wife and I have much money and I have my sons and my father and my wife and I have much and I have a fine house and I have my wife and I have my sons.\"",
+  "[action] (to Wang Lung) sells fields",
+  "[action] shows father fields to sell",
+  "the eldest son (to Wang Lung): \"Well, and this field, and this one, and this one, and this one,\"",
+  "[action] (to Wang Lung) sees fields",
+  "[action] Wang Lung forgets his sons, feeling the earth in his hand.",
+  "[says] (to Wang Lung) The eldest son tells his father about the fields' value.",
+  "the second son (to the eldest son): \"Well, and the whole land could be sold,\"",
+  "[action] (to the eldest son, the second son) Wang Lung speaks out against selling the land.",
+  "[says] (to the second son) Eldest son tells brother about fields' value.",
+  "[action] (to Wang Lung) Eldest son questions father about love for land.",
+  "[action] (to the eldest son) Wang Lung sits beside eldest son, feeling his hand.",
+  "the second son (to the eldest son): \"I think we will sell the land and not the rice land, and the rice land we can keep. We can sell the wheat land and the land we do not need to sow.\"",
+  "[silence] (to Wang Lung) the eldest son says nothing.",
+  "the eldest son (to Wang Lung): \"I would not sell the land even if it were needed, and even if we were to live in a house of bricks and stone and have a garden and a well and a stone gate.\"",
+  "[says] Wang Lung mutters about the land.",
+  "[action] Eldest son asks father about love for land.",
+  "[action] (to Wang Lung) Eldest son questions father about love for land.",
+  "Wang Lung (to the eldest son): \"This land is not for a little bit of silver. It is not a thing to be sold for silver. It is not a thing to be sold for gold.\"",
+  "[action] The second son walks away silently."
+ ],
+ "seconds": 183.73106813430786
+}

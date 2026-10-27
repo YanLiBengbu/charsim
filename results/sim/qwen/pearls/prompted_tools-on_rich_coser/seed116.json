@@ -1,0 +1,851 @@
+{
+ "scene": "pearls",
+ "seed": 116,
+ "config": {
+  "mode": "prompted",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "coser",
+  "t4": false,
+  "t5": false,
+  "t6": false,
+  "t7": false,
+  "t8": false,
+  "t9": false,
+  "cards": "rich"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6792979836463928,
+     "act": 0.32070204615592957,
+     "silent": 2.8472780773738937e-13,
+     "wait": 6.830264435639388e-13
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.999999999999317
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Because I am a man and not a woman, and I have no use for pearls."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"Because I am a man and not a woman, and I have no use for pearls.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Because I am a man and not a woman, and I have no use for pearls.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "o_lan": {
+     "speak": 2.14388328458881e-05,
+     "act": 0.9999785423278809,
+     "silent": 3.3982014979727637e-09,
+     "wait": 2.59455876921999e-11
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9999999999740544
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly takes the small package from her bosom and gives it to him"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"slowly takes the small package from her bosom and gives it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly takes the small package from her bosom and gives it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.0777631402015686,
+     "act": 0.9222368001937866,
+     "silent": 2.440767588041126e-09,
+     "wait": 3.0724728317110817e-11
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9999999999692752
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "take the pearls from O-lan's hands and laugh at them"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"O-lan\"] , \"action\": \"take the pearls from O-lan's hands and laugh at them\"}",
+   "item": {
+    "kind": "act",
+    "text": "take the pearls from O-lan's hands and laugh at them",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {
+    "pearls": "wang_lung"
+   },
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "o_lan": {
+     "speak": 2.080981357721612e-05,
+     "act": 0.9704214334487915,
+     "silent": 0.02930418774485588,
+     "wait": 0.0002535309176892042
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9997464690823108
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "step back and continue beating his clothes on the stone"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"step back and continue beating his clothes on the stone\"}",
+   "item": {
+    "kind": "act",
+    "text": "step back and continue beating his clothes on the stone",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "o_lan": {
+     "speak": 4.984483439329779e-07,
+     "act": 0.008533087559044361,
+     "silent": 0.9862908720970154,
+     "wait": 0.005175579339265823
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9948244206607342
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "o_lan": {
+     "speak": 7.670812465221388e-07,
+     "act": 0.20934289693832397,
+     "silent": 0.7306785583496094,
+     "wait": 0.05997774749994278
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9400222525000572
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\" , \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "o_lan": {
+     "speak": 4.035749157083046e-08,
+     "act": 0.005100792273879051,
+     "silent": 0.972038984298706,
+     "wait": 0.022860165685415268
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9771398343145847
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "o_lan": {
+     "speak": 1.8473440377420047e-07,
+     "act": 0.0003342866257298738,
+     "silent": 0.9964938759803772,
+     "wait": 0.0031716215889900923
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9968283784110099
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 6.081140213609615e-07,
+     "act": 0.0005365838296711445,
+     "silent": 0.9701663255691528,
+     "wait": 0.02929648570716381
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9707035142928362
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "o_lan": {
+     "speak": 3.013292086961883e-07,
+     "act": 0.0008982497383840382,
+     "silent": 0.9850504398345947,
+     "wait": 0.014050989411771297
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9859490105882287
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "o_lan": {
+     "speak": 1.0608937373035587e-06,
+     "act": 0.0011634117690846324,
+     "silent": 0.9936215281486511,
+     "wait": 0.005214049480855465
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9947859505191445
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\" }",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "o_lan": {
+     "speak": 3.150075400526475e-08,
+     "act": 9.987536941480357e-06,
+     "silent": 0.9859265089035034,
+     "wait": 0.014063479378819466
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9859365206211805
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "o_lan": {
+     "speak": 1.7579513951204717e-06,
+     "act": 0.0001579333475092426,
+     "silent": 0.9966681599617004,
+     "wait": 0.003172174794599414
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9968278252054006
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\" , \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "o_lan": {
+     "speak": 0.4782243072986603,
+     "act": 0.5217453241348267,
+     "silent": 3.0414967113756575e-05,
+     "wait": 1.0203085487603403e-08
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9999999897969145
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "They are here, my husband. I kept them for you."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"They are here, my husband. I kept them for you.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "They are here, my husband. I kept them for you.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11254941672086716,
+     "act": 0.8874505758285522,
+     "silent": 7.47540744583386e-12,
+     "wait": 1.4719950518909952e-12
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.999999999998528
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "grab the small package from her bosom"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"O-lan\"] , \"action\": \"grab the small package from her bosom\"}",
+   "item": {
+    "kind": "act",
+    "text": "grab the small package from her bosom",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.941248893737793,
+     "act": 0.05875103548169136,
+     "silent": 1.9965171182967367e-10,
+     "wait": 1.4462720951402552e-11
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9999999999855372
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "These pearls are not for you. They are for Lotus."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"These pearls are not for you. They are for Lotus.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "These pearls are not for you. They are for Lotus.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "o_lan": {
+     "speak": 0.006713905371725559,
+     "act": 0.9925812482833862,
+     "silent": 0.0007049061241559684,
+     "wait": 3.200267428837833e-08
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9999999679973257
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly hands over the small package"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"slowly hands over the small package\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly hands over the small package",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "o_lan": {
+     "speak": 0.13196372985839844,
+     "act": 0.7645133137702942,
+     "silent": 0.10346563905477524,
+     "wait": 5.722522109863348e-05
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9999427747789014
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "wipes her tears silently with the edge of her sleeve"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"wipes her tears silently with the edge of her sleeve\"}",
+   "item": {
+    "kind": "act",
+    "text": "wipes her tears silently with the edge of her sleeve",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.93895024061203,
+     "act": 0.061049483716487885,
+     "silent": 8.369632809035465e-08,
+     "wait": 1.0746830980679078e-07
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9999998925316902
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "You think you can keep them for yourself, but they are for Lotus now."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"] , \"speech\": \"You think you can keep them for yourself, but they are for Lotus now.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "You think you can keep them for yourself, but they are for Lotus now.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "o_lan": {
+     "speak": 4.581408120429842e-06,
+     "act": 0.03667997568845749,
+     "silent": 0.9459890723228455,
+     "wait": 0.017326394096016884
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9826736059039831
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\" , \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "wang_lung"
+ },
+ "transcript": [
+  "Wang Lung (to O-lan): \"Because I am a man and not a woman, and I have no use for pearls.\"",
+  "[action] (to Wang Lung) slowly takes the small package from her bosom and gives it to him",
+  "[action] (to O-lan) take the pearls from O-lan's hands and laugh at them",
+  "[action] (to Wang Lung) step back and continue beating his clothes on the stone",
+  "[silence] O-lan says nothing.",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[silence] O-lan says nothing.",
+  "[silence] O-lan says nothing.",
+  "[silence] O-lan says nothing.",
+  "[silence] O-lan says nothing.",
+  "[silence] O-lan says nothing.",
+  "[silence] O-lan says nothing.",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "O-lan (to Wang Lung): \"They are here, my husband. I kept them for you.\"",
+  "[action] (to O-lan) grab the small package from her bosom",
+  "Wang Lung (to O-lan): \"These pearls are not for you. They are for Lotus.\"",
+  "[action] (to Wang Lung) slowly hands over the small package",
+  "[action] (to Wang Lung) wipes her tears silently with the edge of her sleeve",
+  "Wang Lung (to O-lan): \"You think you can keep them for yourself, but they are for Lotus now.\"",
+  "[silence] (to Wang Lung) O-lan says nothing."
+ ],
+ "seconds": 44.653589963912964
+}

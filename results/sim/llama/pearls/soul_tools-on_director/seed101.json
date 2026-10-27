@@ -1,0 +1,872 @@
+{
+ "scene": "pearls",
+ "seed": 101,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "director",
+  "cards": "base"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7882604598999023,
+     "act": 0.05041912943124771,
+     "silent": 0.006021502893418074,
+     "wait": 0.1552988439798355
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8447011560201645
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Let us have the two white pearls out of your bosom, for I will buy jewels and you shall wear them."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Let us have the two white pearls out of your bosom, for I will buy jewels and you shall wear them.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Let us have the two white pearls out of your bosom, for I will buy jewels and you shall wear them.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Ask O-lan for the white pearls now, and see how she responds.\"}",
+    "actor": "wang_lung",
+    "direction": "Ask O-lan for the white pearls now, and see how she responds."
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "o_lan": {
+     "speak": 0.046227600425481796,
+     "act": 0.3249491751194,
+     "silent": 0.09306081384420395,
+     "wait": 0.535762369632721
+    }
+   },
+   "urgency": {
+    "o_lan": 0.46423763036727905
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Keep the pearls safe from his grasp, for they are the family's past.\"}",
+    "actor": "o_lan",
+    "direction": "Keep the pearls safe from his grasp, for they are the family's past."
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "o_lan": {
+     "speak": 0.05312998220324516,
+     "act": 0.14454689621925354,
+     "silent": 0.06821881234645844,
+     "wait": 0.734104335308075
+    }
+   },
+   "urgency": {
+    "o_lan": 0.26589566469192505
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan hands over the pearls."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan hands over the pearls.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hands over the pearls.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {
+    "pearls": "wang_lung"
+   },
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Look at Wang Lung with a hint of unease, keeping her silence.\"}",
+    "actor": "o_lan",
+    "direction": "Look at Wang Lung with a hint of unease, keeping her silence."
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8044072389602661,
+     "act": 0.028231970965862274,
+     "silent": 0.004905640613287687,
+     "wait": 0.16245506703853607
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8375449329614639
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung persists in asking O-lan about the pearls."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung persists in asking O-lan about the pearls.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung persists in asking O-lan about the pearls.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Press O-lan to confirm you'll give her new jewels if she gives you the pearls.\"}",
+    "actor": "wang_lung",
+    "direction": "Press O-lan to confirm you'll give her new jewels if she gives you the pearls."
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "o_lan": {
+     "speak": 0.2881490886211395,
+     "act": 0.0657421201467514,
+     "silent": 0.09560807049274445,
+     "wait": 0.5505006909370422
+    }
+   },
+   "urgency": {
+    "o_lan": 0.44949930906295776
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan quietly hands over the pearls."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan quietly hands over the pearls.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan quietly hands over the pearls.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Look at Wang Lung with a hint of sadness and concern.\"}",
+    "actor": "o_lan",
+    "direction": "Look at Wang Lung with a hint of sadness and concern."
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "o_lan": {
+     "speak": 0.25127774477005005,
+     "act": 0.08248691260814667,
+     "silent": 0.05665835738182068,
+     "wait": 0.6095770001411438
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3904229998588562
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Ask why these pearls are more precious now than they were when you gave them to me.\"}",
+    "actor": "o_lan",
+    "direction": "Ask why these pearls are more precious now than they were when you gave them to me."
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8876912593841553,
+     "act": 0.01625865325331688,
+     "silent": 0.0024930723011493683,
+     "wait": 0.09355703741312027
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9064429625868797
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung speaks roughly to O-lan."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung speaks roughly to O-lan.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung speaks roughly to O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Tell O-lan how much you need the pearls now.\"}",
+    "actor": "wang_lung",
+    "direction": "Tell O-lan how much you need the pearls now."
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "o_lan": {
+     "speak": 0.1594817340373993,
+     "act": 0.1595335751771927,
+     "silent": 0.12409228831529617,
+     "wait": 0.556892454624176
+    }
+   },
+   "urgency": {
+    "o_lan": 0.443107545375824
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Do not you want the pearls for the one you love, not me?\"}",
+    "actor": "o_lan",
+    "direction": "Do not you want the pearls for the one you love, not me?"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 0.11728766560554504,
+     "act": 0.1050475686788559,
+     "silent": 0.0925404503941536,
+     "wait": 0.685124397277832
+    }
+   },
+   "urgency": {
+    "o_lan": 0.31487560272216797
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan's expression remains stoic."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan's expression remains stoic.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan's expression remains stoic.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Look at Wang Lung's face with a hint of sadness and disappointment.\"}",
+    "actor": "o_lan",
+    "direction": "Look at Wang Lung's face with a hint of sadness and disappointment."
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.681414008140564,
+     "act": 0.09123621881008148,
+     "silent": 0.00848380383104086,
+     "wait": 0.21886588633060455
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7811341136693954
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "The red ones or the green ones?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"The red ones or the green ones?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "The red ones or the green ones?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Demand what the pearls are doing so quietly hidden in her bosom.\"}",
+    "actor": "wang_lung",
+    "direction": "Demand what the pearls are doing so quietly hidden in her bosom."
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "o_lan": {
+     "speak": 0.30213209986686707,
+     "act": 0.08409855514764786,
+     "silent": 0.0652967244386673,
+     "wait": 0.5484726428985596
+    }
+   },
+   "urgency": {
+    "o_lan": 0.45152735710144043
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "O-lan refuses to choose between the pearls."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan refuses to choose between the pearls.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan refuses to choose between the pearls.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Keep your voice down, the children are sleeping nearby.\"}",
+    "actor": "o_lan",
+    "direction": "Keep your voice down, the children are sleeping nearby."
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "o_lan": {
+     "speak": 0.48255452513694763,
+     "act": 0.047662533819675446,
+     "silent": 0.017502572387456894,
+     "wait": 0.4522804021835327
+    }
+   },
+   "urgency": {
+    "o_lan": 0.5477195978164673
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "O-lan asks about the price."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan asks about the price.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan asks about the price.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Ask for the price of the jewels he wants to buy with your pearls.\"}",
+    "actor": "o_lan",
+    "direction": "Ask for the price of the jewels he wants to buy with your pearls."
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7773081064224243,
+     "act": 0.04388514533638954,
+     "silent": 0.0052384547889232635,
+     "wait": 0.1735682338476181
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8264317661523819
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Those two red ones and those two green ones,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Those two red ones and those two green ones,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Those two red ones and those two green ones,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Press for the pearls, insisting they're worth more than he offered.\"}",
+    "actor": "wang_lung",
+    "direction": "Press for the pearls, insisting they're worth more than he offered."
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "o_lan": {
+     "speak": 0.23547162115573883,
+     "act": 0.15580107271671295,
+     "silent": 0.06484604626893997,
+     "wait": 0.5438812375068665
+    }
+   },
+   "urgency": {
+    "o_lan": 0.45611876249313354
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan gives the pearls."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan gives the pearls.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan gives the pearls.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"See the pearls and decide if you will give them to him.\"}",
+    "actor": "o_lan",
+    "direction": "See the pearls and decide if you will give them to him."
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8836486339569092,
+     "act": 0.0339328907430172,
+     "silent": 0.001023935037665069,
+     "wait": 0.08139463514089584
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9186053648591042
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I will give you a handful of silver for them. Here is the money."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I will give you a handful of silver for them. Here is the money.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will give you a handful of silver for them. Here is the money.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Offer her a high price for the pearls to seal the deal quickly.\"}",
+    "actor": "wang_lung",
+    "direction": "Offer her a high price for the pearls to seal the deal quickly."
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3442386984825134,
+     "act": 0.05429762974381447,
+     "silent": 0.017581935971975327,
+     "wait": 0.5838817358016968
+    }
+   },
+   "urgency": {
+    "o_lan": 0.4161182641983032
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I will take it. But how much is it?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will take it. But how much is it?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will take it. But how much is it?",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Ask how much the handful of silver is worth.\"}",
+    "actor": "o_lan",
+    "direction": "Ask how much the handful of silver is worth."
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "o_lan": {
+     "speak": 0.2183423489332199,
+     "act": 0.08757766336202621,
+     "silent": 0.04683103784918785,
+     "wait": 0.6472489833831787
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3527510166168213
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan takes the silver."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan takes the silver.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan takes the silver.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Don't you think you're offering too little for the pearls?\"}",
+    "actor": "o_lan",
+    "direction": "Don't you think you're offering too little for the pearls?"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3941403925418854,
+     "act": 0.1735057383775711,
+     "silent": 0.016137192025780678,
+     "wait": 0.4162167012691498
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5837832987308502
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "It is nothing,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"It is nothing,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is nothing,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Ask if the silver is enough for the pearls.\"}",
+    "actor": null,
+    "rejected": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "o_lan": {
+     "speak": 0.11618650704622269,
+     "act": 0.09532627463340759,
+     "silent": 0.08401019871234894,
+     "wait": 0.7044770121574402
+    }
+   },
+   "urgency": {
+    "o_lan": 0.2955229878425598
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "It is much,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"It is much,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is much,",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"See the worth of your handful of silver, is it true nothing?\"}",
+    "actor": "o_lan",
+    "direction": "See the worth of your handful of silver, is it true nothing?"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "o_lan": {
+     "speak": 0.589383065700531,
+     "act": 0.02398838847875595,
+     "silent": 0.011325052008032799,
+     "wait": 0.3753035366535187
+    }
+   },
+   "urgency": {
+    "o_lan": 0.6246964633464813
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Is it enough to buy me a new dress?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is it enough to buy me a new dress?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Is it enough to buy me a new dress?",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Ask if the silver is enough to buy her a decent cloth.\"}",
+    "actor": "o_lan",
+    "direction": "Ask if the silver is enough to buy her a decent cloth."
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "wang_lung"
+ },
+ "transcript": [
+  "Wang Lung (to O-lan): \"Let us have the two white pearls out of your bosom, for I will buy jewels and you shall wear them.\"",
+  "[silence] O-lan says nothing.",
+  "[action] O-lan hands over the pearls.",
+  "[says] (to O-lan) Wang Lung persists in asking O-lan about the pearls.",
+  "[action] (to Wang Lung) O-lan quietly hands over the pearls.",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[says] (to O-lan) Wang Lung speaks roughly to O-lan.",
+  "[silence] O-lan says nothing.",
+  "[action] (to Wang Lung) O-lan's expression remains stoic.",
+  "Wang Lung (to O-lan): \"The red ones or the green ones?\"",
+  "[says] O-lan refuses to choose between the pearls.",
+  "[says] (to Wang Lung) O-lan asks about the price.",
+  "Wang Lung (to O-lan): \"Those two red ones and those two green ones,\"",
+  "[action] (to Wang Lung) O-lan gives the pearls.",
+  "Wang Lung (to O-lan): \"I will give you a handful of silver for them. Here is the money.\"",
+  "O-lan (to Wang Lung): \"I will take it. But how much is it?\"",
+  "[action] (to Wang Lung) O-lan takes the silver.",
+  "Wang Lung (to O-lan): \"It is nothing,\"",
+  "O-lan (to Wang Lung): \"It is much,\"",
+  "O-lan (to Wang Lung): \"Is it enough to buy me a new dress?\""
+ ],
+ "seconds": 138.16039323806763
+}

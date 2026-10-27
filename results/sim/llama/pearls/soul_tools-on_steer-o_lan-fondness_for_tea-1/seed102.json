@@ -1,0 +1,874 @@
+{
+ "scene": "pearls",
+ "seed": 102,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {
+   "o_lan": {
+    "path": "results/steer/llama/pearls/o_lan__fondness_for_tea.pt",
+    "alpha": 1.0
+   }
+  },
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3172352910041809,
+     "act": 0.11672088503837585,
+     "silent": 0.042938075959682465,
+     "wait": 0.523105800151825
+    },
+    "o_lan": {
+     "speak": 0.09222034364938736,
+     "act": 0.1551821529865265,
+     "silent": 0.05706985667347908,
+     "wait": 0.6955277323722839
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.47689419984817505,
+    "o_lan": 0.30447226762771606
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\" if True else \"act\", \"to\": [\"O-lan\"], \"speech\": \"and why do you not take it from the box in the fields?\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4168618321418762,
+     "act": 0.15061864256858826,
+     "silent": 0.023094868287444115,
+     "wait": 0.40942469239234924
+    },
+    "o_lan": {
+     "speak": 0.03902426362037659,
+     "act": 0.22467893362045288,
+     "silent": 0.044185467064380646,
+     "wait": 0.6921113133430481
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5905753076076508,
+    "o_lan": 0.3078886866569519
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung turns to O-lan, holding a red paper in his hand."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung turns to O-lan, holding a red paper in his hand.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung turns to O-lan, holding a red paper in his hand.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6076581478118896,
+     "act": 0.10428517311811447,
+     "silent": 0.004581534769386053,
+     "wait": 0.28347504138946533
+    },
+    "o_lan": {
+     "speak": 0.04155222699046135,
+     "act": 0.10998803377151489,
+     "silent": 0.03567352518439293,
+     "wait": 0.8127862215042114
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7165249586105347,
+    "o_lan": 0.18721377849578857
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Here is the paper on which I have written the name of the day. Take it and go into the kitchen and write it on the wall with vermilion, for it is the day of my birth."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Here is the paper on which I have written the name of the day. Take it and go into the kitchen and write it on the wall with vermilion, for it is the day of my birth.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Here is the paper on which I have written the name of the day. Take it and go into the kitchen and write it on the wall with vermilion, for it is the day of my birth.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.18057473003864288,
+     "act": 0.280814528465271,
+     "silent": 0.013980120420455933,
+     "wait": 0.5246306657791138
+    },
+    "o_lan": {
+     "speak": 0.0454319603741169,
+     "act": 0.20364759862422943,
+     "silent": 0.04007994383573532,
+     "wait": 0.7108404636383057
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.47536933422088623,
+    "o_lan": 0.28915953636169434
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung leaves O-lan and goes into the kitchen."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung leaves O-lan and goes into the kitchen.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung leaves O-lan and goes into the kitchen.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.09245692193508148,
+     "act": 0.532098114490509,
+     "silent": 0.00974312424659729,
+     "wait": 0.36570173501968384
+    },
+    "o_lan": {
+     "speak": 0.013694028370082378,
+     "act": 0.10277476906776428,
+     "silent": 0.022895514965057373,
+     "wait": 0.8606356382369995
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6342982649803162,
+    "o_lan": 0.1393643617630005
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung prepares vermilion"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung prepares vermilion\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung prepares vermilion",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.05910905823111534,
+     "act": 0.6357393860816956,
+     "silent": 0.004852611105889082,
+     "wait": 0.3002990484237671
+    },
+    "o_lan": {
+     "speak": 0.01357281394302845,
+     "act": 0.11369257420301437,
+     "silent": 0.032528460025787354,
+     "wait": 0.8402061462402344
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6997009515762329,
+    "o_lan": 0.15979385375976562
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung prepares vermilion"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung prepares vermilion\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung prepares vermilion",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.06276138126850128,
+     "act": 0.657478392124176,
+     "silent": 0.00568418949842453,
+     "wait": 0.27407607436180115
+    },
+    "o_lan": {
+     "speak": 0.013622129335999489,
+     "act": 0.12687622010707855,
+     "silent": 0.032040853053331375,
+     "wait": 0.827460765838623
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7259239256381989,
+    "o_lan": 0.17253923416137695
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan observes Wang Lung carefully."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan observes Wang Lung carefully.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan observes Wang Lung carefully.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.08270686864852905,
+     "act": 0.39568474888801575,
+     "silent": 0.01353774406015873,
+     "wait": 0.5080705881118774
+    },
+    "o_lan": {
+     "speak": 0.028406891971826553,
+     "act": 0.18401405215263367,
+     "silent": 0.059660423547029495,
+     "wait": 0.7279186248779297
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.49192941188812256,
+    "o_lan": 0.2720813751220703
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung writes his name on the wall with vermilion."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung writes his name on the wall with vermilion.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung writes his name on the wall with vermilion.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.12136918306350708,
+     "act": 0.6168026328086853,
+     "silent": 0.004708091262727976,
+     "wait": 0.25712013244628906
+    },
+    "o_lan": {
+     "speak": 0.042940858751535416,
+     "act": 0.2471848428249359,
+     "silent": 0.03785482048988342,
+     "wait": 0.6720194816589355
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7428798675537109,
+    "o_lan": 0.32798051834106445
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung hides vermilion"
+   },
+   "raw": "{\"intend\": \"act\", \"to\" : [], \"action\": \"Wang Lung hides vermilion\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung hides vermilion",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.0975145548582077,
+     "act": 0.5545982718467712,
+     "silent": 0.011507252231240273,
+     "wait": 0.3363799750804901
+    },
+    "o_lan": {
+     "speak": 0.028595108538866043,
+     "act": 0.18650662899017334,
+     "silent": 0.04710215702652931,
+     "wait": 0.7377960681915283
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6636200249195099,
+    "o_lan": 0.2622039318084717
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung hides vermilion"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung hides vermilion\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung hides vermilion",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11578937619924545,
+     "act": 0.5190709233283997,
+     "silent": 0.008387180045247078,
+     "wait": 0.3567524552345276
+    },
+    "o_lan": {
+     "speak": 0.028752731159329414,
+     "act": 0.18754926323890686,
+     "silent": 0.04181525483727455,
+     "wait": 0.7418828010559082
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6432475447654724,
+    "o_lan": 0.2581171989440918
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung observes O-lan"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung observes O-lan\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung observes O-lan",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.18350887298583984,
+     "act": 0.3025723397731781,
+     "silent": 0.015062700025737286,
+     "wait": 0.4988560676574707
+    },
+    "o_lan": {
+     "speak": 0.04489956796169281,
+     "act": 0.1548287719488144,
+     "silent": 0.10624922811985016,
+     "wait": 0.6940224766731262
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5011439323425293,
+    "o_lan": 0.3059775233268738
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung calls out to O-lan."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung calls out to O-lan.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung calls out to O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7869343161582947,
+     "act": 0.03458717092871666,
+     "silent": 0.0028390418738126755,
+     "wait": 0.17563949525356293
+    },
+    "o_lan": {
+     "speak": 0.07432524114847183,
+     "act": 0.0954456627368927,
+     "silent": 0.030970852822065353,
+     "wait": 0.7992581725120544
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8243605047464371,
+    "o_lan": 0.20074182748794556
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Now is it written on the wall?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now is it written on the wall?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now is it written on the wall?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.157112717628479,
+     "act": 0.04967702925205231,
+     "silent": 0.016127286478877068,
+     "wait": 0.7770830392837524
+    },
+    "o_lan": {
+     "speak": 0.1345106065273285,
+     "act": 0.11871890723705292,
+     "silent": 0.06350778788328171,
+     "wait": 0.6832627654075623
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.22291696071624756,
+    "o_lan": 0.31673723459243774
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan holds the brush and looks at Wang Lung."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan holds the brush and looks at Wang Lung.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan holds the brush and looks at Wang Lung.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.25981780886650085,
+     "act": 0.1187760978937149,
+     "silent": 0.018214033916592598,
+     "wait": 0.6031920313835144
+    },
+    "o_lan": {
+     "speak": 0.15845981240272522,
+     "act": 0.1398611068725586,
+     "silent": 0.0748145803809166,
+     "wait": 0.626864492893219
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.3968079686164856,
+    "o_lan": 0.373135507106781
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "If you do not know it is as well I tell you. You are with child."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"If you do not know it is as well I tell you. You are with child.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "If you do not know it is as well I tell you. You are with child.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.27749934792518616,
+     "act": 0.11411682516336441,
+     "silent": 0.028851855546236038,
+     "wait": 0.5795319676399231
+    },
+    "o_lan": {
+     "speak": 0.16768816113471985,
+     "act": 0.07922428101301193,
+     "silent": 0.1676303893327713,
+     "wait": 0.5854571461677551
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4204680323600769,
+    "o_lan": 0.4145428538322449
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung touches O-lan's abdomen."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung touches O-lan's abdomen.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung touches O-lan's abdomen.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.34814637899398804,
+     "act": 0.1514774113893509,
+     "silent": 0.03379690647125244,
+     "wait": 0.4665793776512146
+    },
+    "o_lan": {
+     "speak": 0.08949194848537445,
+     "act": 0.14594528079032898,
+     "silent": 0.18728108704090118,
+     "wait": 0.5772817134857178
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5334206223487854,
+    "o_lan": 0.4227182865142822
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung carries O-lan into the house."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung carries O-lan into the house.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung carries O-lan into the house.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.17374365031719208,
+     "act": 0.4829649031162262,
+     "silent": 0.011357625015079975,
+     "wait": 0.33193379640579224
+    },
+    "o_lan": {
+     "speak": 0.02112601511180401,
+     "act": 0.25001129508018494,
+     "silent": 0.04920274019241333,
+     "wait": 0.6796599626541138
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6680662035942078,
+    "o_lan": 0.32034003734588623
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung undresses O-lan"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung undresses O-lan\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung undresses O-lan",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1505998820066452,
+     "act": 0.5458852648735046,
+     "silent": 0.011328469030559063,
+     "wait": 0.29218631982803345
+    },
+    "o_lan": {
+     "speak": 0.043586615473032,
+     "act": 0.2995458245277405,
+     "silent": 0.09716080129146576,
+     "wait": 0.5597067475318909
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7078136801719666,
+    "o_lan": 0.44029325246810913
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan lifts her feet for Wang Lung."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan lifts her feet for Wang Lung.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan lifts her feet for Wang Lung.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.09713379293680191,
+     "act": 0.6540313959121704,
+     "silent": 0.008232451044023037,
+     "wait": 0.24060237407684326
+    },
+    "o_lan": {
+     "speak": 0.04614853858947754,
+     "act": 0.362842321395874,
+     "silent": 0.06300892680883408,
+     "wait": 0.5280001759529114
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7593976259231567,
+    "o_lan": 0.4719998240470886
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung takes O-lan to the room"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung takes O-lan to the room\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung takes O-lan to the room",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "o_lan"
+ },
+ "transcript": [
+  "[silence] Wang Lung says nothing.",
+  "[action] Wang Lung turns to O-lan, holding a red paper in his hand.",
+  "Wang Lung (to O-lan): \"Here is the paper on which I have written the name of the day. Take it and go into the kitchen and write it on the wall with vermilion, for it is the day of my birth.\"",
+  "[action] (to O-lan) Wang Lung leaves O-lan and goes into the kitchen.",
+  "[action] (to O-lan) Wang Lung prepares vermilion",
+  "[action] Wang Lung prepares vermilion",
+  "[action] O-lan observes Wang Lung carefully.",
+  "[action] Wang Lung writes his name on the wall with vermilion.",
+  "[action] Wang Lung hides vermilion",
+  "[action] Wang Lung hides vermilion",
+  "[action] Wang Lung observes O-lan",
+  "[action] Wang Lung calls out to O-lan.",
+  "Wang Lung (to O-lan): \"Now is it written on the wall?\"",
+  "[action] O-lan holds the brush and looks at Wang Lung.",
+  "Wang Lung (to O-lan): \"If you do not know it is as well I tell you. You are with child.\"",
+  "[action] Wang Lung touches O-lan's abdomen.",
+  "[action] Wang Lung carries O-lan into the house.",
+  "[action] (to O-lan) Wang Lung undresses O-lan",
+  "[action] O-lan lifts her feet for Wang Lung.",
+  "[action] Wang Lung takes O-lan to the room"
+ ],
+ "seconds": 87.87642455101013
+}

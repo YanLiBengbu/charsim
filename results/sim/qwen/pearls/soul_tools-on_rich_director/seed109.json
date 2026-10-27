@@ -1,0 +1,842 @@
+{
+ "scene": "pearls",
+ "seed": 109,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "director",
+  "cards": "rich"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "o_lan": {
+     "speak": 0.09439360350370407,
+     "act": 0.14155225455760956,
+     "silent": 0.045303866267204285,
+     "wait": 0.7187502980232239
+    }
+   },
+   "urgency": {
+    "o_lan": 0.2812497019767761
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan hides the pearls more securely."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"O-lan hides the pearls more securely.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hides the pearls more securely.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel your pearls are the only fine thing you have, but you fear speaking of them.\"}",
+    "actor": "o_lan",
+    "direction": "You feel your pearls are the only fine thing you have, but you fear speaking of them."
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2659095227718353,
+     "act": 0.3137093186378479,
+     "silent": 0.017593683674931526,
+     "wait": 0.4027874767780304
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5972125232219696
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Will you give me the pearls you have hidden in your bosom?"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"Will you give me the pearls you have hidden in your bosom?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Will you give me the pearls you have hidden in your bosom?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You think of the pearls hidden in O-lan's chest and wonder if they could be a gift for Lotus.\"}",
+    "actor": "wang_lung",
+    "direction": "You think of the pearls hidden in O-lan's chest and wonder if they could be a gift for Lotus."
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "o_lan": {
+     "speak": 0.09820511192083359,
+     "act": 0.1915493905544281,
+     "silent": 0.04175477847456932,
+     "wait": 0.6684907078742981
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3315092921257019
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls, wondering if he will take them or if you must give them up.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of the pearls, wondering if he will take them or if you must give them up."
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "o_lan": {
+     "speak": 0.07016812264919281,
+     "act": 0.21480301022529602,
+     "silent": 0.05344069004058838,
+     "wait": 0.661588191986084
+    }
+   },
+   "urgency": {
+    "o_lan": 0.338411808013916
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan takes the pearls out of her bosom and shows them to Wang Lung."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"O-lan takes the pearls out of her bosom and shows them to Wang Lung.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan takes the pearls out of her bosom and shows them to Wang Lung.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {
+    "pearls": "wang_lung"
+   },
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls, wondering if they are worth more than your silence and love.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of the pearls, wondering if they are worth more than your silence and love."
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.17500874400138855,
+     "act": 0.22815629839897156,
+     "silent": 0.04958810657262802,
+     "wait": 0.5472468733787537
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.45275312662124634
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung hides pearls in his robe."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"O-lan\"], \"action\": \"Wang Lung hides pearls in his robe.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung hides pearls in his robe.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You see the pearls and feel the weight of their meaning; you want to take them but hesitate.\"}",
+    "actor": "wang_lung",
+    "direction": "You see the pearls and feel the weight of their meaning; you want to take them but hesitate."
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "o_lan": {
+     "speak": 0.05993347987532616,
+     "act": 0.1854800432920456,
+     "silent": 0.02109631896018982,
+     "wait": 0.7334901094436646
+    }
+   },
+   "urgency": {
+    "o_lan": 0.26650989055633545
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "You feel the weight of the pearls, longing for their worth, but fear what giving them might mean."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.\"}",
+   "item": {
+    "kind": "act",
+    "text": "You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of the pearls, longing for their worth, but fear what giving them might mean."
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "o_lan": {
+     "speak": 0.0703241303563118,
+     "act": 0.22240248322486877,
+     "silent": 0.022323494777083397,
+     "wait": 0.6849498152732849
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3150501847267151
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan hides pearls again."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"O-lan hides pearls again.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hides pearls again.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "repeated": "You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.",
+    "direction": null
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1374378651380539,
+     "act": 0.4241439402103424,
+     "silent": 0.014253408648073673,
+     "wait": 0.4241648316383362
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5758351683616638
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung gives pearls to Lotus"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"Wang Lung gives pearls to Lotus\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung gives pearls to Lotus",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the pearls' weight and wonder if giving them would break the silence between you and O-lan.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the pearls' weight and wonder if giving them would break the silence between you and O-lan."
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 0.06901929527521133,
+     "act": 0.24289129674434662,
+     "silent": 0.027922136709094048,
+     "wait": 0.6601673364639282
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3398326635360718
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "O-lan begs for the pearls"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"], \"gist\": \"O-lan begs for the pearls\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan begs for the pearls",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean."
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "o_lan": {
+     "speak": 0.27195098996162415,
+     "act": 0.128454327583313,
+     "silent": 0.024222901090979576,
+     "wait": 0.5753718018531799
+    }
+   },
+   "urgency": {
+    "o_lan": 0.42462819814682007
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan pleads with Wang Lung"
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"O-lan pleads with Wang Lung\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan pleads with Wang Lung",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "repeated": "You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean.",
+    "direction": null
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.24035437405109406,
+     "act": 0.12772612273693085,
+     "silent": 0.05958377569913864,
+     "wait": 0.5723357200622559
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.42766427993774414
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung refuses O-lan"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"O-lan\"] , \"action\": \"Wang Lung refuses O-lan\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung refuses O-lan",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": null,
+    "rejected": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "o_lan": {
+     "speak": 0.09730282425880432,
+     "act": 0.16093704104423523,
+     "silent": 0.020616866648197174,
+     "wait": 0.7211432456970215
+    }
+   },
+   "urgency": {
+    "o_lan": 0.2788567543029785
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan gives Wang Lung her own pearls"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"O-lan gives Wang Lung her own pearls\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan gives Wang Lung her own pearls",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "repeated": "You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.",
+    "direction": null
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "o_lan": {
+     "speak": 0.07292845100164413,
+     "act": 0.2894797623157501,
+     "silent": 0.025103677064180374,
+     "wait": 0.6124881505966187
+    }
+   },
+   "urgency": {
+    "o_lan": 0.38751184940338135
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan gives pearls to Wang Lung"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"O-lan gives pearls to Wang Lung\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan gives pearls to Wang Lung",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "repeated": "You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean.",
+    "direction": null
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1355200856924057,
+     "act": 0.2235826849937439,
+     "silent": 0.10458914190530777,
+     "wait": 0.5363081097602844
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4636918902397156
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung covers his face"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung covers his face\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung covers his face",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls again, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": null,
+    "rejected": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "o_lan": {
+     "speak": 0.04230418801307678,
+     "act": 0.1672556847333908,
+     "silent": 0.04104458540678024,
+     "wait": 0.7493955492973328
+    }
+   },
+   "urgency": {
+    "o_lan": 0.25060445070266724
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I give them to you,"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"], \"speech\": \"I give them to you,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I give them to you,",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of your pearls again, longing for their worth, but fear what giving them might mean.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of your pearls again, longing for their worth, but fear what giving them might mean."
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "o_lan": {
+     "speak": 0.0854712575674057,
+     "act": 0.1605125516653061,
+     "silent": 0.03498595952987671,
+     "wait": 0.7190302610397339
+    }
+   },
+   "urgency": {
+    "o_lan": 0.2809697389602661
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}.",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of your own silence, longing for his touch, but fear what it might cost you.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of your own silence, longing for his touch, but fear what it might cost you."
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.09571537375450134,
+     "act": 0.37389516830444336,
+     "silent": 0.05033574625849724,
+     "wait": 0.4800538122653961
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5199461877346039
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung takes pearls from O-lan"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung takes pearls from O-lan\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung takes pearls from O-lan",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the pearls' weight again. Do you take them, or let them stay where they are?\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the pearls' weight again. Do you take them, or let them stay where they are?"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "o_lan": {
+     "speak": 0.04171192646026611,
+     "act": 0.1701609492301941,
+     "silent": 0.02562013827264309,
+     "wait": 0.7625070214271545
+    }
+   },
+   "urgency": {
+    "o_lan": 0.23749297857284546
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the weight of the pearls again, but your hands are empty. Do you take them back?\"}",
+    "actor": "o_lan",
+    "direction": "You feel the weight of the pearls again, but your hands are empty. Do you take them back?"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "o_lan": {
+     "speak": 0.04598980024456978,
+     "act": 0.139360710978508,
+     "silent": 0.012817983515560627,
+     "wait": 0.8018314838409424
+    }
+   },
+   "urgency": {
+    "o_lan": 0.19816851615905762
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan hides pearls from Wang Lung"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"O-lan hides pearls from Wang Lung\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hides pearls from Wang Lung",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"You feel the pearls are gone, but your heart aches for what you gave him, and you wonder if he will ever see their true worth.\"}",
+    "actor": "o_lan",
+    "direction": "You feel the pearls are gone, but your heart aches for what you gave him, and you wonder if he will ever see their true worth."
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11533220112323761,
+     "act": 0.4011858403682709,
+     "silent": 0.028890354558825493,
+     "wait": 0.45459166169166565
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5454083383083344
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung takes jewels to town"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung takes jewels to town\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung takes jewels to town",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the weight of the pearls, torn between desire and guilt, and wonder if you will ever stop hurting her.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the weight of the pearls, torn between desire and guilt, and wonder if you will ever stop hurting her."
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "wang_lung"
+ },
+ "transcript": [
+  "[action] O-lan hides the pearls more securely.",
+  "Wang Lung (to O-lan): \"Will you give me the pearls you have hidden in your bosom?\"",
+  "[silence] O-lan says nothing.",
+  "[action] (to Wang Lung) O-lan takes the pearls out of her bosom and shows them to Wang Lung.",
+  "[action] (to O-lan) Wang Lung hides pearls in his robe.",
+  "[action] You feel the weight of the pearls, longing for their worth, but fear what giving them might mean.",
+  "[action] O-lan hides pearls again.",
+  "[action] Wang Lung gives pearls to Lotus",
+  "[says] (to Wang Lung) O-lan begs for the pearls",
+  "[action] O-lan pleads with Wang Lung",
+  "[action] (to O-lan) Wang Lung refuses O-lan",
+  "[action] O-lan gives Wang Lung her own pearls",
+  "[action] (to Wang Lung) O-lan gives pearls to Wang Lung",
+  "[action] Wang Lung covers his face",
+  "O-lan (to Wang Lung): \"I give them to you,\"",
+  "[silence] O-lan says nothing.",
+  "[action] Wang Lung takes pearls from O-lan",
+  "[silence] O-lan says nothing.",
+  "[action] (to Wang Lung) O-lan hides pearls from Wang Lung",
+  "[action] Wang Lung takes jewels to town"
+ ],
+ "seconds": 160.434095621109
+}

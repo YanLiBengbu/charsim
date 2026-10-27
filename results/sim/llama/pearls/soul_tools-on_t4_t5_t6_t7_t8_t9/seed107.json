@@ -1,0 +1,1318 @@
+{
+ "scene": "pearls",
+ "seed": 107,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": true,
+  "t9": true,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.20356597006320953,
+     "act": 0.44257429242134094,
+     "silent": 0.009184751659631729,
+     "wait": 0.3446749746799469
+    },
+    "o_lan": {
+     "speak": 0.23581020534038544,
+     "act": 0.11138864606618881,
+     "silent": 0.01173681765794754,
+     "wait": 0.6410643458366394
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6553250253200531,
+    "o_lan": 0.3589356541633606
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung hides the money from O-lan."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung hides the money from O-lan.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung hides the money from O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung buys a gold pin\"}",
+    "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung secretly purchases the gold pin.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung hides the money from O-lan.\"}",
+     "{\"intend\": \"act\", \"to\" : [\"O-lan\"], \"action\": \"Wang Lung covers his face\"}"
+    ],
+    "probs": [
+     0.5,
+     0.5
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "shown": "I want O-lan to see the new gold pin on Lotus's hair and understand my affection for her, but I fear O-lan's reaction.",
+    "intend_probs": {
+     "speak": 0.20356597006320953,
+     "act": 0.44257429242134094,
+     "silent": 0.009184751659631729
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1252443939447403,
+     "act": 0.48734042048454285,
+     "silent": 0.00787654984742403,
+     "wait": 0.37953874468803406
+    },
+    "o_lan": {
+     "speak": 0.1992034763097763,
+     "act": 0.09410513937473297,
+     "silent": 0.011235367506742477,
+     "wait": 0.6954560279846191
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6204612553119659,
+    "o_lan": 0.30454397201538086
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan quietly hides her own money."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan quietly hides her own money.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan quietly hides her own money.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan begins secretly saving money.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan tries to keep the money from Wang Lung.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan quietly hides her own money.\"}"
+    ],
+    "probs": [
+     0.21194155514240265,
+     0.21194155514240265,
+     0.5761168599128723
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to stop taking the money from the wall and to use it for our family's needs.",
+    "plan": "I want Wang Lung to stop taking the money from the wall and to use it for our family's needs.",
+    "shown": "I want Wang Lung to stop taking the money from the wall and to use it for our family's needs.",
+    "intend_probs": {
+     "speak": 0.06614460051059723,
+     "act": 0.18124672770500183,
+     "silent": 0.03565741330385208
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11480294913053513,
+     "act": 0.5211958289146423,
+     "silent": 0.00578931113705039,
+     "wait": 0.35821184515953064
+    },
+    "o_lan": {
+     "speak": 0.05427708849310875,
+     "act": 0.16720765829086304,
+     "silent": 0.029026221483945847,
+     "wait": 0.7494890093803406
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6417881548404694,
+    "o_lan": 0.2505109906196594
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung hides the money in his bosom."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung hides the money in his bosom.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung hides the money in his bosom.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung buys a gold pin for Lotus.\"}",
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung buys a gold pin.\"}"
+   ],
+   "plan": {
+    "raw": "I want O-lan to remain oblivious to my intentions, so I will hide the money from her and keep my purchases from Lotus a secret.",
+    "plan": "I want O-lan to remain oblivious to my intentions, so I will hide the money from her and keep my purchases from Lotus a secret.",
+    "shown": "I want O-lan to remain oblivious to my intentions, so I will hide the money from her and keep my purchases from Lotus a secret.",
+    "intend_probs": {
+     "speak": 0.10030970722436905,
+     "act": 0.6293966174125671,
+     "silent": 0.007921487092971802
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.08994827419519424,
+     "act": 0.5873110294342041,
+     "silent": 0.008375772275030613,
+     "wait": 0.3143649399280548
+    },
+    "o_lan": {
+     "speak": 0.07557269930839539,
+     "act": 0.17749261856079102,
+     "silent": 0.04483660310506821,
+     "wait": 0.7020981311798096
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6856350600719452,
+    "o_lan": 0.29790186882019043
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to notice the gold pin I'll buy for Lotus, to see me as a generous and loving man.",
+    "plan": "I want O-lan to notice the gold pin I'll buy for Lotus, to see me as a generous and loving man.",
+    "shown": "I want O-lan to notice the gold pin I'll buy for Lotus, to see me as a generous and loving man.",
+    "intend_probs": {
+     "speak": 0.19676879048347473,
+     "act": 0.47252601385116577,
+     "silent": 0.005947093479335308
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2529414892196655,
+     "act": 0.41703295707702637,
+     "silent": 0.005248043220490217,
+     "wait": 0.3247775137424469
+    },
+    "o_lan": {
+     "speak": 0.12195030599832535,
+     "act": 0.12629306316375732,
+     "silent": 0.024825435131788254,
+     "wait": 0.7269312143325806
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6752224862575531,
+    "o_lan": 0.27306878566741943
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "O-lan asks why Wang Lung is hiding his money."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan asks why Wang Lung is hiding his money.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan asks why Wang Lung is hiding his money.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Why do you hide your money from me? I have but to ask and you give me what I want.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Master, why do you hide your money from me?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan asks why Wang Lung is hiding his money.\"}"
+    ],
+    "probs": [
+     0.05661172792315483,
+     0.2537161707878113,
+     0.68967205286026
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to speak kindly to me and show me his love, so I will say, \"Master, why do you hide your money from me?\"",
+    "plan": "I want Wang Lung to speak kindly to me and show me his love, so I will say, \"Master, why do you hide your money from me?",
+    "shown": "I want Wang Lung to speak kindly to me and show me his love, so I will say, \"Master, why do you hide your money from me?",
+    "intend_probs": {
+     "speak": 0.583776593208313,
+     "act": 0.02750859595835209,
+     "silent": 0.008922412060201168
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4648948907852173,
+     "act": 0.1672682911157608,
+     "silent": 0.013726391829550266,
+     "wait": 0.3541104793548584
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6458895206451416
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I am only going to buy red paper for the Mid-Autumn Festival,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"speech\": \"I am only going to buy red paper for the Mid-Autumn Festival,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I am only going to buy red paper for the Mid-Autumn Festival,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung answers O-lan roughly.\"}",
+     "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"speech\": \"I am only going to buy red paper for the Mid-Autumn Festival,\"}"
+    ],
+    "probs": [
+     0.2689414322376251,
+     0.7310585975646973
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to leave me alone so I can go back to the tea house and buy a gold pin for Lotus, my jewel.",
+    "plan": "I want O-lan to leave me alone so I can go back to the tea house and buy a gold pin for Lotus, my jewel.",
+    "shown": "I want O-lan to leave me alone so I can go back to the tea house and buy a gold pin for Lotus, my jewel.",
+    "intend_probs": {
+     "speak": 0.5062143802642822,
+     "act": 0.1047620177268982,
+     "silent": 0.023372991010546684
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "o_lan": {
+     "speak": 0.46744316816329956,
+     "act": 0.0219168271869421,
+     "silent": 0.011725767515599728,
+     "wait": 0.4989142119884491
+    }
+   },
+   "urgency": {
+    "o_lan": 0.5010857880115509
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "O-lan questions Wang Lung about the cost of red paper."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan questions Wang Lung about the cost of red paper.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan questions Wang Lung about the cost of red paper.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is it not?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan expresses concern about the expense of red paper.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan questions Wang Lung about the cost of red paper.\"}"
+    ],
+    "probs": [
+     0.14780405163764954,
+     0.18978416919708252,
+     0.6624118089675903
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to trust me enough to tell me the truth about his actions, so I ask again, \"Red paper is expensive, is it not?\"",
+    "plan": "I want Wang Lung to trust me enough to tell me the truth about his actions, so I ask again, \"Red paper is expensive, is it not?",
+    "shown": "I want Wang Lung to trust me enough to tell me the truth about his actions, so I ask again, \"Red paper is expensive, is it not?",
+    "intend_probs": {
+     "speak": 0.3513728678226471,
+     "act": 0.03029010072350502,
+     "silent": 0.009829982183873653
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.557388186454773,
+     "act": 0.08547785878181458,
+     "silent": 0.019071130082011223,
+     "wait": 0.3380627930164337
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6619372069835663
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung explains his need for red paper to O-lan."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung explains his need for red paper to O-lan.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung explains his need for red paper to O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"It is only paper and cannot be had for less than one dollar a roll.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung explains his need for red paper to O-lan.\"}"
+    ],
+    "probs": [
+     0.2018132209777832,
+     0.7981867790222168
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want to keep my secret of the gold pin for Lotus hidden from O-lan, so I'll distract her with the red paper for the Mid-Autumn Festival.",
+    "plan": "I want to keep my secret of the gold pin for Lotus hidden from O-lan, so I'll distract her with the red paper for the Mid-Autumn Festival.",
+    "shown": "I want to keep my secret of the gold pin for Lotus hidden from O-lan, so I'll distract her with the red paper for the Mid-Autumn Festival.",
+    "intend_probs": {
+     "speak": 0.5757439732551575,
+     "act": 0.09315722435712814,
+     "silent": 0.00595451332628727
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 0.5114417672157288,
+     "act": 0.028855841606855392,
+     "silent": 0.008263052441179752,
+     "wait": 0.4514392912387848
+    }
+   },
+   "urgency": {
+    "o_lan": 0.5485607087612152
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan asks Wang Lung about the special paper."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan asks Wang Lung about the special paper.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan asks Wang Lung about the special paper.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan pushes Wang Lung for an explanation.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan asks Wang Lung about the special paper.\"}"
+    ],
+    "probs": [
+     0.18242551386356354,
+     0.8175744414329529
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want to know if Wang Lung is hiding something else from me, and I'll ask him again, \"What is so special about this red paper?\"",
+    "plan": "I want to know if Wang Lung is hiding something else from me, and I'll ask him again, \"What is so special about this red paper?",
+    "shown": "I want to know if Wang Lung is hiding something else from me, and I'll ask him again, \"What is so special about this red paper?",
+    "intend_probs": {
+     "speak": 0.42076197266578674,
+     "act": 0.03439319133758545,
+     "silent": 0.006766205653548241
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5765615701675415,
+     "act": 0.09326691925525665,
+     "silent": 0.00464292848482728,
+     "wait": 0.32552850246429443
+    },
+    "o_lan": {
+     "speak": 0.4406410753726959,
+     "act": 0.05921289324760437,
+     "silent": 0.004284895025193691,
+     "wait": 0.4958610236644745
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6744714975357056,
+    "o_lan": 0.5041389763355255
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Is it not enough that I have bought a new robe for you this year?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is it not enough that I have bought a new robe for you this year?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Is it not enough that I have bought a new robe for you this year?",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan expresses disappointment that Wang Lung is not saving money.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is it the money that I took from the jewels, the two silver pieces that I kept?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is it not enough that I have bought a new robe for you this year?\"}"
+    ],
+    "probs": [
+     0.08450926840305328,
+     0.42917346954345703,
+     0.4863172471523285
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to know why Wang Lung is hiding his money, and I must ask him again in a way that will not make him angry with me.",
+    "plan": "I want to know why Wang Lung is hiding his money, and I must ask him again in a way that will not make him angry with me.",
+    "shown": "I want to know why Wang Lung is hiding his money, and I must ask him again in a way that will not make him angry with me.",
+    "intend_probs": {
+     "speak": 0.42256805300712585,
+     "act": 0.06830243766307831,
+     "silent": 0.0043629612773656845
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.626409113407135,
+     "act": 0.0741671547293663,
+     "silent": 0.006087189540266991,
+     "wait": 0.2933366298675537
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7066633701324463
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "This is a day of good fortune. I will buy red paper and have it made into candles. It is a lucky sign."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"This is a day of good fortune. I will buy red paper and have it made into candles. It is a lucky sign.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "This is a day of good fortune. I will buy red paper and have it made into candles. It is a lucky sign.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung responds to O-lan's question about the paper.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"This is a day of good fortune. I will buy red paper and have it made into candles. It is a lucky sign.\"}"
+    ],
+    "probs": [
+     0.08509904891252518,
+     0.9149009585380554
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want to distract O-lan from the money in my bosom so I can think about Lotus and how I can give her a beautiful present.",
+    "plan": "I want to distract O-lan from the money in my bosom so I can think about Lotus and how I can give her a beautiful present.",
+    "shown": "I want to distract O-lan from the money in my bosom so I can think about Lotus and how I can give her a beautiful present.",
+    "intend_probs": {
+     "speak": 0.553175687789917,
+     "act": 0.08870594948530197,
+     "silent": 0.0072801373898983
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "o_lan": {
+     "speak": 0.35348713397979736,
+     "act": 0.05420714244246483,
+     "silent": 0.00941453967243433,
+     "wait": 0.5828912258148193
+    }
+   },
+   "urgency": {
+    "o_lan": 0.41710877418518066
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "O-lan asks Wang Lung directly about the money."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan asks Wang Lung directly about the money.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan asks Wang Lung directly about the money.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan asks Wang Lung why he is hiding money from her.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan presses Wang Lung for the truth.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan asks Wang Lung directly about the money.\"}"
+    ],
+    "probs": [
+     0.11920291185379028,
+     0.8807970285415649
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want to know why Wang Lung is hiding his money from me, and I will ask him directly without hesitation.",
+    "plan": "I want to know why Wang Lung is hiding his money from me, and I will ask him directly without hesitation.",
+    "shown": "I want to know why Wang Lung is hiding his money from me, and I will ask him directly without hesitation.",
+    "intend_probs": {
+     "speak": 0.4967605173587799,
+     "act": 0.05932338908314705,
+     "silent": 0.005515377968549728
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5043796300888062,
+     "act": 0.11981276422739029,
+     "silent": 0.006758749019354582,
+     "wait": 0.3690488934516907
+    },
+    "o_lan": {
+     "speak": 0.689393937587738,
+     "act": 0.029130080714821815,
+     "silent": 0.005058871116489172,
+     "wait": 0.27641716599464417
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6309511065483093,
+    "o_lan": 0.7235828340053558
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I must have red paper to make good fortune and I must have red candles to light on the day. It is the custom of the people."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I must have red paper to make good fortune and I must have red candles to light on the day. It is the custom of the people.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I must have red paper to make good fortune and I must have red candles to light on the day. It is the custom of the people.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"What is it you want to know?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tell my father that I am going into the city,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I must have red paper to make good fortune and I must have red candles to light on the day. It is the custom of the people.\"}"
+    ],
+    "probs": [
+     0.22481529414653778,
+     0.08270492404699326,
+     0.6924798488616943
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to stop suspecting me and ask her no questions about where I'm going with my money.",
+    "plan": "I want O-lan to stop suspecting me and ask her no questions about where I'm going with my money.",
+    "shown": "I want O-lan to stop suspecting me and ask her no questions about where I'm going with my money.",
+    "intend_probs": {
+     "speak": 0.43937715888023376,
+     "act": 0.09776253998279572,
+     "silent": 0.02471623197197914
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "o_lan": {
+     "speak": 0.5559747219085693,
+     "act": 0.05170939117670059,
+     "silent": 0.010174072347581387,
+     "wait": 0.3821417987346649
+    }
+   },
+   "urgency": {
+    "o_lan": 0.6178582012653351
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Then buy the paper and make the candles. But I wish to know why you hide your money."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Then buy the paper and make the candles. But I wish to know why you hide your money.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Then buy the paper and make the candles. But I wish to know why you hide your money.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is it for this that you hide your money?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan presses Wang Lung about the money.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Then buy the paper and make the candles. But I wish to know why you hide your money.\"}"
+    ],
+    "probs": [
+     0.05127093940973282,
+     0.03992984816431999,
+     0.9087991714477539
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to know why Wang Lung is hiding his money, and I will ask him directly to see if he will tell the truth.",
+    "plan": "I want to know why Wang Lung is hiding his money, and I will ask him directly to see if he will tell the truth.",
+    "shown": "I want to know why Wang Lung is hiding his money, and I will ask him directly to see if he will tell the truth.",
+    "intend_probs": {
+     "speak": 0.43131622672080994,
+     "act": 0.06602401286363602,
+     "silent": 0.014718791469931602
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5195941925048828,
+     "act": 0.0750281810760498,
+     "silent": 0.02435479313135147,
+     "wait": 0.3810228705406189
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6189771294593811
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Let us finish this. Now it is time for me to go into the fields."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Let us finish this. Now it is time for me to go into the fields.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Let us finish this. Now it is time for me to go into the fields.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung responds harshly to O-lan's question.\"}",
+     "{\"intend\": \"speak\", \"to\" : [], \"speech\": \"I must go into the city today and buy red paper. If I do not buy it today, I shall forget and do it tomorrow.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Let us finish this. Now it is time for me to go into the fields.\"}"
+    ],
+    "probs": [
+     0.10167954862117767,
+     0.31319501996040344,
+     0.5851253867149353
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to keep O-lan from asking too many questions about my money so I'll quickly finish our conversation about the red paper.",
+    "plan": "I want to keep O-lan from asking too many questions about my money so I'll quickly finish our conversation about the red paper.",
+    "shown": "I want to keep O-lan from asking too many questions about my money so I'll quickly finish our conversation about the red paper.",
+    "intend_probs": {
+     "speak": 0.6281068921089172,
+     "act": 0.08114103227853775,
+     "silent": 0.007545534987002611
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3024333417415619,
+     "act": 0.07358760386705399,
+     "silent": 0.007749874610453844,
+     "wait": 0.6162291765213013
+    }
+   },
+   "urgency": {
+    "o_lan": 0.38377082347869873
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I will wait until you come from the fields. If you will not tell me then, I will go into the house and look for myself."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will wait until you come from the fields. If you will not tell me then, I will go into the house and look for myself.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will wait until you come from the fields. If you will not tell me then, I will go into the house and look for myself.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan expresses her desire to know the truth about the money.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"It is always so. There is no good fortune for me. Only you have good fortune.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will wait until you come from the fields. If you will not tell me then, I will go into the house and look for myself.\"}"
+    ],
+    "probs": [
+     0.09850569069385529,
+     0.07671631127595901,
+     0.8247780203819275
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to know the truth from Wang Lung about why he's hiding his money and what it has to do with the Mid-Autumn Festival.",
+    "plan": "I want to know the truth from Wang Lung about why he's hiding his money and what it has to do with the Mid-Autumn Festival.",
+    "shown": "I want to know the truth from Wang Lung about why he's hiding his money and what it has to do with the Mid-Autumn Festival.",
+    "intend_probs": {
+     "speak": 0.12888772785663605,
+     "act": 0.11350435763597488,
+     "silent": 0.01739538460969925
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5399786233901978,
+     "act": 0.17172400653362274,
+     "silent": 0.005185072310268879,
+     "wait": 0.28311237692832947
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7168876230716705
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Tomorrow I will buy the red paper and then I will tell you why I have hidden the money."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tomorrow I will buy the red paper and then I will tell you why I have hidden the money.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Tomorrow I will buy the red paper and then I will tell you why I have hidden the money.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Well, and if you find it you will hide it yourself. Go, I am tired.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tomorrow I will buy the red paper and then I will tell you why I have hidden the money.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung and O-lan argue about money.\"}"
+    ],
+    "probs": [
+     0.2326965481042862,
+     0.3836517333984375,
+     0.3836517333984375
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to leave me alone so I can go to the tea house and see Lotus, but she's suspicious and won't let me be.",
+    "plan": "I want O-lan to leave me alone so I can go to the tea house and see Lotus, but she's suspicious and won't let me be.",
+    "shown": "I want O-lan to leave me alone so I can go to the tea house and see Lotus, but she's suspicious and won't let me be.",
+    "intend_probs": {
+     "speak": 0.44889572262763977,
+     "act": 0.14571721851825714,
+     "silent": 0.009314912371337414
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "o_lan": {
+     "speak": 0.04636325687170029,
+     "act": 0.1371772438287735,
+     "silent": 0.026986081153154373,
+     "wait": 0.7894734144210815
+    }
+   },
+   "urgency": {
+    "o_lan": 0.21052658557891846
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to tell me why he's hidden the money, and I will only ask him again when he returns from the fields.",
+    "plan": "I want Wang Lung to tell me why he's hidden the money, and I will only ask him again when he returns from the fields.",
+    "shown": "I want Wang Lung to tell me why he's hidden the money, and I will only ask him again when he returns from the fields.",
+    "intend_probs": {
+     "speak": 0.01595393940806389,
+     "act": 0.0915975570678711,
+     "silent": 0.023093948140740395
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.31316179037094116,
+     "act": 0.27638527750968933,
+     "silent": 0.008343829773366451,
+     "wait": 0.40210914611816406
+    },
+    "o_lan": {
+     "speak": 0.01137640979140997,
+     "act": 0.06549378484487534,
+     "silent": 0.018673107028007507,
+     "wait": 0.9044566750526428
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5978908538818359,
+    "o_lan": 0.09554332494735718
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung leaves O-lan at the pool.\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung goes to the tea shop.\"}",
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung leaves to work in the fields.\"}",
+    "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung leaves O-lan at the pool.\"}"
+   ],
+   "dropped": "act",
+   "plan": {
+    "raw": "I want O-lan to understand that I'm buying red paper for good fortune and the tea house, not to spend it on her or our family.",
+    "plan": "I want O-lan to understand that I'm buying red paper for good fortune and the tea house, not to spend it on her or our family.",
+    "shown": "I want O-lan to understand that I'm buying red paper for good fortune and the tea house, not to spend it on her or our family.",
+    "intend_probs": {
+     "speak": 0.2263265997171402,
+     "act": 0.45296478271484375,
+     "silent": 0.009397714398801327
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.20824939012527466,
+     "act": 0.4410995841026306,
+     "silent": 0.007126125041395426,
+     "wait": 0.34352484345436096
+    },
+    "o_lan": {
+     "speak": 0.016297971829771996,
+     "act": 0.06461916863918304,
+     "silent": 0.026715051382780075,
+     "wait": 0.8923677802085876
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.656475156545639,
+    "o_lan": 0.10763221979141235
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Take these two white pearls and buy red paper with them. Now go into the house and prepare food for my return."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Take these two white pearls and buy red paper with them. Now go into the house and prepare food for my return.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Take these two white pearls and buy red paper with them. Now go into the house and prepare food for my return.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {
+    "pearls": "wang_lung"
+   },
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Take these two white pearls and buy red paper with them. Now go into the house and prepare food for my return.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Here is a little white pearl. It is to show that I value you.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"Here is a small white pearl. Take it and tell the other women.\"}"
+    ],
+    "probs": [
+     0.37575656175613403,
+     0.33160400390625,
+     0.29263949394226074
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want O-lan to leave me alone, so I will give her a small gift, like one of the white pearls, to pacify her.",
+    "plan": "I want O-lan to leave me alone, so I will give her a small gift, like one of the white pearls, to pacify her.",
+    "shown": "I want O-lan to leave me alone, so I will give her a small gift, like one of the white pearls, to pacify her.",
+    "intend_probs": {
+     "speak": 0.2985084354877472,
+     "act": 0.43432241678237915,
+     "silent": 0.003755728015676141
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "wang_lung"
+ },
+ "transcript": [
+  "[action] (to O-lan) Wang Lung hides the money from O-lan.",
+  "[action] O-lan quietly hides her own money.",
+  "[action] (to O-lan) Wang Lung hides the money in his bosom.",
+  "[silence] Wang Lung says nothing.",
+  "[says] (to Wang Lung) O-lan asks why Wang Lung is hiding his money.",
+  "Wang Lung (to O-lan): \"I am only going to buy red paper for the Mid-Autumn Festival,\"",
+  "[says] (to Wang Lung) O-lan questions Wang Lung about the cost of red paper.",
+  "[says] (to O-lan) Wang Lung explains his need for red paper to O-lan.",
+  "[action] O-lan asks Wang Lung about the special paper.",
+  "O-lan (to Wang Lung): \"Is it not enough that I have bought a new robe for you this year?\"",
+  "Wang Lung (to O-lan): \"This is a day of good fortune. I will buy red paper and have it made into candles. It is a lucky sign.\"",
+  "[says] O-lan asks Wang Lung directly about the money.",
+  "Wang Lung (to O-lan): \"I must have red paper to make good fortune and I must have red candles to light on the day. It is the custom of the people.\"",
+  "O-lan (to Wang Lung): \"Then buy the paper and make the candles. But I wish to know why you hide your money.\"",
+  "Wang Lung (to O-lan): \"Let us finish this. Now it is time for me to go into the fields.\"",
+  "O-lan (to Wang Lung): \"I will wait until you come from the fields. If you will not tell me then, I will go into the house and look for myself.\"",
+  "Wang Lung (to O-lan): \"Tomorrow I will buy the red paper and then I will tell you why I have hidden the money.\"",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to O-lan): \"Take these two white pearls and buy red paper with them. Now go into the house and prepare food for my return.\""
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want O-lan to see the new gold pin on Lotus's hair and understand my affection for her, but I fear O-lan's reaction.",
+   "plan": "I want O-lan to see the new gold pin on Lotus's hair and understand my affection for her, but I fear O-lan's reaction."
+  },
+  "o_lan": {
+   "raw": "I want to ask my husband, Wang Lung, why he takes money from the wall to buy a gold pin for Lotus, not for me.",
+   "plan": "I want to ask my husband, Wang Lung, why he takes money from the wall to buy a gold pin for Lotus, not for me."
+  }
+ },
+ "seconds": 229.0691533088684
+}

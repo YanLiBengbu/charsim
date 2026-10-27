@@ -1,0 +1,40 @@
+{
+ "args": {
+  "base": "/media/w/DATA1/models/Qwen3-8B-bnb-4bit",
+  "world": "data/train/c19/world.txt",
+  "soul": null,
+  "world_adapter": null,
+  "out": "adapters/qwen/c19/world",
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "lr": null,
+  "epochs": 2,
+  "max_len": null,
+  "batch": 2,
+  "accum": 8,
+  "seed": 0
+ },
+ "lr": 0.0001,
+ "max_len": 1024,
+ "train_rows": 61,
+ "val_rows": 3,
+ "dropped": 0,
+ "train_tokens_per_epoch": 61621,
+ "optimizer_steps": 8,
+ "epochs": [
+  {
+   "train_loss": 2.99241239793839,
+   "val_loss": 3.0174692471822104,
+   "seconds": 54.0881507396698
+  },
+  {
+   "train_loss": 2.8840459008370676,
+   "val_loss": 2.965737740198771,
+   "seconds": 108.15030717849731
+  }
+ ],
+ "val_loss_before": 3.1024437745412192,
+ "seconds": 108.1503369808197,
+ "peak_gpu_gb": 10.116325378417969
+}

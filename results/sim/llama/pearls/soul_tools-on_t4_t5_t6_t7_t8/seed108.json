@@ -1,0 +1,1348 @@
+{
+ "scene": "pearls",
+ "seed": 108,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": true,
+  "t9": false,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6907173991203308,
+     "act": 0.08251183480024338,
+     "silent": 0.0024915137328207493,
+     "wait": 0.2242792546749115
+    },
+    "o_lan": {
+     "speak": 0.487009197473526,
+     "act": 0.07544967532157898,
+     "silent": 0.0033129178918898106,
+     "wait": 0.43422821164131165
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7757207453250885,
+    "o_lan": 0.5657717883586884
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Come now, my woman, and sit by the water and speak to me."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Come now, my woman, and sit by the water and speak to me.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Come now, my woman, and sit by the water and speak to me.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"speech\": \"Now, tell me why you have not brought a dish of water for me at the day's end for a long time?\"}",
+     "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"gist\": \"Wang Lung asks O-lan to stop washing his clothes.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Come now, my woman, and sit by the water and speak to me.\"}"
+    ],
+    "probs": [
+     0.05625632032752037,
+     0.06374676525592804,
+     0.8799969553947449
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "shown": "I want O-lan's attention and affection, so I'll ask her to stop washing my clothes and come talk to me by the pool.",
+    "intend_probs": {
+     "speak": 0.6907173991203308,
+     "act": 0.08251183480024338,
+     "silent": 0.0024915137328207493
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3788982927799225,
+     "act": 0.19794587790966034,
+     "silent": 0.0041080680675804615,
+     "wait": 0.4190477132797241
+    },
+    "o_lan": {
+     "speak": 0.2924310266971588,
+     "act": 0.08377771824598312,
+     "silent": 0.004724988713860512,
+     "wait": 0.6190662980079651
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5809522867202759,
+    "o_lan": 0.3809337019920349
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "O-lan asks about the money from the wall."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan asks about the money from the wall.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan asks about the money from the wall.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan asks about the money from the wall.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan expresses jealousy and resentment.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan expresses her resentment and desire for a pearl.\"}"
+    ],
+    "probs": [
+     0.46303674578666687,
+     0.21872305870056152,
+     0.3182401657104492
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want to know why he is taking money from the wall and buying a gold pin for Lotus, not his own wife.",
+    "plan": "I want to know why he is taking money from the wall and buying a gold pin for Lotus, not his own wife.",
+    "shown": "I want to know why he is taking money from the wall and buying a gold pin for Lotus, not his own wife.",
+    "intend_probs": {
+     "speak": 0.08478652685880661,
+     "act": 0.06811825931072235,
+     "silent": 0.01721823401749134
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.41167575120925903,
+     "act": 0.17157047986984253,
+     "silent": 0.005180654115974903,
+     "wait": 0.4115731120109558
+    },
+    "o_lan": {
+     "speak": 0.3552308976650238,
+     "act": 0.05406707897782326,
+     "silent": 0.009393706917762756,
+     "wait": 0.5813083052635193
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5884268879890442,
+    "o_lan": 0.4186916947364807
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\" \"to\": [\"O-lan\"], \"gist\": \"Wang Lung explains the money\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to be comfortable with my spending so I can leave her near the pool and go back to the tea house to buy the gold pin for Lotus.",
+    "plan": "I want O-lan to be comfortable with my spending so I can leave her near the pool and go back to the tea house to buy the gold pin for Lotus.",
+    "shown": "I want O-lan to be comfortable with my spending so I can leave her near the pool and go back to the tea house to buy the gold pin for Lotus.",
+    "intend_probs": {
+     "speak": 0.5998020172119141,
+     "act": 0.07163070142269135,
+     "silent": 0.007549623027443886
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.46368691325187683,
+     "act": 0.17060460150241852,
+     "silent": 0.0045460588298738,
+     "wait": 0.3611624240875244
+    },
+    "o_lan": {
+     "speak": 0.31582313776016235,
+     "act": 0.08935973793268204,
+     "silent": 0.012087270617485046,
+     "wait": 0.5827299356460571
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6388375759124756,
+    "o_lan": 0.41727006435394287
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I wish to buy a gold pin for the hair of my jewel and I do not know the price of gold."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I wish to buy a gold pin for the hair of my jewel and I do not know the price of gold.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I wish to buy a gold pin for the hair of my jewel and I do not know the price of gold.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to speak to me about my infatuation with Lotus and my desire to buy her a gold pin, now.",
+    "plan": "I want O-lan to speak to me about my infatuation with Lotus and my desire to buy her a gold pin, now.",
+    "shown": "I want O-lan to speak to me about my infatuation with Lotus and my desire to buy her a gold pin, now.",
+    "intend_probs": {
+     "speak": 0.4416789710521698,
+     "act": 0.11168651282787323,
+     "silent": 0.004906236194074154
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2273632138967514,
+     "act": 0.08126039057970047,
+     "silent": 0.010996375232934952,
+     "wait": 0.6803800463676453
+    },
+    "o_lan": {
+     "speak": 0.3007737398147583,
+     "act": 0.07238581031560898,
+     "silent": 0.020731791853904724,
+     "wait": 0.6061087250709534
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.31961995363235474,
+    "o_lan": 0.39389127492904663
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung sets down his hoe and approaches O-lan."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung sets down his hoe and approaches O-lan.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung sets down his hoe and approaches O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung stares at O-lan, expecting an answer.\"}",
+     "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung asks O-lan about gold prices.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung sets down his hoe and approaches O-lan.\"}"
+    ],
+    "probs": [
+     0.13582445681095123,
+     0.17440205812454224,
+     0.6897734999656677
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the price of gold, so I can buy the pin for Lotus, my jewel.",
+    "plan": "I want O-lan to give me the price of gold, so I can buy the pin for Lotus, my jewel.",
+    "shown": "I want O-lan to give me the price of gold, so I can buy the pin for Lotus, my jewel.",
+    "intend_probs": {
+     "speak": 0.32804378867149353,
+     "act": 0.05031076446175575,
+     "silent": 0.008742301724851131
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.50382000207901,
+     "act": 0.09914213418960571,
+     "silent": 0.004935802426189184,
+     "wait": 0.39210209250450134
+    },
+    "o_lan": {
+     "speak": 0.18333058059215546,
+     "act": 0.07642722874879837,
+     "silent": 0.015043416060507298,
+     "wait": 0.7251988053321838
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6078979074954987,
+    "o_lan": 0.27480119466781616
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Now, my woman, tell me the price of gold so that I can buy a gold pin for my jewel."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, tell me the price of gold so that I can buy a gold pin for my jewel.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now, my woman, tell me the price of gold so that I can buy a gold pin for my jewel.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tell me the price of gold that you may buy for the other woman,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Go, my woman, and see the money-changer in the town and find out the price of gold.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, tell me the price of gold so that I can buy a gold pin for my jewel.\"}"
+    ],
+    "probs": [
+     0.10158423334360123,
+     0.14780418574810028,
+     0.7506115436553955
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to get the price of gold for me so I can buy the gold pin for Lotus and keep my infatuation a secret.",
+    "plan": "I want O-lan to get the price of gold for me so I can buy the gold pin for Lotus and keep my infatuation a secret.",
+    "shown": "I want O-lan to get the price of gold for me so I can buy the gold pin for Lotus and keep my infatuation a secret.",
+    "intend_probs": {
+     "speak": 0.5726684331893921,
+     "act": 0.09435532987117767,
+     "silent": 0.0036583500914275646
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2354343980550766,
+     "act": 0.1112256869673729,
+     "silent": 0.013283335603773594,
+     "wait": 0.6400565505027771
+    },
+    "o_lan": {
+     "speak": 0.19126102328300476,
+     "act": 0.10187787562608719,
+     "silent": 0.04244726896286011,
+     "wait": 0.6644137501716614
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.3599434494972229,
+    "o_lan": 0.3355862498283386
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan hesitates to answer Wang Lung's question."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan hesitates to answer Wang Lung's question.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hesitates to answer Wang Lung's question.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to know why Wang Lung takes the money from the wall and what he plans to do with it, quietly and humbly.",
+    "plan": "I want to know why Wang Lung takes the money from the wall and what he plans to do with it, quietly and humbly.",
+    "shown": "I want to know why Wang Lung takes the money from the wall and what he plans to do with it, quietly and humbly.",
+    "intend_probs": {
+     "speak": 0.28912729024887085,
+     "act": 0.09284211695194244,
+     "silent": 0.012555854395031929
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3558320999145508,
+     "act": 0.11555138975381851,
+     "silent": 0.010747074149549007,
+     "wait": 0.5178694128990173
+    },
+    "o_lan": {
+     "speak": 0.25772663950920105,
+     "act": 0.10744397342205048,
+     "silent": 0.016461648046970367,
+     "wait": 0.6183677911758423
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.48213058710098267,
+    "o_lan": 0.3816322088241577
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung impatiently asks O-lan for the price of gold."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung impatiently asks O-lan for the price of gold.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung impatiently asks O-lan for the price of gold.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"How much gold is there in a gold pin?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung impatiently asks O-lan for the price of gold.\"}"
+    ],
+    "probs": [
+     0.3775406777858734,
+     0.622459352016449
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want from O-lan a clear answer about the price of gold so I can buy the pin for Lotus.",
+    "plan": "I want from O-lan a clear answer about the price of gold so I can buy the pin for Lotus.",
+    "shown": "I want from O-lan a clear answer about the price of gold so I can buy the pin for Lotus.",
+    "intend_probs": {
+     "speak": 0.5181295871734619,
+     "act": 0.09600916504859924,
+     "silent": 0.00613718805834651
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5988803505897522,
+     "act": 0.07222028076648712,
+     "silent": 0.0052312337793409824,
+     "wait": 0.32366812229156494
+    },
+    "o_lan": {
+     "speak": 0.3188610374927521,
+     "act": 0.07972781360149384,
+     "silent": 0.01221554633229971,
+     "wait": 0.5891956090927124
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6763318777084351,
+    "o_lan": 0.4108043909072876
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I do not know the price of gold,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I do not know the price of gold,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I do not know the price of gold,",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Two pieces of silver for a piece of gold,\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan quietly answers Wang Lung's question about the price of gold.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I do not know the price of gold,\"}"
+    ],
+    "probs": [
+     0.12201938778162003,
+     0.2583150267601013,
+     0.6196655631065369
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to know why Wang Lung is taking the money from the wall, and I hesitate to answer his impatient question about the price of gold.",
+    "plan": "I want to know why Wang Lung is taking the money from the wall, and I hesitate to answer his impatient question about the price of gold.",
+    "shown": "I want to know why Wang Lung is taking the money from the wall, and I hesitate to answer his impatient question about the price of gold.",
+    "intend_probs": {
+     "speak": 0.14154820144176483,
+     "act": 0.11775387823581696,
+     "silent": 0.06298559159040451
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6423104405403137,
+     "act": 0.07085727155208588,
+     "silent": 0.006590132601559162,
+     "wait": 0.2802421450614929
+    },
+    "o_lan": {
+     "speak": 0.23503348231315613,
+     "act": 0.0979706197977066,
+     "silent": 0.028054961934685707,
+     "wait": 0.6389409899711609
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7197578549385071,
+    "o_lan": 0.3610590100288391
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Now, my woman, you know as well as I do that there is gold in the house, and jewels, and money, and if I do not know the price of gold I shall never buy this pin for my jewel."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, you know as well as I do that there is gold in the house, and jewels, and money, and if I do not know the price of gold I shall never buy this pin for my jewel.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now, my woman, you know as well as I do that there is gold in the house, and jewels, and money, and if I do not know the price of gold I shall never buy this pin for my jewel.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, you know as well as I do that there is gold in the house, and jewels, and money, and if I do not know the price of gold I shall never buy this pin for my jewel.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung persistently asks O-lan about the price of gold.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Is not gold as gold,\"}"
+    ],
+    "probs": [
+     0.4044707715511322,
+     0.4044707715511322,
+     0.1910584717988968
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want O-lan to tell me the price of gold so I can buy a gift for Lotus, and I will pressure her to answer.",
+    "plan": "I want O-lan to tell me the price of gold so I can buy a gift for Lotus, and I will pressure her to answer.",
+    "shown": "I want O-lan to tell me the price of gold so I can buy a gift for Lotus, and I will pressure her to answer.",
+    "intend_probs": {
+     "speak": 0.6791000366210938,
+     "act": 0.06370840221643448,
+     "silent": 0.005228891968727112
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5764670968055725,
+     "act": 0.12201130390167236,
+     "silent": 0.008837698958814144,
+     "wait": 0.292683869600296
+    },
+    "o_lan": {
+     "speak": 0.21433347463607788,
+     "act": 0.10954488068819046,
+     "silent": 0.04564231261610985,
+     "wait": 0.6304793357849121
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.707316130399704,
+    "o_lan": 0.3695206642150879
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Now tell me the price of gold so that I can buy a pin for my jewel's hair."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now tell me the price of gold so that I can buy a pin for my jewel's hair.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now tell me the price of gold so that I can buy a pin for my jewel's hair.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"gist\": \"Wang Lung impatiently asks O-lan for the price of gold.\"}",
+    "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tell me the price of gold so that I can buy a gold pin for my jewel.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung impatiently questions O-lan about the price of gold.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now tell me the price of gold so that I can buy a pin for my jewel's hair.\"}"
+    ],
+    "probs": [
+     0.22270014882087708,
+     0.7772998809814453
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to tell me the price of gold so I can buy a gold pin for Lotus and satisfy my infatuation.",
+    "plan": "I want O-lan to tell me the price of gold so I can buy a gold pin for Lotus and satisfy my infatuation.",
+    "shown": "I want O-lan to tell me the price of gold so I can buy a gold pin for Lotus and satisfy my infatuation.",
+    "intend_probs": {
+     "speak": 0.43501752614974976,
+     "act": 0.12293659150600433,
+     "silent": 0.0129564693197608
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3406015634536743,
+     "act": 0.14199955761432648,
+     "silent": 0.021774139255285263,
+     "wait": 0.4956246614456177
+    },
+    "o_lan": {
+     "speak": 0.25190606713294983,
+     "act": 0.11516853421926498,
+     "silent": 0.0479758083820343,
+     "wait": 0.5849495530128479
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5043753385543823,
+    "o_lan": 0.4150504469871521
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan stops speaking when Wang Lung asks for the price of gold."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan stops speaking when Wang Lung asks for the price of gold.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan stops speaking when Wang Lung asks for the price of gold.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan stops speaking when Wang Lung asks for the price of gold.\"}",
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan ties the two small white pearls to her hair.\"}"
+    ],
+    "probs": [
+     0.5,
+     0.5
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want Wang Lung to give me the two small white pearls as a gift, not as something I must ask for.",
+    "plan": "I want Wang Lung to give me the two small white pearls as a gift, not as something I must ask for.",
+    "shown": "I want Wang Lung to give me the two small white pearls as a gift, not as something I must ask for.",
+    "intend_probs": {
+     "speak": 0.2927585542201996,
+     "act": 0.12260325253009796,
+     "silent": 0.03506430983543396
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3194771409034729,
+     "act": 0.13321572542190552,
+     "silent": 0.020425109192728996,
+     "wait": 0.5268820524215698
+    },
+    "o_lan": {
+     "speak": 0.16496354341506958,
+     "act": 0.1456087827682495,
+     "silent": 0.03670583292841911,
+     "wait": 0.6527218222618103
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4731179475784302,
+    "o_lan": 0.3472781777381897
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "Wang Lung loudly and impatiently demands the price of gold."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung loudly and impatiently demands the price of gold.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung loudly and impatiently demands the price of gold.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tell me, then, the price of gold and I will buy this pin for my jewel.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung impatiently repeats his question.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung loudly and impatiently demands the price of gold.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"Is it then a handful of silver or a handful of gold?\"}"
+    ],
+    "probs": [
+     0.12689447402954102,
+     0.5687015056610107,
+     0.30440399050712585
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to tell me the price of gold so I can buy a gold pin for Lotus, not my wife.",
+    "plan": "I want O-lan to tell me the price of gold so I can buy a gold pin for Lotus, not my wife.",
+    "shown": "I want O-lan to tell me the price of gold so I can buy a gold pin for Lotus, not my wife.",
+    "intend_probs": {
+     "speak": 0.36592063307762146,
+     "act": 0.14977428317070007,
+     "silent": 0.02296498231589794
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.41354766488075256,
+     "act": 0.1521826684474945,
+     "silent": 0.020591428503394127,
+     "wait": 0.41367825865745544
+    },
+    "o_lan": {
+     "speak": 0.26713648438453674,
+     "act": 0.12621386349201202,
+     "silent": 0.04085448384284973,
+     "wait": 0.5657951831817627
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5863217413425446,
+    "o_lan": 0.4342048168182373
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to avoid Wang Lung's anger and disappointment, so I will remain silent and let him find the price of gold on his own.",
+    "plan": "I want to avoid Wang Lung's anger and disappointment, so I will remain silent and let him find the price of gold on his own.",
+    "shown": "I want to avoid Wang Lung's anger and disappointment, so I will remain silent and let him find the price of gold on his own.",
+    "intend_probs": {
+     "speak": 0.03209494799375534,
+     "act": 0.029851090162992477,
+     "silent": 0.4084435999393463
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.474540114402771,
+     "act": 0.16425517201423645,
+     "silent": 0.013480921275913715,
+     "wait": 0.34772375226020813
+    },
+    "o_lan": {
+     "speak": 0.02830646187067032,
+     "act": 0.030583787709474564,
+     "silent": 0.32602259516716003,
+     "wait": 0.6150871515274048
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6522762477397919,
+    "o_lan": 0.3849128484725952
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan quietly does her work."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan quietly does her work.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan quietly does her work.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan stands with the water-soaked clothes in her arms.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan quietly does her work.\"}"
+    ],
+    "probs": [
+     0.10669060051441193,
+     0.8933094143867493
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want Wang Lung to stop scolding me, and I will stay silent, waiting for him to calm down before speaking.",
+    "plan": "I want Wang Lung to stop scolding me, and I will stay silent, waiting for him to calm down before speaking.",
+    "shown": "I want Wang Lung to stop scolding me, and I will stay silent, waiting for him to calm down before speaking.",
+    "intend_probs": {
+     "speak": 0.013029921799898148,
+     "act": 0.027843350544571877,
+     "silent": 0.03541974350810051
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.45964351296424866,
+     "act": 0.16942259669303894,
+     "silent": 0.012270907871425152,
+     "wait": 0.35866302251815796
+    },
+    "o_lan": {
+     "speak": 0.007142777554690838,
+     "act": 0.14326779544353485,
+     "silent": 0.02469426952302456,
+     "wait": 0.8248951435089111
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.641336977481842,
+    "o_lan": 0.17510485649108887
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, tell me the price of gold, that I may buy a pin for my jewel's hair.\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Tell me the price of gold so that I can buy a pin for my jewel's hair. Is it as dear as that red paper?\"}",
+    "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, tell me the price of gold, I will buy a pin for my jewel's hair with it, and you shall have a gold clasp for your hair.\"}",
+    "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, my woman, tell me the price of gold, that I may buy a pin for my jewel's hair.\"}"
+   ],
+   "dropped": "speak",
+   "plan": {
+    "raw": "I want O-lan to tell me the price of gold so I can buy a pin for Lotus, and I will nag her until she answers.",
+    "plan": "I want O-lan to tell me the price of gold so I can buy a pin for Lotus, and I will nag her until she answers.",
+    "shown": "I want O-lan to tell me the price of gold so I can buy a pin for Lotus, and I will nag her until she answers.",
+    "intend_probs": {
+     "speak": 0.6172628402709961,
+     "act": 0.09144376963376999,
+     "silent": 0.009636535309255123
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6423985958099365,
+     "act": 0.10164505243301392,
+     "silent": 0.012131023220717907,
+     "wait": 0.2438252866268158
+    },
+    "o_lan": {
+     "speak": 0.006890486925840378,
+     "act": 0.07348666340112686,
+     "silent": 0.02361365780234337,
+     "wait": 0.8960091471672058
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7561747133731842,
+    "o_lan": 0.10399085283279419
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to calm down and talk to me gently, so I can tell him the price of gold.",
+    "plan": "I want Wang Lung to calm down and talk to me gently, so I can tell him the price of gold.",
+    "shown": "I want Wang Lung to calm down and talk to me gently, so I can tell him the price of gold.",
+    "intend_probs": {
+     "speak": 0.023520642891526222,
+     "act": 0.06468328088521957,
+     "silent": 0.01841643825173378
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.625446081161499,
+     "act": 0.1269599050283432,
+     "silent": 0.010409150272607803,
+     "wait": 0.23718483746051788
+    },
+    "o_lan": {
+     "speak": 0.034024305641651154,
+     "act": 0.07203202694654465,
+     "silent": 0.015957942232489586,
+     "wait": 0.8779857754707336
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7628151625394821,
+    "o_lan": 0.12201422452926636
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung turns away, ashamed."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung turns away, ashamed.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung turns away, ashamed.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung watches O-lan with annoyance.\"}",
+     "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung turns away, ashamed.\"}"
+    ],
+    "probs": [
+     0.11920291185379028,
+     0.8807970285415649
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to tell me the price of gold so I can buy a pin for Lotus, but I'm also slightly ashamed of my behavior towards my wife.",
+    "plan": "I want O-lan to tell me the price of gold so I can buy a pin for Lotus, but I'm also slightly ashamed of my behavior towards my wife.",
+    "shown": "I want O-lan to tell me the price of gold so I can buy a pin for Lotus, but I'm also slightly ashamed of my behavior towards my wife.",
+    "intend_probs": {
+     "speak": 0.3786121606826782,
+     "act": 0.22970911860466003,
+     "silent": 0.012952026911079884
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1681838035583496,
+     "act": 0.4370529055595398,
+     "silent": 0.009065018966794014,
+     "wait": 0.3856982886791229
+    },
+    "o_lan": {
+     "speak": 0.039137229323387146,
+     "act": 0.06402658671140671,
+     "silent": 0.012517822906374931,
+     "wait": 0.8843184113502502
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6143017113208771,
+    "o_lan": 0.11568158864974976
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "O-lan tries to explain her actions."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan tries to explain her actions.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan tries to explain her actions.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will tell you, I will tell you,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I would speak to you, but you will not listen to me.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan tries to explain her actions.\"}"
+    ],
+    "probs": [
+     0.13160164654254913,
+     0.27860066294670105,
+     0.5897976756095886
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want my husband to understand that I am afraid to ask him anything when he is angry, and I am not trying to avoid him.",
+    "plan": "I want my husband to understand that I am afraid to ask him anything when he is angry, and I am not trying to avoid him.",
+    "shown": "I want my husband to understand that I am afraid to ask him anything when he is angry, and I am not trying to avoid him.",
+    "intend_probs": {
+     "speak": 0.17937912046909332,
+     "act": 0.09495733678340912,
+     "silent": 0.02388712204992771
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.19948053359985352,
+     "act": 0.15537796914577484,
+     "silent": 0.03058396466076374,
+     "wait": 0.6145575642585754
+    },
+    "o_lan": {
+     "speak": 0.7314688563346863,
+     "act": 0.01774526573717594,
+     "silent": 0.005750148557126522,
+     "wait": 0.24503561854362488
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.38544243574142456,
+    "o_lan": 0.7549643814563751
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan breaks off her work to speak to Wang Lung."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan breaks off her work to speak to Wang Lung.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan breaks off her work to speak to Wang Lung.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan expresses her devotion through her actions.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan stops speaking when Wang Lung does not respond.\"}",
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan breaks off her work to speak to Wang Lung.\"}"
+    ],
+    "probs": [
+     0.09640508145093918,
+     0.09640508145093918,
+     0.8071898221969604
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want from Wang Lung an acknowledgment of my devotion and willingness to sacrifice for our family, expressed through his acceptance of my actions.",
+    "plan": "I want from Wang Lung an acknowledgment of my devotion and willingness to sacrifice for our family, expressed through his acceptance of my actions.",
+    "shown": "I want from Wang Lung an acknowledgment of my devotion and willingness to sacrifice for our family, expressed through his acceptance of my actions.",
+    "intend_probs": {
+     "speak": 0.46139028668403625,
+     "act": 0.062316738069057465,
+     "silent": 0.015695590525865555
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "o_lan"
+ },
+ "transcript": [
+  "Wang Lung (to O-lan): \"Come now, my woman, and sit by the water and speak to me.\"",
+  "[says] O-lan asks about the money from the wall.",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to O-lan): \"I wish to buy a gold pin for the hair of my jewel and I do not know the price of gold.\"",
+  "[action] Wang Lung sets down his hoe and approaches O-lan.",
+  "Wang Lung (to O-lan): \"Now, my woman, tell me the price of gold so that I can buy a gold pin for my jewel.\"",
+  "[action] O-lan hesitates to answer Wang Lung's question.",
+  "[says] (to O-lan) Wang Lung impatiently asks O-lan for the price of gold.",
+  "O-lan (to Wang Lung): \"I do not know the price of gold,\"",
+  "Wang Lung (to O-lan): \"Now, my woman, you know as well as I do that there is gold in the house, and jewels, and money, and if I do not know the price of gold I shall never buy this pin for my jewel.\"",
+  "Wang Lung (to O-lan): \"Now tell me the price of gold so that I can buy a pin for my jewel's hair.\"",
+  "[action] (to Wang Lung) O-lan stops speaking when Wang Lung asks for the price of gold.",
+  "[says] Wang Lung loudly and impatiently demands the price of gold.",
+  "[silence] O-lan says nothing.",
+  "[action] O-lan quietly does her work.",
+  "[silence] Wang Lung says nothing.",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[action] (to O-lan) Wang Lung turns away, ashamed.",
+  "[says] O-lan tries to explain her actions.",
+  "[action] (to Wang Lung) O-lan breaks off her work to speak to Wang Lung."
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want O-lan's attention and affection, so I'll ask her to stop washing my clothes and come talk to me by the pool.",
+   "plan": "I want O-lan's attention and affection, so I'll ask her to stop washing my clothes and come talk to me by the pool."
+  },
+  "o_lan": {
+   "raw": "I want to speak to Wang Lung about the money he takes from the wall, to remind him of our life together.",
+   "plan": "I want to speak to Wang Lung about the money he takes from the wall, to remind him of our life together."
+  }
+ },
+ "seconds": 239.33730459213257
+}

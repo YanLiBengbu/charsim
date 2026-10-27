@@ -1,0 +1,40 @@
+{
+ "args": {
+  "base": "/media/w/DATA1/models/Qwen3-8B-bnb-4bit",
+  "world": null,
+  "soul": "data/train/c19/soul_wang_lung.jsonl",
+  "world_adapter": "adapters/qwen/c19/world",
+  "out": "adapters/qwen/c19/soul_wang_lung",
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "lr": null,
+  "epochs": 2,
+  "max_len": null,
+  "batch": 2,
+  "accum": 8,
+  "seed": 0
+ },
+ "lr": 0.0002,
+ "max_len": 1280,
+ "train_rows": 1169,
+ "val_rows": 55,
+ "dropped": 0,
+ "train_tokens_per_epoch": 794900,
+ "optimizer_steps": 148,
+ "epochs": [
+  {
+   "train_loss": 0.8703504484242354,
+   "val_loss": 0.9599815482263174,
+   "seconds": 806.5908780097961
+  },
+  {
+   "train_loss": 0.6074145473221428,
+   "val_loss": 0.9781316978656976,
+   "seconds": 1614.770221710205
+  }
+ ],
+ "val_loss_before": 2.577534042930199,
+ "seconds": 1614.7702496051788,
+ "peak_gpu_gb": 10.771461963653564
+}

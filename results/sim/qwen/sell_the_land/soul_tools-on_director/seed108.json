@@ -1,0 +1,859 @@
+{
+ "scene": "sell_the_land",
+ "seed": 108,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "cast",
+   "eldest_son",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "director",
+  "cards": "base"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.073384590446949,
+     "act": 0.13709570467472076,
+     "silent": 0.0005548509070649743,
+     "wait": 0.7889647483825684
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.21103525161743164
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "eldest son sells land"
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"], \"action\": \"eldest son sells land\"}",
+   "item": {
+    "kind": "act",
+    "text": "eldest son sells land",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show respect but also ask if it's okay to sell some land for the family's future.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show respect but also ask if it's okay to sell some land for the family's future."
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.1163163110613823,
+     "act": 0.1781015545129776,
+     "silent": 0.0011689546518027782,
+     "wait": 0.704413115978241
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.29558688402175903
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "The eldest son complains about the cost of his wife's jewels."
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"],\"gist\": \"The eldest son complains about the cost of his wife's jewels.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "The eldest son complains about the cost of his wife's jewels.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to sell the best fields to fund your new wife's gifts and your status in the town.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to sell the best fields to fund your new wife's gifts and your status in the town."
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.07084468752145767,
+     "act": 0.06957268714904785,
+     "silent": 0.01204089168459177,
+     "wait": 0.8475417494773865
+    },
+    "second_son": {
+     "speak": 0.02809607796370983,
+     "act": 0.03195123001933098,
+     "silent": 0.005530581343919039,
+     "wait": 0.9344220757484436
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.15245825052261353,
+    "second_son": 0.0655779242515564
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "Wang Lung listens to his eldest son's complaints."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [], \"gist\": \"Wang Lung listens to his eldest son's complaints.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung listens to his eldest son's complaints.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to sell some of the best fields to fund your wife's jewels and your status.\"}",
+    "actor": null,
+    "rejected": "eldest_son",
+    "direction": null
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "second_son": {
+     "speak": 0.09622445702552795,
+     "act": 0.07661920040845871,
+     "silent": 0.0033608945086598396,
+     "wait": 0.82379549741745
+    }
+   },
+   "urgency": {
+    "second_son": 0.17620450258255005
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son"
+    ],
+    "gist": "The second son tells his brother to sell the land."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"] , \"gist\": \"The second son tells his brother to sell the land.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "The second son tells his brother to sell the land.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You want to sell the best fields to fund your grain market, but you hesitate to anger your father.\"}",
+    "actor": "second_son",
+    "direction": "You want to sell the best fields to fund your grain market, but you hesitate to anger your father."
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.12453262507915497,
+     "act": 0.2289765179157257,
+     "silent": 0.024092933163046837,
+     "wait": 0.6223978996276855
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.37760210037231445
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung decides to sell the land."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung decides to sell the land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung decides to sell the land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the weight of your sons' words and wonder if they will take what is yours without asking.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the weight of your sons' words and wonder if they will take what is yours without asking."
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.10917016118764877,
+     "act": 0.16226348280906677,
+     "silent": 0.0013884628424420953,
+     "wait": 0.7271779179573059
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.2728220820426941
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "Eldest son complains about his wife."
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"] ,\"gist\": \"Eldest son complains about his wife.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Eldest son complains about his wife.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to sell the best fields to fund your wife's jewels and your status.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to sell the best fields to fund your wife's jewels and your status."
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.06793328374624252,
+     "act": 0.110972099006176,
+     "silent": 0.001077468623407185,
+     "wait": 0.8200171589851379
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.17998284101486206
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "Eldest son helps his father."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"], \"action\": \"Eldest son helps his father.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son helps his father.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to know if your father will sell the land or if he still values it as he once did.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to know if your father will sell the land or if he still values it as he once did."
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2120794653892517,
+     "act": 0.37845009565353394,
+     "silent": 0.03102409467101097,
+     "wait": 0.37844642996788025
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6215535700321198
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the second son"
+    ],
+    "speech": "Well, and what have you in your hand?"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the second son\"] , \"speech\": \"Well, and what have you in your hand?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and what have you in your hand?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the weight of your land and wonder if your sons truly understand its value to you.\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the weight of your land and wonder if your sons truly understand its value to you."
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "second_son": {
+     "speak": 0.08674143254756927,
+     "act": 0.06837619096040726,
+     "silent": 0.011862149462103844,
+     "wait": 0.8330201506614685
+    }
+   },
+   "urgency": {
+    "second_son": 0.1669798493385315
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Nothing,"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"Nothing,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Nothing,",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You want to sell the best fields to fund your market, but you hesitate at the sight of your father's love for the land.\"}",
+    "actor": "second_son",
+    "direction": "You want to sell the best fields to fund your market, but you hesitate at the sight of your father's love for the land."
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.06732440739870071,
+     "act": 0.11100103706121445,
+     "silent": 0.0013723738957196474,
+     "wait": 0.8203021883964539
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.17969781160354614
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Eldest son watches land."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Eldest son watches land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son watches land.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to know if your father will sell the land or if he will stand against you.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to know if your father will sell the land or if he will stand against you."
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.24436615407466888,
+     "act": 0.2777058780193329,
+     "silent": 0.02007792890071869,
+     "wait": 0.45785006880760193
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5421499311923981
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "speech": "Well, and what is it then?"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [], \"speech\": \"Well, and what is it then?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and what is it then?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the weight of your land in your hands; do you let them take part of it or stand firm?\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the weight of your land in your hands; do you let them take part of it or stand firm?"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "second_son": {
+     "speak": 0.22531037032604218,
+     "act": 0.0569637268781662,
+     "silent": 0.023728221654891968,
+     "wait": 0.6939976811408997
+    }
+   },
+   "urgency": {
+    "second_son": 0.30600231885910034
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The second son leaves to sell the land."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"The second son leaves to sell the land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The second son leaves to sell the land.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the second son\", \"direction\": \"You want to sell the best land to fund your market, but you hesitate to offend your father.\"}",
+    "actor": "second_son",
+    "direction": "You want to sell the best land to fund your market, but you hesitate to offend your father."
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.07319503277540207,
+     "act": 0.136746346950531,
+     "silent": 0.0031845916528254747,
+     "wait": 0.7868740558624268
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.21312594413757324
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The eldest son shows his father his wife's jewels."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [], \"action\": \"The eldest son shows his father his wife's jewels.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The eldest son shows his father his wife's jewels.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You feel ashamed of your wife's jewels and want to show your father you care.\"}",
+    "actor": "eldest_son",
+    "direction": "You feel ashamed of your wife's jewels and want to show your father you care."
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.08262453228235245,
+     "act": 0.20064809918403625,
+     "silent": 0.016394110396504402,
+     "wait": 0.700333297252655
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.29966670274734497
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\" , \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the weight of your land and wonder if your sons truly understand its value to you.\"}",
+    "actor": "wang_lung",
+    "repeated": "You feel the weight of your land and wonder if your sons truly understand its value to you.",
+    "direction": null
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.09256302565336227,
+     "act": 0.12018214911222458,
+     "silent": 0.003589249448850751,
+     "wait": 0.7836655974388123
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.21633440256118774
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "There are many more things, but these are the best."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"There are many more things, but these are the best.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "There are many more things, but these are the best.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the jewels of your wife to prove your worth and secure your place.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the jewels of your wife to prove your worth and secure your place."
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.09474562853574753,
+     "act": 0.11994267255067825,
+     "silent": 0.0031690041068941355,
+     "wait": 0.782142698764801
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.21785730123519897
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Eldest son watches land."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [], \"action\": \"Eldest son watches land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son watches land.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the jewels again, but feel guilty about the land being sold.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the jewels again, but feel guilty about the land being sold."
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.20540083944797516,
+     "act": 0.18579158186912537,
+     "silent": 0.03652959689497948,
+     "wait": 0.5722779631614685
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4277220368385315
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "the eldest son"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\" , \"to\": [\"the eldest son\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the land's weight in your staff; do you still want to sell it, or does it belong to your family?\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the land's weight in your staff; do you still want to sell it, or does it belong to your family?"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.12835994362831116,
+     "act": 0.12847647070884705,
+     "silent": 0.0038009111303836107,
+     "wait": 0.7393627166748047
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.2606372833251953
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Eldest son looks at his wife."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"Eldest son looks at his wife.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Eldest son looks at his wife.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the jewels again, hoping to make him feel proud of your wife.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the jewels again, hoping to make him feel proud of your wife."
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "eldest_son": {
+     "speak": 0.09934913367033005,
+     "act": 0.13298948109149933,
+     "silent": 0.002386046340689063,
+     "wait": 0.7652753591537476
+    }
+   },
+   "urgency": {
+    "eldest_son": 0.23472464084625244
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "The jewels are fine, and the clothes you wear are fine, and the food you eat is fine. I will marry a woman who is fine and wear fine clothes and live in a fine house."
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"], \"speech\": \"The jewels are fine, and the clothes you wear are fine, and the food you eat is fine. I will marry a woman who is fine and wear fine clothes and live in a fine house.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "The jewels are fine, and the clothes you wear are fine, and the food you eat is fine. I will marry a woman who is fine and wear fine clothes and live in a fine house.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"the eldest son\", \"direction\": \"You want to show your father the value of fine things, not land, to prove your worth.\"}",
+    "actor": "eldest_son",
+    "direction": "You want to show your father the value of fine things, not land, to prove your worth."
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.26036807894706726,
+     "act": 0.28359195590019226,
+     "silent": 0.04342518746852875,
+     "wait": 0.4126147925853729
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5873852074146271
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "the eldest son"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\" ,\"to\": [\"the eldest son\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"You feel the land beneath your feet and know it is your life; will you let them take it?\"}",
+    "actor": "wang_lung",
+    "direction": "You feel the land beneath your feet and know it is your life; will you let them take it?"
+   }
+  }
+ ],
+ "opening_lines": 114,
+ "final_state": {
+  "land": "kept"
+ },
+ "transcript": [
+  "[action] (to Wang Lung) eldest son sells land",
+  "[says] (to Wang Lung) The eldest son complains about the cost of his wife's jewels.",
+  "[says] Wang Lung listens to his eldest son's complaints.",
+  "[says] (to the eldest son) The second son tells his brother to sell the land.",
+  "[action] Wang Lung decides to sell the land.",
+  "[says] (to Wang Lung) Eldest son complains about his wife.",
+  "[action] (to Wang Lung) Eldest son helps his father.",
+  "Wang Lung (to the second son): \"Well, and what have you in your hand?\"",
+  "the second son (to Wang Lung): \"Nothing,\"",
+  "[action] Eldest son watches land.",
+  "Wang Lung: \"Well, and what is it then?\"",
+  "[action] The second son leaves to sell the land.",
+  "[action] The eldest son shows his father his wife's jewels.",
+  "[silence] Wang Lung says nothing.",
+  "the eldest son (to Wang Lung): \"There are many more things, but these are the best.\"",
+  "[action] Eldest son watches land.",
+  "[silence] (to the eldest son) Wang Lung says nothing.",
+  "[action] Eldest son looks at his wife.",
+  "the eldest son (to Wang Lung): \"The jewels are fine, and the clothes you wear are fine, and the food you eat is fine. I will marry a woman who is fine and wear fine clothes and live in a fine house.\"",
+  "[silence] (to the eldest son) Wang Lung says nothing."
+ ],
+ "seconds": 148.24123287200928
+}

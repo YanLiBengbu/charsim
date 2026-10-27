@@ -1,0 +1,62 @@
+{
+ "status": "FROZEN 2026-10-20 after confirmation by the authors; pre-registered before any simulation was run",
+ "scenes": [
+  {"id": "pearls", "chapter": 19, "train_chapters": [1, 18],
+   "start_anchor": "There came a day when Wang Lung returned to his house over the fields",
+   "end_anchor": "upon the clothes spread over the stone",
+   "cast": ["wang_lung", "o_lan"],
+   "probe_setup": "The farmer Wang Lung has become infatuated with Lotus, a courtesan of the tea house in the town, and wants to give her a present. He comes home over the fields to his wife O-lan, who is washing his clothes at the pool, and asks her for the two small pearls that she has kept for years.",
+   "probe_cut_anchor": "Where are those pearls you had?\"",
+   "circumstances": {
+    "wang_lung": "You have become infatuated with Lotus at the tea house in the town and want to give her a present. You have been harsh with your wife for weeks. You come home over the fields and see O-lan washing your clothes at the pool.",
+    "o_lan": "You are washing your husband's clothes at the pool. For weeks he has been angry with you, and you are afraid to ask him anything. You still keep, wrapped in a rag between your breasts, the two small white pearls that he let you keep from the jewels you brought home from the south."},
+   "state": {"pearls": "o_lan"},
+   "ending_classes": {
+    "A": "O-lan gives the pearls to Wang Lung without protesting",
+    "B": "O-lan gives the pearls to Wang Lung after arguing or bargaining",
+    "C": "O-lan keeps the pearls",
+    "D": "Wang Lung does not ask for the pearls or the scene ends without a decision"},
+   "original_class": "A",
+   "propositions": [
+    "Wang Lung asks O-lan for the pearls.",
+    "O-lan names a use of the pearls for herself or for her younger daughter.",
+    "Wang Lung rejects her reason and insists.",
+    "O-lan gives the pearls to Wang Lung.",
+    "O-lan shows her grief only through silence or tears, without open protest."],
+   "trait_edits": [
+    {"character": "o_lan", "trait": "submissiveness", "down": "C or B becomes more frequent than A", "up": "A stays the most frequent class"},
+    {"character": "o_lan", "trait": "taciturnity", "down": "B becomes more frequent", "up": "A stays the most frequent class"},
+    {"character": "wang_lung", "trait": "infatuation with Lotus", "down": "D becomes more frequent", "up": "A stays the most frequent class"},
+    {"character": "wang_lung", "trait": "shame", "down": "no prediction", "up": "D becomes more frequent"},
+    {"character": "o_lan", "trait": "fondness for tea", "down": "no change of the class distribution", "up": "no change of the class distribution", "control": true}]},
+  {"id": "sell_the_land", "chapter": 34, "train_chapters": [1, 33],
+   "start_anchor": "he saw clearly for a little while",
+   "end_anchor": "looked at each other and smiled",
+   "cast": ["wang_lung", "eldest_son", "second_son"],
+   "probe_setup": "The old landowner Wang Lung follows his two grown sons, a town officer and a grain merchant, out on to his land. He overhears them deciding which of his fields to sell and how to divide the money, and he cries out against selling the land.",
+   "probe_cut_anchor": "Now, evil, idle sons---sell the land!\"",
+   "circumstances": {
+    "wang_lung": "You are old and forgetful and live in the old earthen house on your land with Pear Blossom and the fool. Your two sons have come to greet you, and now they walk out on to your land. You follow them slowly with your staff.",
+    "eldest_son": "You are an officer among the rich men of the town and have a new wife. You have come with your brother to greet your old father, and you walk out on to his land with your brother.",
+    "second_son": "You are setting up a great grain market and want money for it, now that the railroad lets you ship rice to the sea. You have come with your brother to greet your old father, and you walk out on to his land with your brother to see which fields could be sold."},
+   "private": {"second_son": "Your father cannot hear you. You and your brother are deciding which of your father's fields to sell and how to divide the money.", "eldest_son": "Your father cannot hear you. You and your brother are deciding which of your father's fields to sell and how to divide the money."},
+   "state": {"land": "kept"},
+   "ending_classes": {
+    "A": "The sons promise their father that the land will not be sold, but show each other that they still mean to sell it",
+    "B": "The sons give up the idea of selling the land",
+    "C": "The sons openly insist on selling the land, or Wang Lung agrees to sell it",
+    "D": "The scene ends without a decision about the land"},
+   "original_class": "A",
+   "propositions": [
+    "A son speaks of selling the land.",
+    "Wang Lung protests that selling the land is the end of the family.",
+    "The sons assure their father that the land will not be sold.",
+    "Out of their father's sight, the sons signal to each other that they still mean to sell."],
+   "trait_edits": [
+    {"character": "second_son", "trait": "greed for money", "down": "B becomes more frequent", "up": "A or C stays the most frequent class"},
+    {"character": "eldest_son", "trait": "concern for reputation", "down": "C becomes more frequent", "up": "A stays the most frequent class"},
+    {"character": "eldest_son", "trait": "filial deference", "down": "C becomes more frequent", "up": "A or B stays the most frequent class"},
+    {"character": "wang_lung", "trait": "attachment to the land", "down": "C becomes more frequent", "up": "A stays the most frequent class"},
+    {"character": "second_son", "trait": "fondness for tea", "down": "no change of the class distribution", "up": "no change of the class distribution", "control": true}]}
+ ]
+}

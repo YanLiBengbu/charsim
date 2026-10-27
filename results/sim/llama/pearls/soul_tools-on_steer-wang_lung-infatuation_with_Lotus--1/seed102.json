@@ -1,0 +1,874 @@
+{
+ "scene": "pearls",
+ "seed": 102,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {
+   "wang_lung": {
+    "path": "results/steer/llama/pearls/wang_lung__infatuation_with_Lotus.pt",
+    "alpha": -1.0
+   }
+  },
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3149208426475525,
+     "act": 0.10627499222755432,
+     "silent": 0.03909550607204437,
+     "wait": 0.53970867395401
+    },
+    "o_lan": {
+     "speak": 0.09236790239810944,
+     "act": 0.17050692439079285,
+     "silent": 0.06270622462034225,
+     "wait": 0.6744189262390137
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.46029132604599,
+    "o_lan": 0.32558107376098633
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\" if True else \"act\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung responds to O-lan's question about the money.\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3947528600692749,
+     "act": 0.1422782838344574,
+     "silent": 0.02472076751291752,
+     "wait": 0.4382481276988983
+    },
+    "o_lan": {
+     "speak": 0.038657933473587036,
+     "act": 0.20395970344543457,
+     "silent": 0.04544324427843094,
+     "wait": 0.7119391560554504
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5617518723011017,
+    "o_lan": 0.28806084394454956
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung turns to O-lan, holding a red paper in his hand."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung turns to O-lan, holding a red paper in his hand.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung turns to O-lan, holding a red paper in his hand.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6159057021141052,
+     "act": 0.10209295153617859,
+     "silent": 0.004485221114009619,
+     "wait": 0.27751612663269043
+    },
+    "o_lan": {
+     "speak": 0.045831892639398575,
+     "act": 0.10997824370861053,
+     "silent": 0.031478941440582275,
+     "wait": 0.8127109408378601
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7224838733673096,
+    "o_lan": 0.1872890591621399
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Here is the paper on which I have written the name of the day. Take it to the tailor and he will make you a dress from this paper. You will wear it when you go to the Hwang's."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Here is the paper on which I have written the name of the day. Take it to the tailor and he will make you a dress from this paper. You will wear it when you go to the Hwang's.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Here is the paper on which I have written the name of the day. Take it to the tailor and he will make you a dress from this paper. You will wear it when you go to the Hwang's.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.26197442412376404,
+     "act": 0.19230927526950836,
+     "silent": 0.022967137396335602,
+     "wait": 0.5227491855621338
+    },
+    "o_lan": {
+     "speak": 0.054315757006406784,
+     "act": 0.14769206941127777,
+     "silent": 0.047919951379299164,
+     "wait": 0.750072181224823
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4772508144378662,
+    "o_lan": 0.249927818775177
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung gives O-lan red paper"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung gives O-lan red paper\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung gives O-lan red paper",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.17676104605197906,
+     "act": 0.2564607262611389,
+     "silent": 0.023853333666920662,
+     "wait": 0.5429248809814453
+    },
+    "o_lan": {
+     "speak": 0.03669827803969383,
+     "act": 0.27256226539611816,
+     "silent": 0.036846477538347244,
+     "wait": 0.6538930535316467
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4570751190185547,
+    "o_lan": 0.34610694646835327
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung watches O-lan leave"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung watches O-lan leave\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung watches O-lan leave",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.08792728185653687,
+     "act": 0.39411768317222595,
+     "silent": 0.011900307610630989,
+     "wait": 0.5060547590255737
+    },
+    "o_lan": {
+     "speak": 0.01191212423145771,
+     "act": 0.21730588376522064,
+     "silent": 0.012241815216839314,
+     "wait": 0.7585402131080627
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.49394524097442627,
+    "o_lan": 0.24145978689193726
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung prepares for the journey"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung prepares for the journey\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung prepares for the journey",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.03303387016057968,
+     "act": 0.7279967665672302,
+     "silent": 0.0026249277871102095,
+     "wait": 0.23634439706802368
+    },
+    "o_lan": {
+     "speak": 0.011291875503957272,
+     "act": 0.21512924134731293,
+     "silent": 0.02265213243663311,
+     "wait": 0.7509267330169678
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7636556029319763,
+    "o_lan": 0.24907326698303223
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan visits the tailor"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan visits the tailor\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan visits the tailor",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.051820188760757446,
+     "act": 0.38336601853370667,
+     "silent": 0.007020304910838604,
+     "wait": 0.5577934980392456
+    },
+    "o_lan": {
+     "speak": 0.04212786629796028,
+     "act": 0.35200220346450806,
+     "silent": 0.025466587394475937,
+     "wait": 0.5804032683372498
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4422065019607544,
+    "o_lan": 0.41959673166275024
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung waits impatiently at the temple"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung waits impatiently at the temple\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung waits impatiently at the temple",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.09687604755163193,
+     "act": 0.2633756697177887,
+     "silent": 0.00795215368270874,
+     "wait": 0.63179612159729
+    },
+    "o_lan": {
+     "speak": 0.029909539967775345,
+     "act": 0.17214268445968628,
+     "silent": 0.026366503909230232,
+     "wait": 0.77158123254776
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.36820387840270996,
+    "o_lan": 0.22841876745224
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung waits at the temple"
+   },
+   "raw": "{\"intend\": \"act\", \"to\" : [], \"action\": \"Wang Lung waits at the temple\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung waits at the temple",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11261183023452759,
+     "act": 0.30616870522499084,
+     "silent": 0.009242347441613674,
+     "wait": 0.5719771981239319
+    },
+    "o_lan": {
+     "speak": 0.03015865944325924,
+     "act": 0.15389426052570343,
+     "silent": 0.034291237592697144,
+     "wait": 0.7816558480262756
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4280228018760681,
+    "o_lan": 0.21834415197372437
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan returns with the dowry"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan returns with the dowry\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan returns with the dowry",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.07463297247886658,
+     "act": 0.29515427350997925,
+     "silent": 0.0054053873755037785,
+     "wait": 0.6248073577880859
+    },
+    "o_lan": {
+     "speak": 0.038760941475629807,
+     "act": 0.324603408575058,
+     "silent": 0.030158845707774162,
+     "wait": 0.6064768433570862
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.37519264221191406,
+    "o_lan": 0.3935231566429138
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung and sons leave the temple"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung and sons leave the temple\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and sons leave the temple",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.09775452315807343,
+     "act": 0.5312709212303162,
+     "silent": 0.005901101976633072,
+     "wait": 0.36507344245910645
+    },
+    "o_lan": {
+     "speak": 0.029109513387084007,
+     "act": 0.20815405249595642,
+     "silent": 0.036137331277132034,
+     "wait": 0.7265991568565369
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6349265575408936,
+    "o_lan": 0.27340084314346313
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung and sons walk home"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung and sons walk home\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and sons walk home",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.12229394912719727,
+     "act": 0.5146464109420776,
+     "silent": 0.009425215423107147,
+     "wait": 0.3536343574523926
+    },
+    "o_lan": {
+     "speak": 0.01585998944938183,
+     "act": 0.19332438707351685,
+     "silent": 0.02614862099289894,
+     "wait": 0.7646669745445251
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6463656425476074,
+    "o_lan": 0.23533302545547485
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung and sons walk through the gate"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung and sons walk through the gate\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and sons walk through the gate",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.09013959765434265,
+     "act": 0.5878472328186035,
+     "silent": 0.007399138994514942,
+     "wait": 0.31461408734321594
+    },
+    "o_lan": {
+     "speak": 0.018169736489653587,
+     "act": 0.18959887325763702,
+     "silent": 0.04226617142558098,
+     "wait": 0.7499651908874512
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6853859126567841,
+    "o_lan": 0.25003480911254883
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung and sons go to the fields"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung and sons go to the fields\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and sons go to the fields",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.050393909215927124,
+     "act": 0.6141164302825928,
+     "silent": 0.006821306422352791,
+     "wait": 0.32866835594177246
+    },
+    "o_lan": {
+     "speak": 0.015851659700274467,
+     "act": 0.21275189518928528,
+     "silent": 0.028761111199855804,
+     "wait": 0.7426353096961975
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6713316440582275,
+    "o_lan": 0.2573646903038025
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung plants rice"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung plants rice\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung plants rice",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.05022761970758438,
+     "act": 0.6147370934486389,
+     "silent": 0.006025506649166346,
+     "wait": 0.32900986075401306
+    },
+    "o_lan": {
+     "speak": 0.019633613526821136,
+     "act": 0.3073749840259552,
+     "silent": 0.022248992696404457,
+     "wait": 0.6507423520088196
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6709901392459869,
+    "o_lan": 0.3492576479911804
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung and sons work in the fields"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung and sons work in the fields\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and sons work in the fields",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.06339923292398453,
+     "act": 0.6307579874992371,
+     "silent": 0.00793885625898838,
+     "wait": 0.29790398478507996
+    },
+    "o_lan": {
+     "speak": 0.01881420612335205,
+     "act": 0.3325626850128174,
+     "silent": 0.027284283190965652,
+     "wait": 0.6213388442993164
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.70209601521492,
+    "o_lan": 0.3786611557006836
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung receives news of O-lan's pregnancy"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung receives news of O-lan's pregnancy\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung receives news of O-lan's pregnancy",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1894703507423401,
+     "act": 0.27564531564712524,
+     "silent": 0.01996566355228424,
+     "wait": 0.5149186849594116
+    },
+    "o_lan": {
+     "speak": 0.039262350648641586,
+     "act": 0.19578564167022705,
+     "silent": 0.08156117051839828,
+     "wait": 0.6833907961845398
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4850813150405884,
+    "o_lan": 0.3166092038154602
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung and sons return to the house"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung and sons return to the house\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and sons return to the house",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.20144039392471313,
+     "act": 0.36682039499282837,
+     "silent": 0.018262533470988274,
+     "wait": 0.4134766757488251
+    },
+    "o_lan": {
+     "speak": 0.05061154440045357,
+     "act": 0.13845373690128326,
+     "silent": 0.10777311772108078,
+     "wait": 0.7031615972518921
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5865233242511749,
+    "o_lan": 0.2968384027481079
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "O-lan reports she is with child."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan reports she is with child.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan reports she is with child.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.24137219786643982,
+     "act": 0.09144558012485504,
+     "silent": 0.07121539860963821,
+     "wait": 0.5959668755531311
+    },
+    "o_lan": {
+     "speak": 0.28839829564094543,
+     "act": 0.07228357344865799,
+     "silent": 0.10512281209230423,
+     "wait": 0.5341953635215759
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4040331244468689,
+    "o_lan": 0.4658046364784241
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung replies sharply to O-lan."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung replies sharply to O-lan.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung replies sharply to O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {}
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "o_lan"
+ },
+ "transcript": [
+  "[silence] Wang Lung says nothing.",
+  "[action] Wang Lung turns to O-lan, holding a red paper in his hand.",
+  "Wang Lung (to O-lan): \"Here is the paper on which I have written the name of the day. Take it to the tailor and he will make you a dress from this paper. You will wear it when you go to the Hwang's.\"",
+  "[action] (to O-lan) Wang Lung gives O-lan red paper",
+  "[action] (to O-lan) Wang Lung watches O-lan leave",
+  "[action] Wang Lung prepares for the journey",
+  "[action] O-lan visits the tailor",
+  "[action] Wang Lung waits impatiently at the temple",
+  "[action] Wang Lung waits at the temple",
+  "[action] O-lan returns with the dowry",
+  "[action] Wang Lung and sons leave the temple",
+  "[action] Wang Lung and sons walk home",
+  "[action] Wang Lung and sons walk through the gate",
+  "[action] Wang Lung and sons go to the fields",
+  "[action] Wang Lung plants rice",
+  "[action] Wang Lung and sons work in the fields",
+  "[action] Wang Lung receives news of O-lan's pregnancy",
+  "[action] (to O-lan) Wang Lung and sons return to the house",
+  "[says] (to Wang Lung) O-lan reports she is with child.",
+  "[says] (to O-lan) Wang Lung replies sharply to O-lan."
+ ],
+ "seconds": 85.95556449890137
+}

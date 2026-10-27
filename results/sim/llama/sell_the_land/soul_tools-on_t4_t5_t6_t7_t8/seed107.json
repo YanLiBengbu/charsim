@@ -1,0 +1,1552 @@
+{
+ "scene": "sell_the_land",
+ "seed": 107,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "cast",
+   "eldest_son",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": true,
+  "t9": false,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.43075013160705566,
+     "act": 0.31230515241622925,
+     "silent": 0.013717280700802803,
+     "wait": 0.24322742223739624
+    },
+    "eldest_son": {
+     "speak": 0.09141814708709717,
+     "act": 0.12067524343729019,
+     "silent": 0.0008123120642267168,
+     "wait": 0.7870942950248718
+    },
+    "second_son": {
+     "speak": 0.09357573091983795,
+     "act": 0.12014608085155487,
+     "silent": 0.0028249069582670927,
+     "wait": 0.7834532856941223
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7567725777626038,
+    "eldest_son": 0.21290570497512817,
+    "second_son": 0.21654671430587769
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "action": "Wang Lung tells his sons to work the land."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"the eldest son\", \"the second son\"], \"action\": \"Wang Lung tells his sons to work the land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung tells his sons to work the land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"the eldest son\", \"the second son\"], \"action\": \"Wang Lung tells his sons to work the land.\"}",
+     "{\"intend\": \"act\", \"to\": [\"the eldest son\", \"the second son\"], \"action\": \"Wang Lung stops his sons from buying a second house.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung chooses a spot for his hut.\"}"
+    ],
+    "probs": [
+     0.405500203371048,
+     0.2786959111690521,
+     0.3158038556575775
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "shown": "I want my sons to understand that the land is our family's true wealth and must be cherished, not squandered on fleeting ambitions.",
+    "intend_probs": {
+     "speak": 0.43075013160705566,
+     "act": 0.31230515241622925,
+     "silent": 0.013717280700802803
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7207428812980652,
+     "act": 0.12101936340332031,
+     "silent": 0.002844092436134815,
+     "wait": 0.15539370477199554
+    },
+    "eldest_son": {
+     "speak": 0.04826866090297699,
+     "act": 0.17353124916553497,
+     "silent": 0.0002601205196697265,
+     "wait": 0.777940034866333
+    },
+    "second_son": {
+     "speak": 0.0858541876077652,
+     "act": 0.09731483459472656,
+     "silent": 0.0020176037214696407,
+     "wait": 0.8148133754730225
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8446062952280045,
+    "eldest_son": 0.222059965133667,
+    "second_son": 0.18518662452697754
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "works on grain market"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"works on grain market\"}",
+   "item": {
+    "kind": "act",
+    "text": "works on grain market",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"the eldest son\"], \"action\": \"sons return from town\"}",
+     "{\"intend\": \"act\", \"to\": [\"the eldest son\"], \"action\": \"The second son waits for the eldest son to speak.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"works on grain market\"}"
+    ],
+    "probs": [
+     0.08794894069433212,
+     0.0776146724820137,
+     0.8344363570213318
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want my father to let me sell some of his fields so I can invest the money in my grain market.",
+    "plan": "I want my father to let me sell some of his fields so I can invest the money in my grain market.",
+    "shown": "I want my father to let me sell some of his fields so I can invest the money in my grain market.",
+    "intend_probs": {
+     "speak": 0.09608243405818939,
+     "act": 0.09608818590641022,
+     "silent": 0.0032868573907762766
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.33259838819503784,
+     "act": 0.3464362323284149,
+     "silent": 0.015211460180580616,
+     "wait": 0.3057539761066437
+    },
+    "eldest_son": {
+     "speak": 0.06242363899946213,
+     "act": 0.1541147083044052,
+     "silent": 0.0005544092273339629,
+     "wait": 0.7829071879386902
+    },
+    "second_son": {
+     "speak": 0.08453087508678436,
+     "act": 0.10862413793802261,
+     "silent": 0.004208806436508894,
+     "wait": 0.8026361465454102
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6942460238933563,
+    "eldest_son": 0.21709281206130981,
+    "second_son": 0.19736385345458984
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "We will work the land and I will show you how to plough and plant and to reap, and I will tell you how to make the earth yield its fruits, and how to irrigate it, and how to keep it free from pests and how to know when the time is ripe for harvest."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"We will work the land and I will show you how to plough and plant and to reap, and I will tell you how to make the earth yield its fruits, and how to irrigate it, and how to keep it free from pests and how to know when the time is ripe for harvest.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "We will work the land and I will show you how to plough and plant and to reap, and I will tell you how to make the earth yield its fruits, and how to irrigate it, and how to keep it free from pests and how to know when the time is ripe for harvest.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"We will work the land and I will show you how to plough and plant and to reap, and I will tell you how to make the earth yield its fruits, and how to irrigate it, and how to keep it free from pests and how to know when the time is ripe for harvest.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Now, my sons, come, let us work the land, that it may teach you its goodness.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Let us work the land, that it may teach us.\"}"
+    ],
+    "probs": [
+     0.4055001735687256,
+     0.3158038854598999,
+     0.2786959409713745
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want my sons to understand the value of the land, and I will tell them, \"Come, let us work the land, and let its goodness teach you.\"",
+    "plan": "I want my sons to understand the value of the land, and I will tell them, \"Come, let us work the land, and let its goodness teach you.",
+    "shown": "I want my sons to understand the value of the land, and I will tell them, \"Come, let us work the land, and let its goodness teach you.",
+    "intend_probs": {
+     "speak": 0.2965235114097595,
+     "act": 0.4095863699913025,
+     "silent": 0.012357954867184162
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.15223972499370575,
+     "act": 0.48968297243118286,
+     "silent": 0.02150743454694748,
+     "wait": 0.3365698754787445
+    },
+    "eldest_son": {
+     "speak": 0.09369869530200958,
+     "act": 0.1203211098909378,
+     "silent": 0.0009158609318546951,
+     "wait": 0.7850643396377563
+    },
+    "second_son": {
+     "speak": 0.1199246272444725,
+     "act": 0.09339959174394608,
+     "silent": 0.004648873582482338,
+     "wait": 0.7820268869400024
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6634301245212555,
+    "eldest_son": 0.21493566036224365,
+    "second_son": 0.21797311305999756
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want them to understand the value of our land and work it with me, to keep it fertile and fruitful for our family.",
+    "plan": "I want them to understand the value of our land and work it with me, to keep it fertile and fruitful for our family.",
+    "shown": "I want them to understand the value of our land and work it with me, to keep it fertile and fruitful for our family.",
+    "intend_probs": {
+     "speak": 0.13581639528274536,
+     "act": 0.47411105036735535,
+     "silent": 0.020824188366532326
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.13405507802963257,
+     "act": 0.5302183032035828,
+     "silent": 0.01412016712129116,
+     "wait": 0.32160642743110657
+    },
+    "eldest_son": {
+     "speak": 0.10638516396284103,
+     "act": 0.09506002068519592,
+     "silent": 0.0022274681832641363,
+     "wait": 0.7963273525238037
+    },
+    "second_son": {
+     "speak": 0.14290468394756317,
+     "act": 0.1133020743727684,
+     "silent": 0.0049706376157701015,
+     "wait": 0.7388225793838501
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6783935725688934,
+    "eldest_son": 0.2036726474761963,
+    "second_son": 0.2611774206161499
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "We will do so, good father, and we will be humble before you and follow your words and your example."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"We will do so, good father, and we will be humble before you and follow your words and your example.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "We will do so, good father, and we will be humble before you and follow your words and your example.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"We will do so, good father, and we will be humble before you and follow your words and your example.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Yes, my father,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Well, and if there is a great harvest, I shall have it, and there is no need for me to work it myself, for I am rich and I can hire men to work for me, and I can buy grain from the people and sell it in the market and be rich,\"}"
+    ],
+    "probs": [
+     0.39443665742874146,
+     0.39443665742874146,
+     0.21112671494483948
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want my father's respect and approval to prove myself a worthy son, and I will speak respectfully to him.",
+    "plan": "I want my father's respect and approval to prove myself a worthy son, and I will speak respectfully to him.",
+    "shown": "I want my father's respect and approval to prove myself a worthy son, and I will speak respectfully to him.",
+    "intend_probs": {
+     "speak": 0.17211005091667175,
+     "act": 0.055865947157144547,
+     "silent": 0.00037487444933503866
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.19692543148994446,
+     "act": 0.41686999797821045,
+     "silent": 0.018307477235794067,
+     "wait": 0.3678971529006958
+    },
+    "eldest_son": {
+     "speak": 0.09065625816583633,
+     "act": 0.14951157569885254,
+     "silent": 0.0003265701816417277,
+     "wait": 0.7595056295394897
+    },
+    "second_son": {
+     "speak": 0.09811241179704666,
+     "act": 0.09577419608831406,
+     "silent": 0.0042030722834169865,
+     "wait": 0.801910400390625
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6321028470993042,
+    "eldest_son": 0.24049437046051025,
+    "second_son": 0.198089599609375
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The eldest son proudly shows his wife and children."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son proudly shows his wife and children.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The eldest son proudly shows his wife and children.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son invites his father to a meal.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son invites guests.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son proudly shows his wife and children.\"}"
+    ],
+    "probs": [
+     0.3045043647289276,
+     0.3045043647289276,
+     0.39099130034446716
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want my father to acknowledge my position as a respected member of society, not as a son who needs to learn farming.",
+    "plan": "I want my father to acknowledge my position as a respected member of society, not as a son who needs to learn farming.",
+    "shown": "I want my father to acknowledge my position as a respected member of society, not as a son who needs to learn farming.",
+    "intend_probs": {
+     "speak": 0.15738606452941895,
+     "act": 0.11195911467075348,
+     "silent": 0.00040334041113965213
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11671608686447144,
+     "act": 0.4608311951160431,
+     "silent": 0.015763698145747185,
+     "wait": 0.406688928604126
+    },
+    "eldest_son": {
+     "speak": 0.1382855474948883,
+     "act": 0.17382067441940308,
+     "silent": 0.0001581590186106041,
+     "wait": 0.6877355575561523
+    },
+    "second_son": {
+     "speak": 0.10588905960321426,
+     "act": 0.11834636330604553,
+     "silent": 0.004046680871397257,
+     "wait": 0.7717178463935852
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.593311071395874,
+    "eldest_son": 0.31226444244384766,
+    "second_son": 0.2282821536064148
+   },
+   "actor": "second_son",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\" \"to\": [\"Wang Lung\"], \"speech\": \"Well, and is there not land enough for me and my grain market?\"}",
+   "item": {
+    "kind": "silent",
+    "text": "the second son says nothing.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want my father to recognize my grain market and see its potential, and I want a share of the land to support it.",
+    "plan": "I want my father to recognize my grain market and see its potential, and I want a share of the land to support it.",
+    "shown": "I want my father to recognize my grain market and see its potential, and I want a share of the land to support it.",
+    "intend_probs": {
+     "speak": 0.0639447420835495,
+     "act": 0.15340428054332733,
+     "silent": 0.0035961868707090616
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.13589738309383392,
+     "act": 0.5059072971343994,
+     "silent": 0.010487489402294159,
+     "wait": 0.3477078378200531
+    },
+    "eldest_son": {
+     "speak": 0.14125660061836243,
+     "act": 0.141195148229599,
+     "silent": 0.00014554921654053032,
+     "wait": 0.7174026370048523
+    },
+    "second_son": {
+     "speak": 0.12107069045305252,
+     "act": 0.1761719137430191,
+     "silent": 0.0059823510237038136,
+     "wait": 0.6967750191688538
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6522921621799469,
+    "eldest_son": 0.2825973629951477,
+    "second_son": 0.30322498083114624
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "You do not know what the land is and how it can feed us all and keep us rich, and how it can feed your children and grandchildren and great-grandchildren, and how it is better than any silver or any jewel."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"You do not know what the land is and how it can feed us all and keep us rich, and how it can feed your children and grandchildren and great-grandchildren, and how it is better than any silver or any jewel.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "You do not know what the land is and how it can feed us all and keep us rich, and how it can feed your children and grandchildren and great-grandchildren, and how it is better than any silver or any jewel.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\"], \"speech\": \"Well, and what is your wife like and what are your children?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"You see this is my land and this I have planted and this I have harvested and this I have sold, and this I have bought with the money. It is my life and I am the life of this land, and without me the land will die.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"You do not know what the land is and how it can feed us all and keep us rich, and how it can feed your children and grandchildren and great-grandchildren, and how it is better than any silver or any jewel.\"}"
+    ],
+    "probs": [
+     0.0996236503124237,
+     0.1642516404390335,
+     0.7361247539520264
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want them to understand the land's importance and value, and to see it as the true source of our wealth and family's strength.",
+    "plan": "I want them to understand the land's importance and value, and to see it as the true source of our wealth and family's strength.",
+    "shown": "I want them to understand the land's importance and value, and to see it as the true source of our wealth and family's strength.",
+    "intend_probs": {
+     "speak": 0.23164919018745422,
+     "act": 0.4498583674430847,
+     "silent": 0.009306774474680424
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.24816358089447021,
+     "act": 0.3444214463233948,
+     "silent": 0.01712989993393421,
+     "wait": 0.39028504490852356
+    },
+    "eldest_son": {
+     "speak": 0.17715595662593842,
+     "act": 0.12176177650690079,
+     "silent": 0.0001827088708523661,
+     "wait": 0.7008995413780212
+    },
+    "second_son": {
+     "speak": 0.0798574909567833,
+     "act": 0.15063241124153137,
+     "silent": 0.0045358785428106785,
+     "wait": 0.7649742364883423
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6097149550914764,
+    "eldest_son": 0.29910045862197876,
+    "second_son": 0.23502576351165771
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The eldest son introduces his wife and children to Wang Lung."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son introduces his wife and children to Wang Lung.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The eldest son introduces his wife and children to Wang Lung.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son proudly shows his wife and children.\"}",
+    "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son proudly shows his wife and children.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son introduces his children to his father.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son prides himself and talks to his wife.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The eldest son introduces his wife and children to Wang Lung.\"}"
+    ],
+    "probs": [
+     0.07209917902946472,
+     0.04955299198627472,
+     0.8783478140830994
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want my father's approval and respect, but I'm also annoyed that he's ignoring my wife and children, and I want him to acknowledge my accomplishments.",
+    "plan": "I want my father's approval and respect, but I'm also annoyed that he's ignoring my wife and children, and I want him to acknowledge my accomplishments.",
+    "shown": "I want my father's approval and respect, but I'm also annoyed that he's ignoring my wife and children, and I want him to acknowledge my accomplishments.",
+    "intend_probs": {
+     "speak": 0.1408335119485855,
+     "act": 0.1566699892282486,
+     "silent": 0.00018302594253327698
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2586696445941925,
+     "act": 0.2740461230278015,
+     "silent": 0.01545102708041668,
+     "wait": 0.45183315873146057
+    },
+    "eldest_son": {
+     "speak": 0.11138658970594406,
+     "act": 0.1620258241891861,
+     "silent": 0.00018948258366435766,
+     "wait": 0.7263981103897095
+    },
+    "second_son": {
+     "speak": 0.05939766764640808,
+     "act": 0.18903610110282898,
+     "silent": 0.0039122384041547775,
+     "wait": 0.7476539611816406
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5481668412685394,
+    "eldest_son": 0.2736018896102905,
+    "second_son": 0.2523460388183594
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Father, may I show you the house I have prepared for my family."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Father, may I show you the house I have prepared for my family.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Father, may I show you the house I have prepared for my family.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"Eldest son invites father to see his house\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Father, may I show you the house I have prepared for my family.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Well, and may I show you the house I have prepared for my family?\"}"
+    ],
+    "probs": [
+     0.03913038596510887,
+     0.5401782989501953,
+     0.42069128155708313
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want Father to see that I am a successful and capable son, worthy of his pride and respect, and I will say, \"Father, may I show you the house I have prepared for my family.\"",
+    "plan": "I want Father to see that I am a successful and capable son, worthy of his pride and respect, and I will say, \"Father, may I show you the house I have prepared for my family.",
+    "shown": "I want Father to see that I am a successful and capable son, worthy of his pride and respect, and I will say, \"Father, may I show you the house I have prepared for my family.",
+    "intend_probs": {
+     "speak": 0.08031263202428818,
+     "act": 0.1361238658428192,
+     "silent": 4.021816494059749e-05
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.31355953216552734,
+     "act": 0.23470813035964966,
+     "silent": 0.01323692873120308,
+     "wait": 0.4384954273700714
+    },
+    "eldest_son": {
+     "speak": 0.043084751814603806,
+     "act": 0.19305835664272308,
+     "silent": 8.29421405796893e-05,
+     "wait": 0.7637739777565002
+    },
+    "second_son": {
+     "speak": 0.04980609193444252,
+     "act": 0.17260043323040009,
+     "silent": 0.0040512969717383385,
+     "wait": 0.7735422253608704
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5615045726299286,
+    "eldest_son": 0.23622602224349976,
+    "second_son": 0.22645777463912964
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "Now I have sons and I can inspect my land with them and see what I have and what I have not, and what needs to be done and what needs to be planted, and what needs to be weeded."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Now I have sons and I can inspect my land with them and see what I have and what I have not, and what needs to be done and what needs to be planted, and what needs to be weeded.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now I have sons and I can inspect my land with them and see what I have and what I have not, and what needs to be done and what needs to be planted, and what needs to be weeded.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Come here, my two sons, and let us look at the land and see if it is still as rich as in the years past.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung asks his sons to inspect the land.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Now I have sons and I can inspect my land with them and see what I have and what I have not, and what needs to be done and what needs to be planted, and what needs to be weeded.\"}"
+    ],
+    "probs": [
+     0.3169822692871094,
+     0.0908169373869896,
+     0.5922008156776428
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to see if they understand and respect the land's value, so I'll ask them to help me inspect the fields and crops nearby.",
+    "plan": "I want to see if they understand and respect the land's value, so I'll ask them to help me inspect the fields and crops nearby.",
+    "shown": "I want to see if they understand and respect the land's value, so I'll ask them to help me inspect the fields and crops nearby.",
+    "intend_probs": {
+     "speak": 0.6473891735076904,
+     "act": 0.11246877163648605,
+     "silent": 0.0020541350822895765
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5682089328765869,
+     "act": 0.21485097706317902,
+     "silent": 0.0020902459509670734,
+     "wait": 0.2148497998714447
+    },
+    "eldest_son": {
+     "speak": 0.05004715174436569,
+     "act": 0.2327694594860077,
+     "silent": 8.829947182675824e-05,
+     "wait": 0.717095136642456
+    },
+    "second_son": {
+     "speak": 0.045685820281505585,
+     "act": 0.14072869718074799,
+     "silent": 0.003745870664715767,
+     "wait": 0.8098395466804504
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7851502001285553,
+    "eldest_son": 0.28290486335754395,
+    "second_son": 0.19016045331954956
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung observes his sons."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung observes his sons.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung observes his sons.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung enjoys the sunshine on his face.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung goes with his sons to the western field.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung observes his sons.\"}"
+    ],
+    "probs": [
+     0.07070307433605194,
+     0.4068680703639984,
+     0.5224289298057556
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want my sons to appreciate and respect the land, to understand its value and importance in our family's life.",
+    "plan": "I want my sons to appreciate and respect the land, to understand its value and importance in our family's life.",
+    "shown": "I want my sons to appreciate and respect the land, to understand its value and importance in our family's life.",
+    "intend_probs": {
+     "speak": 0.14342841506004333,
+     "act": 0.4997689723968506,
+     "silent": 0.013314438983798027
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.24326378107070923,
+     "act": 0.3711720407009125,
+     "silent": 0.014387686736881733,
+     "wait": 0.37117642164230347
+    },
+    "eldest_son": {
+     "speak": 0.06031985953450203,
+     "act": 0.2302330881357193,
+     "silent": 0.00018504630133975297,
+     "wait": 0.7092620134353638
+    },
+    "second_son": {
+     "speak": 0.05051933601498604,
+     "act": 0.1556035280227661,
+     "silent": 0.0036564564798027277,
+     "wait": 0.7902206778526306
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6288235783576965,
+    "eldest_son": 0.29073798656463623,
+    "second_son": 0.20977932214736938
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "speech": "This will be the house in which my grandson will be born, and my great-grandson, and I will see my great-great-grandson."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"speech\": \"This will be the house in which my grandson will be born, and my great-grandson, and I will see my great-great-grandson.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "This will be the house in which my grandson will be born, and my great-grandson, and I will see my great-great-grandson.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\"], \"speech\": \"What is this house you have built?\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung expresses his love for his sons.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"This will be the house in which my grandson will be born, and my great-grandson, and I will see my great-great-grandson.\"}"
+    ],
+    "probs": [
+     0.23862655460834503,
+     0.11271922290325165,
+     0.6486542224884033
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want my sons to understand and respect the land that has given us our prosperity and to help me work it.",
+    "plan": "I want my sons to understand and respect the land that has given us our prosperity and to help me work it.",
+    "shown": "I want my sons to understand and respect the land that has given us our prosperity and to help me work it.",
+    "intend_probs": {
+     "speak": 0.20704855024814606,
+     "act": 0.4383375644683838,
+     "silent": 0.01323320809751749
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.25106891989707947,
+     "act": 0.4140031635761261,
+     "silent": 0.012498962692916393,
+     "wait": 0.32242897152900696
+    },
+    "eldest_son": {
+     "speak": 0.06909897178411484,
+     "act": 0.187810018658638,
+     "silent": 0.00017094568465836346,
+     "wait": 0.7429201006889343
+    },
+    "second_son": {
+     "speak": 0.05793256312608719,
+     "act": 0.13898681104183197,
+     "silent": 0.0032672227825969458,
+     "wait": 0.799813449382782
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.677571028470993,
+    "eldest_son": 0.2570798993110657,
+    "second_son": 0.20018655061721802
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "speech": "It is good to have sons and to be able to look at the land."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"speech\": \"It is good to have sons and to be able to look at the land.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is good to have sons and to be able to look at the land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"Well, and you have built it of bricks, and there will be no fear of it falling in the rains.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung expresses his joy about grandchildren.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"It is good to have sons and to be able to look at the land.\"}"
+    ],
+    "probs": [
+     0.23356996476650238,
+     0.20612478256225586,
+     0.5603052377700806
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want them to understand the true value of our land and the importance of preserving it for our future generations.",
+    "plan": "I want them to understand the true value of our land and the importance of preserving it for our future generations.",
+    "shown": "I want them to understand the true value of our land and the importance of preserving it for our future generations.",
+    "intend_probs": {
+     "speak": 0.3920128643512726,
+     "act": 0.27926400303840637,
+     "silent": 0.01226735394448042
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3582158386707306,
+     "act": 0.31611883640289307,
+     "silent": 0.009543964639306068,
+     "wait": 0.31612133979797363
+    },
+    "eldest_son": {
+     "speak": 0.07569631934165955,
+     "act": 0.2057858407497406,
+     "silent": 0.00014587421901524067,
+     "wait": 0.7183719277381897
+    },
+    "second_son": {
+     "speak": 0.06388069689273834,
+     "act": 0.15324616432189941,
+     "silent": 0.004625849425792694,
+     "wait": 0.7782472968101501
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6838786602020264,
+    "eldest_son": 0.2816280722618103,
+    "second_son": 0.22175270318984985
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Now that there is a railroad it is easy to sell land, and we can buy other land elsewhere for the same price, and we can have all the money to put in the grain business."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Now that there is a railroad it is easy to sell land, and we can buy other land elsewhere for the same price, and we can have all the money to put in the grain business.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now that there is a railroad it is easy to sell land, and we can buy other land elsewhere for the same price, and we can have all the money to put in the grain business.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\", \"the eldest son\"], \"speech\": \"Father, this land is good and there is more of it than we need, for a house such as this can stand empty in winter and yet feed all of us, and there is no need to sell a piece of it and yet the money from a piece could be used to buy and sell grain.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Now that there is a railroad it is easy to sell land, and we can buy other land elsewhere for the same price, and we can have all the money to put in the grain business.\"}"
+    ],
+    "probs": [
+     0.11920291185379028,
+     0.8807970285415649
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want to persuade Father to let us sell some of this land so we can invest the money in my grain market and increase our wealth.",
+    "plan": "I want to persuade Father to let us sell some of this land so we can invest the money in my grain market and increase our wealth.",
+    "shown": "I want to persuade Father to let us sell some of this land so we can invest the money in my grain market and increase our wealth.",
+    "intend_probs": {
+     "speak": 0.18203219771385193,
+     "act": 0.07757553458213806,
+     "silent": 0.0043752072378993034
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5635235905647278,
+     "act": 0.12573650479316711,
+     "silent": 0.009106769226491451,
+     "wait": 0.3016330599784851
+    },
+    "eldest_son": {
+     "speak": 0.08155950158834457,
+     "act": 0.16750623285770416,
+     "silent": 0.00010481194476597011,
+     "wait": 0.7508295178413391
+    },
+    "second_son": {
+     "speak": 0.32961010932922363,
+     "act": 0.07913821935653687,
+     "silent": 0.006493846885859966,
+     "wait": 0.5847578644752502
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6983669400215149,
+    "eldest_son": 0.2491704821586609,
+    "second_son": 0.41524213552474976
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "It is well that we should do this and make our family secure, and we will not forget your land, father, and we will come back to it as you wish."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"It is well that we should do this and make our family secure, and we will not forget your land, father, and we will come back to it as you wish.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is well that we should do this and make our family secure, and we will not forget your land, father, and we will come back to it as you wish.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Well, good father, and it is good to have sons to whom to leave the land and to whom to pass it down through the generations.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"The eldest son asks his father for approval.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"It is well that we should do this and make our family secure, and we will not forget your land, father, and we will come back to it as you wish.\"}"
+    ],
+    "probs": [
+     0.30440399050712585,
+     0.12689445912837982,
+     0.5687015056610107
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to hear my father's approval and blessing for our plan to sell some of his land to secure our family's future.",
+    "plan": "I want to hear my father's approval and blessing for our plan to sell some of his land to secure our family's future.",
+    "shown": "I want to hear my father's approval and blessing for our plan to sell some of his land to secure our family's future.",
+    "intend_probs": {
+     "speak": 0.1280684769153595,
+     "act": 0.03668246418237686,
+     "silent": 0.00013224591384641826
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5737984776496887,
+     "act": 0.16970568895339966,
+     "silent": 0.009571277536451817,
+     "wait": 0.24692456424236298
+    },
+    "eldest_son": {
+     "speak": 0.11406467109918594,
+     "act": 0.04727783799171448,
+     "silent": 0.00036065562744624913,
+     "wait": 0.8382968902587891
+    },
+    "second_son": {
+     "speak": 0.25491559505462646,
+     "act": 0.07066350430250168,
+     "silent": 0.003985357936471701,
+     "wait": 0.6704355478286743
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.753075435757637,
+    "eldest_son": 0.16170310974121094,
+    "second_son": 0.3295644521713257
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "Well, and it is good that you should think of the land and of our family's wealth. But tell me this, have you two sons any understanding of the land's value?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Well, and it is good that you should think of the land and of our family's wealth. But tell me this, have you two sons any understanding of the land's value?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and it is good that you should think of the land and of our family's wealth. But tell me this, have you two sons any understanding of the land's value?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"Now you do not know what this land is and what it means. I do not need to teach you this. It means that we can feed all our sons and our sons' sons and our sons' sons' sons, and that we have a roof for all our heads, and that we can feed a fool and a second woman, and that we have silver and jewels and that I can lie on a great bed and that I can drink tea in a great hall.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Now tell me truly, my sons, what is your thought of this land and of the land my father and I have tilled, and what your thought is of buying other land anywhere?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"Well, and it is good that you should think of the land and of our family's wealth. But tell me this, have you two sons any understanding of the land's value?\"}"
+    ],
+    "probs": [
+     0.11900052428245544,
+     0.1961987018585205,
+     0.6848007440567017
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to know what they understand of the land's value, and what I must teach them to keep our family's wealth and tradition.",
+    "plan": "I want to know what they understand of the land's value, and what I must teach them to keep our family's wealth and tradition.",
+    "shown": "I want to know what they understand of the land's value, and what I must teach them to keep our family's wealth and tradition.",
+    "intend_probs": {
+     "speak": 0.4901247024536133,
+     "act": 0.15883983671665192,
+     "silent": 0.014767213724553585
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5392217636108398,
+     "act": 0.08265475183725357,
+     "silent": 0.007682703901082277,
+     "wait": 0.3704407513141632
+    },
+    "eldest_son": {
+     "speak": 0.1425018161535263,
+     "act": 0.057888880372047424,
+     "silent": 0.0002676262811291963,
+     "wait": 0.7993416786193848
+    },
+    "second_son": {
+     "speak": 0.455036461353302,
+     "act": 0.05774890258908272,
+     "silent": 0.0036906462628394365,
+     "wait": 0.48352402448654175
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6295592486858368,
+    "eldest_son": 0.20065832138061523,
+    "second_son": 0.5164759755134583
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The second son speaks confidently about the land."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"The second son speaks confidently about the land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The second son speaks confidently about the land.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The second son looks at Wang Lung with concern.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Second son explains value of land\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"The second son speaks confidently about the land.\"}"
+    ],
+    "probs": [
+     0.17980413138866425,
+     0.10905672609806061,
+     0.7111391425132751
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to agree to sell our land and give me control over the finances, so I can invest in my grain business.",
+    "plan": "I want Wang Lung to agree to sell our land and give me control over the finances, so I can invest in my grain business.",
+    "shown": "I want Wang Lung to agree to sell our land and give me control over the finances, so I can invest in my grain business.",
+    "intend_probs": {
+     "speak": 0.30197635293006897,
+     "act": 0.052475668489933014,
+     "silent": 0.006264907773584127
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2779219150543213,
+     "act": 0.10576526075601578,
+     "silent": 0.007660187780857086,
+     "wait": 0.608652651309967
+    },
+    "eldest_son": {
+     "speak": 0.12299653887748718,
+     "act": 0.07460536807775497,
+     "silent": 0.00012699261424131691,
+     "wait": 0.8022710680961609
+    },
+    "second_son": {
+     "speak": 0.8302274346351624,
+     "act": 0.022123364731669426,
+     "silent": 0.0033843517303466797,
+     "wait": 0.14426496624946594
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.39134734869003296,
+    "eldest_son": 0.1977289319038391,
+    "second_son": 0.8557350337505341
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "speech": "I can sell the land and divide the money, for I have experience in the grain business."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"speech\": \"I can sell the land and divide the money, for I have experience in the grain business.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I can sell the land and divide the money, for I have experience in the grain business.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"We will divide it between us, according to what it is worth. We will divide it according to which fields are best.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"The second son asks his father to divide the land.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"I can sell the land and divide the money, for I have experience in the grain business.\"}"
+    ],
+    "probs": [
+     0.2738439440727234,
+     0.0692385882139206,
+     0.6569174528121948
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to give me control over the sale of our land and to divide the money according to its worth.",
+    "plan": "I want Wang Lung to give me control over the sale of our land and to divide the money according to its worth.",
+    "shown": "I want Wang Lung to give me control over the sale of our land and to divide the money according to its worth.",
+    "intend_probs": {
+     "speak": 0.7904606461524963,
+     "act": 0.03064901754260063,
+     "silent": 0.0025142848026007414
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5168449878692627,
+     "act": 0.15102973580360413,
+     "silent": 0.012393081560730934,
+     "wait": 0.3197322189807892
+    },
+    "eldest_son": {
+     "speak": 0.10089407861232758,
+     "act": 0.054001711308956146,
+     "silent": 0.00015157481539063156,
+     "wait": 0.8449526429176331
+    },
+    "second_son": {
+     "speak": 0.3779183328151703,
+     "act": 0.09111978858709335,
+     "silent": 0.006598982494324446,
+     "wait": 0.5243628621101379
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6802677810192108,
+    "eldest_son": 0.15504735708236694,
+    "second_son": 0.47563713788986206
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "It is a good thing to do this, to divide the money equally, and it is better than for one of us to have the money and the other not, and the father should give me the authority to manage the money, so that I can buy land and sell it, and my brother can also buy land if he wants to."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"It is a good thing to do this, to divide the money equally, and it is better than for one of us to have the money and the other not, and the father should give me the authority to manage the money, so that I can buy land and sell it, and my brother can also buy land if he wants to.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is a good thing to do this, to divide the money equally, and it is better than for one of us to have the money and the other not, and the father should give me the authority to manage the money, so that I can buy land and sell it, and my brother can also buy land if he wants to.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"We have thought of this and we have decided that we will divide the money equally between us.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"It is a good thing to do this, to divide the money equally, and it is better than for one of us to have the money and the other not, and the father should give me the authority to manage the money, so that I can buy land and sell it, and my brother can also buy land if he wants to.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"It is good to have sons who can think for themselves and know the value of money. Therefore I give you this land and divide it, my sons, and let each of you have half. I have lived on it and labored on it for more than sixty years, and it is good land, but it is worth more to you to sell it than it is to me to keep it.\"}"
+    ],
+    "probs": [
+     0.06644191592931747,
+     0.8094282150268555,
+     0.12412985414266586
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want my father to give me the authority to decide how to use the land's value, and to share the profits with my brother.",
+    "plan": "I want my father to give me the authority to decide how to use the land's value, and to share the profits with my brother.",
+    "shown": "I want my father to give me the authority to decide how to use the land's value, and to share the profits with my brother.",
+    "intend_probs": {
+     "speak": 0.4478549361228943,
+     "act": 0.0999242439866066,
+     "silent": 0.004388683009892702
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  }
+ ],
+ "opening_lines": 114,
+ "final_state": {
+  "land": "kept"
+ },
+ "transcript": [
+  "[action] (to the eldest son, the second son) Wang Lung tells his sons to work the land.",
+  "[action] works on grain market",
+  "Wang Lung (to the eldest son, the second son): \"We will work the land and I will show you how to plough and plant and to reap, and I will tell you how to make the earth yield its fruits, and how to irrigate it, and how to keep it free from pests and how to know when the time is ripe for harvest.\"",
+  "[silence] Wang Lung says nothing.",
+  "the eldest son (to Wang Lung): \"We will do so, good father, and we will be humble before you and follow your words and your example.\"",
+  "[action] The eldest son proudly shows his wife and children.",
+  "[silence] the second son says nothing.",
+  "Wang Lung (to the eldest son, the second son): \"You do not know what the land is and how it can feed us all and keep us rich, and how it can feed your children and grandchildren and great-grandchildren, and how it is better than any silver or any jewel.\"",
+  "[action] The eldest son introduces his wife and children to Wang Lung.",
+  "the eldest son (to Wang Lung): \"Father, may I show you the house I have prepared for my family.\"",
+  "Wang Lung (to the eldest son, the second son): \"Now I have sons and I can inspect my land with them and see what I have and what I have not, and what needs to be done and what needs to be planted, and what needs to be weeded.\"",
+  "[action] Wang Lung observes his sons.",
+  "Wang Lung: \"This will be the house in which my grandson will be born, and my great-grandson, and I will see my great-great-grandson.\"",
+  "Wang Lung: \"It is good to have sons and to be able to look at the land.\"",
+  "the second son (to Wang Lung): \"Now that there is a railroad it is easy to sell land, and we can buy other land elsewhere for the same price, and we can have all the money to put in the grain business.\"",
+  "the eldest son (to Wang Lung): \"It is well that we should do this and make our family secure, and we will not forget your land, father, and we will come back to it as you wish.\"",
+  "Wang Lung (to the eldest son, the second son): \"Well, and it is good that you should think of the land and of our family's wealth. But tell me this, have you two sons any understanding of the land's value?\"",
+  "[action] The second son speaks confidently about the land.",
+  "the second son: \"I can sell the land and divide the money, for I have experience in the grain business.\"",
+  "the second son (to Wang Lung): \"It is a good thing to do this, to divide the money equally, and it is better than for one of us to have the money and the other not, and the father should give me the authority to manage the money, so that I can buy land and sell it, and my brother can also buy land if he wants to.\""
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want my sons to understand that the land is our family's true wealth and must be cherished, not squandered on fleeting ambitions.",
+   "plan": "I want my sons to understand that the land is our family's true wealth and must be cherished, not squandered on fleeting ambitions."
+  },
+  "eldest_son": {
+   "raw": "I want my father's approval and respect, so I will say nothing about our conversation to show loyalty and obedience.",
+   "plan": "I want my father's approval and respect, so I will say nothing about our conversation to show loyalty and obedience."
+  },
+  "second_son": {
+   "raw": "I want to persuade Father to sell one of his fields to fund my grain market, so I must convince him of its worth.",
+   "plan": "I want to persuade Father to sell one of his fields to fund my grain market, so I must convince him of its worth."
+  }
+ },
+ "seconds": 286.2608621120453
+}

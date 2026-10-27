@@ -1,0 +1,1586 @@
+{
+ "scene": "sell_the_land",
+ "seed": 109,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "cast",
+   "eldest_son",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": true,
+  "t9": false,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5427165627479553,
+     "act": 0.2564294636249542,
+     "silent": 0.0011832226300612092,
+     "wait": 0.1996707320213318
+    },
+    "eldest_son": {
+     "speak": 0.08884062618017197,
+     "act": 0.1659964770078659,
+     "silent": 0.0012534486595541239,
+     "wait": 0.743909478187561
+    },
+    "second_son": {
+     "speak": 0.3752408027648926,
+     "act": 0.04724908620119095,
+     "silent": 0.001824831124395132,
+     "wait": 0.5756852626800537
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8003292679786682,
+    "eldest_son": 0.25609052181243896,
+    "second_son": 0.4243147373199463
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "speech": "Tell them that a man is only a fool if he does not know how to take a good and fertile piece of land and to plow it and sow it and reap it and to feed his children on its harvests. What would he be without land?"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [] , \"speech\": \"Tell them that a man is only a fool if he does not know how to take a good and fertile piece of land and to plow it and sow it and reap it and to feed his children on its harvests. What would he be without land?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Tell them that a man is only a fool if he does not know how to take a good and fertile piece of land and to plow it and sow it and reap it and to feed his children on its harvests. What would he be without land?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"My sons, it is time you came to me and told me what you would do with your lives, for you have eaten and drunk and worn yourselves out in idleness and you have not done a day's work on the land, and I will not have a house full of idle men!\"}",
+     "{\"intend\": \"speak\" , \"to\": [] , \"speech\": \"Tell them that a man is only a fool if he does not know how to take a good and fertile piece of land and to plow it and sow it and reap it and to feed his children on its harvests. What would he be without land?\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"I will say it to you both at the same time.\"}"
+    ],
+    "probs": [
+     0.0008843699470162392,
+     0.9698293805122375,
+     0.029286310076713562
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "shown": "I want my sons to understand that land is everything, and I will tell them so, even if they do not listen.",
+    "intend_probs": {
+     "speak": 0.5427165627479553,
+     "act": 0.2564294636249542,
+     "silent": 0.0011832226300612092
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4348818361759186,
+     "act": 0.26386550068855286,
+     "silent": 0.0022778876591473818,
+     "wait": 0.2989748418331146
+    },
+    "eldest_son": {
+     "speak": 0.087997205555439,
+     "act": 0.1662220060825348,
+     "silent": 0.0007589954184368253,
+     "wait": 0.7450218200683594
+    },
+    "second_son": {
+     "speak": 0.42609715461730957,
+     "act": 0.054291822016239166,
+     "silent": 0.004446027800440788,
+     "wait": 0.5151650309562683
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7010251581668854,
+    "eldest_son": 0.2549781799316406,
+    "second_son": 0.4848349690437317
+   },
+   "actor": "eldest_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "My brother, the second son, is a grain merchant, and he has taken much land from our neighbors and is setting up his market in the town,"
+   },
+   "raw": "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"] ,\"speech\": \"My brother, the second son, is a grain merchant, and he has taken much land from our neighbors and is setting up his market in the town,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "My brother, the second son, is a grain merchant, and he has taken much land from our neighbors and is setting up his market in the town,",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"the second son\"] , \"speech\": \"We have done this and we have done it with honor and with great pride and with a proud heart, and we are not like the other men who sell their lands and then go and do things that are not good.\"}",
+     "{\"intend\": \"speak\" ,\"to\": [\"Wang Lung\"] ,\"speech\": \"My brother, the second son, is a grain merchant, and he has taken much land from our neighbors and is setting up his market in the town,\"}",
+     "{\"intend\": \"speak\" ,\"to\": [], \"speech\": \"We will take our wife and children and live in the town.\"}"
+    ],
+    "probs": [
+     0.26890143752098083,
+     0.730949878692627,
+     0.00014872518659103662
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will show them I am worthy of the family name, not by selling land, but by proving my worth through honor and respect, just as they expect.",
+    "plan": "I will show them I am worthy of the family name, not by selling land, but by proving my worth through honor and respect, just as they expect.",
+    "shown": "I will show them I am worthy of the family name, not by selling land, but by proving my worth through honor and respect, just as they expect.",
+    "intend_probs": {
+     "speak": 0.08073938637971878,
+     "act": 0.16754966974258423,
+     "silent": 0.0005249802488833666
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6307931542396545,
+     "act": 0.0894072949886322,
+     "silent": 0.004438810050487518,
+     "wait": 0.2753606140613556
+    },
+    "eldest_son": {
+     "speak": 0.0898992270231247,
+     "act": 0.1345210075378418,
+     "silent": 0.001004108926281333,
+     "wait": 0.7745756506919861
+    },
+    "second_son": {
+     "speak": 0.4178464412689209,
+     "act": 0.044018931686878204,
+     "silent": 0.0017019371734932065,
+     "wait": 0.5364326238632202
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7246393859386444,
+    "eldest_son": 0.22542434930801392,
+    "second_son": 0.4635673761367798
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "the eldest son"
+    ],
+    "action": "Wang Lung tells his son about the importance of land."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"the eldest son\"] , \"action\": \"Wang Lung tells his son about the importance of land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung tells his son about the importance of land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" ,\"to\": [\"the eldest son\"] ,\"action\": \"shakes head\"}",
+     "{\"intend\": \"act\" , \"to\": [\"the eldest son\"] , \"action\": \"Wang Lung tells his son about the importance of land.\"}",
+     "{\"intend\": \"act\" , \"to\": [\"the eldest son\"] , \"action\": \"calls eldest son back\"}"
+    ],
+    "probs": [
+     3.726559498318238e-06,
+     0.9999748468399048,
+     2.1444868252729066e-05
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want them to understand that land is the heart of a man, not wealth or titles, and I will speak plainly about the value of plowing and the curse of selling.",
+    "plan": "I want them to understand that land is the heart of a man, not wealth or titles, and I will speak plainly about the value of plowing and the curse of selling.",
+    "shown": "I want them to understand that land is the heart of a man, not wealth or titles, and I will speak plainly about the value of plowing and the curse of selling.",
+    "intend_probs": {
+     "speak": 0.7053545117378235,
+     "act": 0.05789849907159805,
+     "silent": 0.007810861337929964
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.837976336479187,
+     "act": 0.060715265572071075,
+     "silent": 0.001253517926670611,
+     "wait": 0.10005487501621246
+    },
+    "eldest_son": {
+     "speak": 0.08298978954553604,
+     "act": 0.1505843698978424,
+     "silent": 0.001646406832151115,
+     "wait": 0.7647793889045715
+    },
+    "second_son": {
+     "speak": 0.09224697947502136,
+     "act": 0.04283123463392258,
+     "silent": 0.00450519984588027,
+     "wait": 0.8604165315628052
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8999451249837875,
+    "eldest_son": 0.23522061109542847,
+    "second_son": 0.13958346843719482
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son"
+    ],
+    "speech": "Here is my land and this is the heart of a man, and without this earth, one is a ghost."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"] , \"speech\": \"Here is my land and this is the heart of a man, and without this earth, one is a ghost.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Here is my land and this is the heart of a man, and without this earth, one is a ghost.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"] , \"speech\": \"Tell me, then, how is it done and how is the land divided?\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"] , \"speech\": \"Here is my land and this is the heart of a man, and without this earth, one is a ghost.\"}",
+     "{\"intend\": \"speak\" , \"to\" : [\"the eldest son\", \"the second son\"] , \"speech\" : \"Now, my sons, and what is a man without the land?\"}"
+    ],
+    "probs": [
+     3.726049044416868e-06,
+     0.9998378753662109,
+     0.00015843563596718013
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want them to understand that land is the heart of a man, and I will tell them that without it, they are but shadows, and I will show them the earth with my staff.",
+    "plan": "I want them to understand that land is the heart of a man, and I will tell them that without it, they are but shadows, and I will show them the earth with my staff.",
+    "shown": "I want them to understand that land is the heart of a man, and I will tell them that without it, they are but shadows, and I will show them the earth with my staff.",
+    "intend_probs": {
+     "speak": 0.6723229289054871,
+     "act": 0.21273820102214813,
+     "silent": 0.0011123106814920902
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.36888572573661804,
+     "act": 0.4737451374530792,
+     "silent": 0.0036022879648953676,
+     "wait": 0.15376678109169006
+    },
+    "eldest_son": {
+     "speak": 0.08300914615392685,
+     "act": 0.15060381591320038,
+     "silent": 0.0014559533447027206,
+     "wait": 0.7649310827255249
+    },
+    "second_son": {
+     "speak": 0.3390173316001892,
+     "act": 0.0560593381524086,
+     "silent": 0.0021701802033931017,
+     "wait": 0.6027531623840332
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8462332189083099,
+    "eldest_son": 0.2350689172744751,
+    "second_son": 0.3972468376159668
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son"
+    ],
+    "speech": "I have thought of this thing, and of the land you have bought, and I say you will have to sell it quickly, for I will buy it from you."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"], \"speech\": \"I have thought of this thing, and of the land you have bought, and I say you will have to sell it quickly, for I will buy it from you.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have thought of this thing, and of the land you have bought, and I say you will have to sell it quickly, for I will buy it from you.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "eldest_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"], \"speech\": \"I have thought of this thing, and of the land you have bought, and I say you will have to sell it quickly, for I will buy it from you.\"}",
+     "{\"intend\": \"speak\" , \"to\": [] , \"speech\": \"The land is a fool to leave the land and to go about buying land in the town. It is the land that will bear the grain and you will have to buy it, and you will have to buy it, and you will have to buy it, and you will have to buy it. I have seen this.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\"], \"speech\": \"I do not care for land. A man is nothing unless he has money, and I have bought land from our neighbors, and I have a grain market in the town, and money I have!\"}"
+    ],
+    "probs": [
+     0.42231881618499756,
+     0.15536241233348846,
+     0.42231881618499756
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I will show them the value of my grain, not the land, for money grows where it is handled, not buried in the earth.",
+    "plan": "I will show them the value of my grain, not the land, for money grows where it is handled, not buried in the earth.",
+    "shown": "I will show them the value of my grain, not the land, for money grows where it is handled, not buried in the earth.",
+    "intend_probs": {
+     "speak": 0.1338094025850296,
+     "act": 0.09192375838756561,
+     "silent": 0.0045667910017073154
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5531287789344788,
+     "act": 0.276286244392395,
+     "silent": 0.0030566866043955088,
+     "wait": 0.16752824187278748
+    },
+    "eldest_son": {
+     "speak": 0.07330357283353806,
+     "act": 0.13696029782295227,
+     "silent": 0.001497562974691391,
+     "wait": 0.788238525390625
+    },
+    "second_son": {
+     "speak": 0.11327285319566727,
+     "act": 0.14544110000133514,
+     "silent": 0.0026530514005571604,
+     "wait": 0.7386330366134644
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8324717581272125,
+    "eldest_son": 0.211761474609375,
+    "second_son": 0.26136696338653564
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung tells his sons he will not sell his land."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Wang Lung tells his sons he will not sell his land.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung tells his sons he will not sell his land.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [\"the eldest son\"] , \"action\": \"Wang Lung tells his eldest son about the importance of land.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung sits and smokes pipe\"}",
+     "{\"intend\": \"act\" , \"to\": [], \"action\": \"Wang Lung sits and watches his sons.\"}",
+     "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Wang Lung tells his sons he will not sell his land.\"}"
+    ],
+    "probs": [
+     2.64657362691878e-09,
+     1.5229979055675358e-08,
+     1.0
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I will tell them that without land, they are no better than ghosts, and that I will not sell a single acre to either of them.",
+    "plan": "I will tell them that without land, they are no better than ghosts, and that I will not sell a single acre to either of them.",
+    "shown": "I will tell them that without land, they are no better than ghosts, and that I will not sell a single acre to either of them.",
+    "intend_probs": {
+     "speak": 0.4965323507785797,
+     "act": 0.17124618589878082,
+     "silent": 0.012322387658059597
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6985160112380981,
+     "act": 0.14041078090667725,
+     "silent": 0.0019964836537837982,
+     "wait": 0.15907670557498932
+    },
+    "eldest_son": {
+     "speak": 0.08243070542812347,
+     "act": 0.12189526855945587,
+     "silent": 0.0007170052267611027,
+     "wait": 0.7949569821357727
+    },
+    "second_son": {
+     "speak": 0.09059826284646988,
+     "act": 0.13421829044818878,
+     "silent": 0.0027796197682619095,
+     "wait": 0.77240389585495
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8409232944250107,
+    "eldest_son": 0.2050430178642273,
+    "second_son": 0.22759610414505005
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "action": "Wang Lung calls his sons to him."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [\"the eldest son\", \"the second son\"] , \"action\": \"Wang Lung calls his sons to him.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung calls his sons to him.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [], \"action\": \"Wang Lung enters his eldest son's room.\"}",
+    "{\"intend\": \"act\" ,\"to\": [] ,\"action\": \"Wang Lung goes to his land and sleeps there.\"}",
+    "{\"intend\": \"act\" ,\"to\": [] , \"action\": \"Wang Lung avoids his sons and sleeps in the fields.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" , \"to\": [\"the eldest son\", \"the second son\"], \"action\": \"Wang Lung shouts at his sons, angry about the land.\"}",
+     "{\"intend\": \"act\" ,\"to\": [\"the eldest son\", \"the second son\"] , \"action\": \"Wang Lung calls his sons to him.\"}"
+    ],
+    "probs": [
+     0.037326883524656296,
+     0.9626730680465698
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not sell my land, for it is the heart of a man, and I will not let either of you take it from me.",
+    "plan": "I will not sell my land, for it is the heart of a man, and I will not let either of you take it from me.",
+    "shown": "I will not sell my land, for it is the heart of a man, and I will not let either of you take it from me.",
+    "intend_probs": {
+     "speak": 0.5276551842689514,
+     "act": 0.17543670535087585,
+     "silent": 0.00768901314586401
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7146645784378052,
+     "act": 0.12416545301675797,
+     "silent": 0.001760618994012475,
+     "wait": 0.15940937399864197
+    },
+    "eldest_son": {
+     "speak": 0.06583897769451141,
+     "act": 0.13817326724529266,
+     "silent": 0.0009219823987223208,
+     "wait": 0.7950658202171326
+    },
+    "second_son": {
+     "speak": 0.013671149499714375,
+     "act": 0.0255468487739563,
+     "silent": 0.0020949416793882847,
+     "wait": 0.9586871266365051
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.840590626001358,
+    "eldest_son": 0.20493417978286743,
+    "second_son": 0.04131287336349487
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The eldest son says he will not sell his land and will work to honor his father's name."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"The eldest son says he will not sell his land and will work to honor his father's name.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The eldest son says he will not sell his land and will work to honor his father's name.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" ,\"to\": [],\"action\": \"The eldest son says he will not sell his land and will work to honor his father's name.\"}",
+     "{\"intend\": \"act\" ,\"to\": [] ,\"action\": \"Eldest son sells his land to his brother.\"}",
+     "{\"intend\": \"act\" ,\"to\": [], \"action\": \"The eldest son tells his father he will not sell his land.\"}"
+    ],
+    "probs": [
+     0.9999039173126221,
+     5.3152742651718654e-08,
+     9.610241977497935e-05
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want to prove my worth and show I am not like my brother, so I will say I will not sell my land and will work to honor our family's name.",
+    "plan": "I want to prove my worth and show I am not like my brother, so I will say I will not sell my land and will work to honor our family's name.",
+    "shown": "I want to prove my worth and show I am not like my brother, so I will say I will not sell my land and will work to honor our family's name.",
+    "intend_probs": {
+     "speak": 0.05802375078201294,
+     "act": 0.15478800237178802,
+     "silent": 0.0011651956010609865
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.571796715259552,
+     "act": 0.1727878302335739,
+     "silent": 0.00404237350448966,
+     "wait": 0.2513730525970459
+    },
+    "eldest_son": {
+     "speak": 0.07212787121534348,
+     "act": 0.13721583783626556,
+     "silent": 0.000911722076125443,
+     "wait": 0.7897445559501648
+    },
+    "second_son": {
+     "speak": 0.1591285914182663,
+     "act": 0.099764384329319,
+     "silent": 0.003854826558381319,
+     "wait": 0.7372521758079529
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7486269474029541,
+    "eldest_son": 0.2102554440498352,
+    "second_son": 0.2627478241920471
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "Well, and I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"] , \"speech\": \"Well, and I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"I will not sell this land---it is the heart of a man. I would rather die than see this land turned into dust.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"You shall have no land for any man of you. You have heard that a man cannot sell his land for the price of a handful of earth, and I will not sell it!\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"] , \"speech\": \"Well, and I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.\"}"
+    ],
+    "probs": [
+     0.00043051570537500083,
+     9.606104140402749e-05,
+     0.9994733929634094
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "plan": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "shown": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "intend_probs": {
+     "speak": 0.6381232142448425,
+     "act": 0.14632824063301086,
+     "silent": 0.0026678419671952724
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.12047133594751358,
+     "act": 0.25503960251808167,
+     "silent": 0.012673850171267986,
+     "wait": 0.6118152141571045
+    },
+    "eldest_son": {
+     "speak": 0.0715811550617218,
+     "act": 0.1373664289712906,
+     "silent": 0.0004875941958744079,
+     "wait": 0.790564775466919
+    },
+    "second_son": {
+     "speak": 0.08453042060136795,
+     "act": 0.12128718197345734,
+     "silent": 0.003225399414077401,
+     "wait": 0.790956974029541
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.3881847858428955,
+    "eldest_son": 0.20943522453308105,
+    "second_son": 0.20904302597045898
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung sits and drinks tea with his sons."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Wang Lung sits and drinks tea with his sons.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung sits and drinks tea with his sons.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Wang Lung goes to the town gate.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" ,\"to\": [] ,\"action\": \"Wang Lung feels his sons' resentment.\"}",
+     "{\"intend\": \"act\" ,\"to\": [],\"action\": \"Wang Lung sits and drinks tea with his sons.\"}",
+     "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung goes to his land and sits and smokes.\"}"
+    ],
+    "probs": [
+     0.1910584568977356,
+     0.4044707715511322,
+     0.4044707715511322
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "plan": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "shown": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "intend_probs": {
+     "speak": 0.12047133594751358,
+     "act": 0.25503960251808167,
+     "silent": 0.012673850171267986
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.15259169042110443,
+     "act": 0.3655538558959961,
+     "silent": 0.012477490119636059,
+     "wait": 0.46937698125839233
+    },
+    "eldest_son": {
+     "speak": 0.05702774226665497,
+     "act": 0.15506519377231598,
+     "silent": 0.00042943403241224587,
+     "wait": 0.7874775528907776
+    },
+    "second_son": {
+     "speak": 0.1450980305671692,
+     "act": 0.12612347304821014,
+     "silent": 0.0029635296668857336,
+     "wait": 0.7258149981498718
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5306230187416077,
+    "eldest_son": 0.2125224471092224,
+    "second_son": 0.2741850018501282
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The eldest son drinks tea with his father and brother."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [], \"action\": \"The eldest son drinks tea with his father and brother.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The eldest son drinks tea with his father and brother.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"] ,\"action\": \"The eldest son plants a seed and watches the earth.\"}",
+     "{\"intend\": \"act\" ,\"to\": [], \"action\": \"The eldest son drinks tea with his father and brother.\"}",
+     "{\"intend\": \"act\" ,\"to\": [], \"action\": \"The sons sit by their father and drink tea.\"}"
+    ],
+    "probs": [
+     0.014061430469155312,
+     0.9857823848724365,
+     0.00015620837802998722
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not sell my land, for it is not only my father's heart but my own, and I will honor it with my labor and pride.",
+    "plan": "I will not sell my land, for it is not only my father's heart but my own, and I will honor it with my labor and pride.",
+    "shown": "I will not sell my land, for it is not only my father's heart but my own, and I will honor it with my labor and pride.",
+    "intend_probs": {
+     "speak": 0.06374113261699677,
+     "act": 0.13854028284549713,
+     "silent": 0.0004319896688684821
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.16737015545368195,
+     "act": 0.43340641260147095,
+     "silent": 0.01672808639705181,
+     "wait": 0.38249537348747253
+    },
+    "eldest_son": {
+     "speak": 0.07205469906330109,
+     "act": 0.15253956615924835,
+     "silent": 0.0006952000549063087,
+     "wait": 0.7747105360031128
+    },
+    "second_son": {
+     "speak": 0.16817550361156464,
+     "act": 0.15133781731128693,
+     "silent": 0.002154812216758728,
+     "wait": 0.6783318519592285
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6175046265125275,
+    "eldest_son": 0.2252894639968872,
+    "second_son": 0.3216681480407715
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung observes his sons' expressions and decides to speak to them."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung observes his sons' expressions and decides to speak to them.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung observes his sons' expressions and decides to speak to them.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [], \"action\": \"The eldest son and second son leave Wang Lung.\"}",
+    "{\"intend\": \"act\" ,\"to\": [] ,\"action\": \"Wang Lung rises from his chair and enters the house.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung goes to his room and smokes.\"}",
+     "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung observes his sons' expressions and decides to speak to them.\"}"
+    ],
+    "probs": [
+     1.0677028967620572e-06,
+     0.999998927116394
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want them to understand that land is life, and I will not let it be taken, not even by my own sons.",
+    "plan": "I want them to understand that land is life, and I will not let it be taken, not even by my own sons.",
+    "shown": "I want them to understand that land is life, and I will not let it be taken, not even by my own sons.",
+    "intend_probs": {
+     "speak": 0.4847545623779297,
+     "act": 0.2674904763698578,
+     "silent": 0.011691860854625702
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8322641253471375,
+     "act": 0.07832635194063187,
+     "silent": 0.0006757572409696877,
+     "wait": 0.08873380720615387
+    },
+    "eldest_son": {
+     "speak": 0.08165711909532547,
+     "act": 0.121963731944561,
+     "silent": 0.0010436561424285173,
+     "wait": 0.7953355312347412
+    },
+    "second_son": {
+     "speak": 0.012155345641076565,
+     "act": 0.015664802864193916,
+     "silent": 0.002706933533772826,
+     "wait": 0.9694729447364807
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9112661927938461,
+    "eldest_son": 0.2046644687652588,
+    "second_son": 0.030527055263519287
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "The younger son looks at his father and begins to speak."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"The younger son looks at his father and begins to speak.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The younger son looks at his father and begins to speak.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [], \"action\": \"The second son leaves the room abruptly.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" , \"to\": [\"the eldest son\"] , \"action\": \"The second son drinks tea and makes a remark.\"}",
+     "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"The younger son looks at his father and begins to speak.\"}",
+     "{\"intend\": \"act\" , \"to\": [], \"action\": \"The younger son drinks tea with his father and brother.\"}"
+    ],
+    "probs": [
+     0.04742153361439705,
+     0.9524869918823242,
+     9.154510189546272e-05
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not let my brother take my land, but I will show him the value of money and how to make it grow, even if it means I must speak sharply.",
+    "plan": "I will not let my brother take my land, but I will show him the value of money and how to make it grow, even if it means I must speak sharply.",
+    "shown": "I will not let my brother take my land, but I will show him the value of money and how to make it grow, even if it means I must speak sharply.",
+    "intend_probs": {
+     "speak": 0.01078457199037075,
+     "act": 0.015689881518483162,
+     "silent": 0.002722684759646654
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.08961416035890579,
+     "act": 0.06835708022117615,
+     "silent": 0.00920928455889225,
+     "wait": 0.8328194618225098
+    },
+    "eldest_son": {
+     "speak": 0.09354010969400406,
+     "act": 0.13397611677646637,
+     "silent": 0.0014675029087811708,
+     "wait": 0.7710162997245789
+    },
+    "second_son": {
+     "speak": 0.7287706732749939,
+     "act": 0.032009292393922806,
+     "silent": 0.002623290056362748,
+     "wait": 0.2365967184305191
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.16718053817749023,
+    "eldest_son": 0.22898370027542114,
+    "second_son": 0.7634032815694809
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "If you say this land is to be left in the hands of an elder son, who never works and buys nothing, I will tell you that I have worked and made a little money and have the skill of buying land and selling it, and that I have the money to buy this land from you, and that you may do as you will with the rest of your land."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"If you say this land is to be left in the hands of an elder son, who never works and buys nothing, I will tell you that I have worked and made a little money and have the skill of buying land and selling it, and that I have the money to buy this land from you, and that you may do as you will with the rest of your land.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "If you say this land is to be left in the hands of an elder son, who never works and buys nothing, I will tell you that I have worked and made a little money and have the skill of buying land and selling it, and that I have the money to buy this land from you, and that you may do as you will with the rest of your land.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"Well, and that I can do.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"I have spent more than you, and I have made money from that. I can buy all your land.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"If you say this land is to be left in the hands of an elder son, who never works and buys nothing, I will tell you that I have worked and made a little money and have the skill of buying land and selling it, and that I have the money to buy this land from you, and that you may do as you will with the rest of your land.\"}"
+    ],
+    "probs": [
+     8.922476808947977e-06,
+     0.11920184642076492,
+     0.8807891607284546
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I will remind my father of the money I have made and the risk I took, and tell him I can buy his land and keep it from falling into the hands of the eldest son.",
+    "plan": "I will remind my father of the money I have made and the risk I took, and tell him I can buy his land and keep it from falling into the hands of the eldest son.",
+    "shown": "I will remind my father of the money I have made and the risk I took, and tell him I can buy his land and keep it from falling into the hands of the eldest son.",
+    "intend_probs": {
+     "speak": 0.8006249666213989,
+     "act": 0.036068394780159,
+     "silent": 0.0015820408007130027
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5268731117248535,
+     "act": 0.13321718573570251,
+     "silent": 0.020372217521071434,
+     "wait": 0.3195374310016632
+    },
+    "eldest_son": {
+     "speak": 0.07382068783044815,
+     "act": 0.15201564133167267,
+     "silent": 0.0021520734298974276,
+     "wait": 0.7720116376876831
+    },
+    "second_son": {
+     "speak": 0.31098997592926025,
+     "act": 0.10103751718997955,
+     "silent": 0.006454902701079845,
+     "wait": 0.5815175175666809
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6804625689983368,
+    "eldest_son": 0.2279883623123169,
+    "second_son": 0.4184824824333191
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "I will not sell it to you, my son, for it is the heart of a man, and it shall not be turned into dust."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"I will not sell it to you, my son, for it is the heart of a man, and it shall not be turned into dust.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will not sell it to you, my son, for it is the heart of a man, and it shall not be turned into dust.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"] , \"gist\": \"Wang Lung responds to his sons' conversation with frustration.\"}",
+     "{\"intend\": \"speak\" ,\"to\": [\"the eldest son\", \"the second son\"], \"gist\": \"Wang Lung shouts at his sons.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"I will not sell it to you, my son, for it is the heart of a man, and it shall not be turned into dust.\"}"
+    ],
+    "probs": [
+     1.5229979055675358e-08,
+     4.139937459513021e-08,
+     1.0
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I will not sell my land, for it is the heart of a man, and I will not let you turn it into dust, no matter how you speak.",
+    "plan": "I will not sell my land, for it is the heart of a man, and I will not let you turn it into dust, no matter how you speak.",
+    "shown": "I will not sell my land, for it is the heart of a man, and I will not let you turn it into dust, no matter how you speak.",
+    "intend_probs": {
+     "speak": 0.38368722796440125,
+     "act": 0.14116793870925903,
+     "silent": 0.04033225029706955
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.17035308480262756,
+     "act": 0.2358337640762329,
+     "silent": 0.02808723784983158,
+     "wait": 0.5657258629798889
+    },
+    "eldest_son": {
+     "speak": 0.06483740359544754,
+     "act": 0.13833250105381012,
+     "silent": 0.0007204542052932084,
+     "wait": 0.7961096167564392
+    },
+    "second_son": {
+     "speak": 0.4782174825668335,
+     "act": 0.06909926980733871,
+     "silent": 0.0020852400921285152,
+     "wait": 0.4505980908870697
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.4342741370201111,
+    "eldest_son": 0.2038903832435608,
+    "second_son": 0.5494019091129303
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}.",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want them to understand that the land is not a possession, but a living thing, and I will not let it be torn apart by their greed and pride.",
+    "plan": "I want them to understand that the land is not a possession, but a living thing, and I will not let it be torn apart by their greed and pride.",
+    "shown": "I want them to understand that the land is not a possession, but a living thing, and I will not let it be torn apart by their greed and pride.",
+    "intend_probs": {
+     "speak": 0.4091852903366089,
+     "act": 0.2134721279144287,
+     "silent": 0.02540423907339573
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4656566083431244,
+     "act": 0.1941087543964386,
+     "silent": 0.020205730572342873,
+     "wait": 0.32002896070480347
+    },
+    "eldest_son": {
+     "speak": 0.059034671634435654,
+     "act": 0.12498149275779724,
+     "silent": 0.0009461614536121488,
+     "wait": 0.8150376677513123
+    },
+    "second_son": {
+     "speak": 0.5546318292617798,
+     "act": 0.058489635586738586,
+     "silent": 0.0054338425397872925,
+     "wait": 0.38144469261169434
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6799710392951965,
+    "eldest_son": 0.18496233224868774,
+    "second_son": 0.6185553073883057
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "the eldest son",
+     "the second son"
+    ],
+    "speech": "It is my land and I will do as I will with it."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"It is my land and I will do as I will with it.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is my land and I will do as I will with it.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "eldest_son",
+     "second_son"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [], \"speech\": \"But if you will not buy it, I will not sell it to anyone.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"speech\": \"It is my land and I will do as I will with it.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"the eldest son\", \"the second son\"], \"gist\": \"Wang Lung answers his sons' argument about the value of land.\"}"
+    ],
+    "probs": [
+     0.013744923286139965,
+     0.9635935425758362,
+     0.022661548107862473
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "plan": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "shown": "I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.",
+    "intend_probs": {
+     "speak": 0.22121335566043854,
+     "act": 0.28407832980155945,
+     "silent": 0.026349367573857307
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.21655550599098206,
+     "act": 0.3337118923664093,
+     "silent": 0.02123536542057991,
+     "wait": 0.4284971356391907
+    },
+    "eldest_son": {
+     "speak": 0.07343724370002747,
+     "act": 0.12308471649885178,
+     "silent": 0.0008238748996518552,
+     "wait": 0.8026540875434875
+    },
+    "second_son": {
+     "speak": 0.525455892086029,
+     "act": 0.031678181141614914,
+     "silent": 0.005499278195202351,
+     "wait": 0.43736666440963745
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5715028643608093,
+    "eldest_son": 0.19734591245651245,
+    "second_son": 0.5626333355903625
+   },
+   "actor": "eldest_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "The eldest son stands proud and tells his father of his ambition and strength."
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"], \"action\": \"The eldest son stands proud and tells his father of his ambition and strength.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The eldest son stands proud and tells his father of his ambition and strength.",
+    "actor": "eldest_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [] , \"action\": \"The eldest son says nothing and leaves.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" ,\"to\": [\"Wang Lung\"], \"action\": \"The eldest son stands proud and tells his father of his ambition and strength.\"}",
+     "{\"intend\": \"act\" , \"to\": [] , \"action\": \"The eldest son turns his face away from his father and brothers, and walks with pride.\"}",
+     "{\"intend\": \"act\" , \"to\": [], \"action\": \"The eldest son walks with pride.\"}"
+    ],
+    "probs": [
+     0.9767732620239258,
+     0.02297150529921055,
+     0.0002551903889980167
+    ],
+    "chosen": 0
+   },
+   "plan": {
+    "raw": "I want to prove my worth, so I will speak with pride, showing my father I am not like the second son, and will not let him take what is mine.",
+    "plan": "I want to prove my worth, so I will speak with pride, showing my father I am not like the second son, and will not let him take what is mine.",
+    "shown": "I want to prove my worth, so I will speak with pride, showing my father I am not like the second son, and will not let him take what is mine.",
+    "intend_probs": {
+     "speak": 0.10498350113630295,
+     "act": 0.11895967274904251,
+     "silent": 0.00032946502324193716
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.11073772609233856,
+     "act": 0.1587732881307602,
+     "silent": 0.018909983336925507,
+     "wait": 0.7115790247917175
+    },
+    "eldest_son": {
+     "speak": 0.1174510046839714,
+     "act": 0.10511816293001175,
+     "silent": 0.0007965167751535773,
+     "wait": 0.7766343951225281
+    },
+    "second_son": {
+     "speak": 0.4060494303703308,
+     "act": 0.02796446718275547,
+     "silent": 0.0042859590612351894,
+     "wait": 0.5617001056671143
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.28842097520828247,
+    "eldest_son": 0.22336560487747192,
+    "second_son": 0.43829989433288574
+   },
+   "actor": "second_son",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "The younger son stands, addressing his father."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"The younger son stands, addressing his father.\"}",
+   "item": {
+    "kind": "act",
+    "text": "The younger son stands, addressing his father.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"The younger son offers to manage the land and promises a good return.\"}",
+     "{\"intend\": \"act\" , \"to\": [], \"action\": \"The younger son stands, addressing his father.\"}",
+     "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"The second son speaks to his father.\"}"
+    ],
+    "probs": [
+     0.36864331364631653,
+     0.6077900528907776,
+     0.023566577583551407
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not let him waste the family's wealth, so I will offer to take the best fields and manage them, proving my worth to him and securing my place.",
+    "plan": "I will not let him waste the family's wealth, so I will offer to take the best fields and manage them, proving my worth to him and securing my place.",
+    "shown": "I will not let him waste the family's wealth, so I will offer to take the best fields and manage them, proving my worth to him and securing my place.",
+    "intend_probs": {
+     "speak": 0.1848175823688507,
+     "act": 0.07704241573810577,
+     "silent": 0.007160484790802002
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.17937488853931427,
+     "act": 0.1617206335067749,
+     "silent": 0.01927311345934868,
+     "wait": 0.6396313905715942
+    },
+    "eldest_son": {
+     "speak": 0.0961868166923523,
+     "act": 0.10761070251464844,
+     "silent": 0.001186381559818983,
+     "wait": 0.7950161099433899
+    },
+    "second_son": {
+     "speak": 0.589288055896759,
+     "act": 0.13147853314876556,
+     "silent": 0.0008851158781908453,
+     "wait": 0.27834823727607727
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.36036860942840576,
+    "eldest_son": 0.2049838900566101,
+    "second_son": 0.7216517627239227
+   },
+   "actor": "second_son",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Well, and I will make a fortune, and I will tell you, my father, that I will buy land and buy land, and I will have more land than the first son of my mother, and when I die my children will say that I was the eldest of my father's sons."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"], \"speech\": \"Well, and I will make a fortune, and I will tell you, my father, that I will buy land and buy land, and I will have more land than the first son of my mother, and when I die my children will say that I was the eldest of my father's sons.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Well, and I will make a fortune, and I will tell you, my father, that I will buy land and buy land, and I will have more land than the first son of my mother, and when I die my children will say that I was the eldest of my father's sons.",
+    "actor": "second_son",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "land": "kept"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"Now I will show you how I will do it. I will take the money you have given me, which you call idle money, and I will use it to buy land, and it will be better than what you have.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"], \"speech\": \"Well, and I will make a fortune, and I will tell you, my father, that I will buy land and buy land, and I will have more land than the first son of my mother, and when I die my children will say that I was the eldest of my father's sons.\"}",
+     "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"] , \"speech\": \"I am not so foolish as he,\"}"
+    ],
+    "probs": [
+     0.017976446077227592,
+     0.9814806580543518,
+     0.0005428416188806295
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I will not let him take the land, but I will show him my worth with words, proving that I, too, can build a fortune and honor the family name.",
+    "plan": "I will not let him take the land, but I will show him my worth with words, proving that I, too, can build a fortune and honor the family name.",
+    "shown": "I will not let him take the land, but I will show him my worth with words, proving that I, too, can build a fortune and honor the family name.",
+    "intend_probs": {
+     "speak": 0.7639504075050354,
+     "act": 0.042876072227954865,
+     "silent": 0.0010076756589114666
+    }
+   },
+   "shown_state": {
+    "land": "kept"
+   }
+  }
+ ],
+ "opening_lines": 114,
+ "final_state": {
+  "land": "kept"
+ },
+ "transcript": [
+  "Wang Lung: \"Tell them that a man is only a fool if he does not know how to take a good and fertile piece of land and to plow it and sow it and reap it and to feed his children on its harvests. What would he be without land?\"",
+  "the eldest son (to Wang Lung): \"My brother, the second son, is a grain merchant, and he has taken much land from our neighbors and is setting up his market in the town,\"",
+  "[action] (to the eldest son) Wang Lung tells his son about the importance of land.",
+  "Wang Lung (to the eldest son): \"Here is my land and this is the heart of a man, and without this earth, one is a ghost.\"",
+  "the second son (to the eldest son): \"I have thought of this thing, and of the land you have bought, and I say you will have to sell it quickly, for I will buy it from you.\"",
+  "[action] Wang Lung tells his sons he will not sell his land.",
+  "[action] (to the eldest son, the second son) Wang Lung calls his sons to him.",
+  "[action] The eldest son says he will not sell his land and will work to honor his father's name.",
+  "Wang Lung (to the eldest son, the second son): \"Well, and I will not sell my land, for it is the heart of a man. You may call me a fool, but I have plowed and reaped, and I will not let you turn it into dust.\"",
+  "[action] Wang Lung sits and drinks tea with his sons.",
+  "[action] The eldest son drinks tea with his father and brother.",
+  "[action] Wang Lung observes his sons' expressions and decides to speak to them.",
+  "[action] (to Wang Lung) The younger son looks at his father and begins to speak.",
+  "the second son (to Wang Lung): \"If you say this land is to be left in the hands of an elder son, who never works and buys nothing, I will tell you that I have worked and made a little money and have the skill of buying land and selling it, and that I have the money to buy this land from you, and that you may do as you will with the rest of your land.\"",
+  "Wang Lung (to the eldest son, the second son): \"I will not sell it to you, my son, for it is the heart of a man, and it shall not be turned into dust.\"",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to the eldest son, the second son): \"It is my land and I will do as I will with it.\"",
+  "[action] (to Wang Lung) The eldest son stands proud and tells his father of his ambition and strength.",
+  "[action] The younger son stands, addressing his father.",
+  "the second son (to Wang Lung): \"Well, and I will make a fortune, and I will tell you, my father, that I will buy land and buy land, and I will have more land than the first son of my mother, and when I die my children will say that I was the eldest of my father's sons.\""
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want my sons to understand that land is everything, and I will tell them so, even if they do not listen.",
+   "plan": "I want my sons to understand that land is everything, and I will tell them so, even if they do not listen."
+  },
+  "eldest_son": {
+   "raw": "I will show them my pride and power, proving I am worthy of our family's place, so they will see I am not like the second son or a fool.",
+   "plan": "I will show them my pride and power, proving I am worthy of our family's place, so they will see I am not like the second son or a fool."
+  },
+  "second_son": {
+   "raw": "I want the fields sold to fund my market, so I will argue with Father that his simple ways waste our wealth and that only I know how to grow it.",
+   "plan": "I want the fields sold to fund my market, so I will argue with Father that his simple ways waste our wealth and that only I know how to grow it."
+  }
+ },
+ "seconds": 328.67292881011963
+}

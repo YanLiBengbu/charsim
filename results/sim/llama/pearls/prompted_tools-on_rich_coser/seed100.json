@@ -1,0 +1,859 @@
+{
+ "scene": "pearls",
+ "seed": 100,
+ "config": {
+  "mode": "prompted",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "coser",
+  "cards": "rich"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8656761646270752,
+     "act": 0.11113002151250839,
+     "silent": 0.019310366362333298,
+     "wait": 0.003883535508066416
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9961164644919336
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Mind your own business, what's it to you where I take the money?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Mind your own business, what's it to you where I take the money?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Mind your own business, what's it to you where I take the money?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "o_lan": {
+     "speak": 0.661074161529541,
+     "act": 0.229167640209198,
+     "silent": 0.06562717258930206,
+     "wait": 0.04413095489144325
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9558690451085567
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "continue washing his clothes in silence"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"continue washing his clothes in silence\"}",
+   "item": {
+    "kind": "act",
+    "text": "continue washing his clothes in silence",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.9765344858169556,
+     "act": 0.020185986533761024,
+     "silent": 0.0027309951838105917,
+     "wait": 0.0005485049332492054
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9994514950667508
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Give me back the two pearls you keep, I need them now."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me back the two pearls you keep, I need them now.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Give me back the two pearls you keep, I need them now.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "o_lan": {
+     "speak": 0.8433697819709778,
+     "act": 0.13893675804138184,
+     "silent": 0.014632009901106358,
+     "wait": 0.0030614016577601433
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9969385983422399
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": "Wang Lung",
+    "speech": "I have them, I thought perhaps to set them in earrings, or keep them for Jade when she is married"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": \"Wang Lung\", \"speech\": \"I have them, I thought perhaps to set them in earrings, or keep them for Jade when she is married\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have them, I thought perhaps to set them in earrings, or keep them for Jade when she is married",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.9851003289222717,
+     "act": 0.014005044475197792,
+     "silent": 0.0008919674437493086,
+     "wait": 2.6136469841731014e-06
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9999973863530158
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Foolish, pearls are for fair women, not for you, you have a worn body and many children to care for, what use to you such things?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Foolish, pearls are for fair women, not for you, you have a worn body and many children to care for, what use to you such things?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Foolish, pearls are for fair women, not for you, you have a worn body and many children to care for, what use to you such things?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "o_lan": {
+     "speak": 0.4491349160671234,
+     "act": 0.5072408318519592,
+     "silent": 0.03237849101424217,
+     "wait": 0.011245813220739365
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9887541867792606
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": "Wang Lung",
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": \"Wang Lung\", \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7197481393814087,
+     "act": 0.2787363827228546,
+     "silent": 0.00036847178125754,
+     "wait": 0.0011468615848571062
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9988531384151429
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I had thought to set them in earrings, sir, as I am a married woman, and not for anyone else"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I had thought to set them in earrings, sir, as I am a married woman, and not for anyone else\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I had thought to set them in earrings, sir, as I am a married woman, and not for anyone else",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.9135798215866089,
+     "act": 0.08400129526853561,
+     "silent": 0.0022362221498042345,
+     "wait": 0.00018258574709761888
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9998174142529024
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Now give them to me and stop your foolish talk."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now give them to me and stop your foolish talk.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now give them to me and stop your foolish talk.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 0.013914674520492554,
+     "act": 0.9715343117713928,
+     "silent": 0.00576177379116416,
+     "wait": 0.00878931861370802
+    }
+   },
+   "urgency": {
+    "o_lan": 0.991210681386292
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": "Wang Lung",
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": \"Wang Lung\", \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6973503232002258,
+     "act": 0.30205491185188293,
+     "silent": 0.0003115275758318603,
+     "wait": 0.00028328143525868654
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9997167185647413
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "What's wrong with you, why do you keep them so long, now hand them over quickly."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"What's wrong with you, why do you keep them so long, now hand them over quickly.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "What's wrong with you, why do you keep them so long, now hand them over quickly.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "o_lan": {
+     "speak": 0.022458547726273537,
+     "act": 0.9528834223747253,
+     "silent": 0.013571369461715221,
+     "wait": 0.011086690239608288
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9889133097603917
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6423597931861877,
+     "act": 0.3568546175956726,
+     "silent": 0.00022337214613799006,
+     "wait": 0.0005622193566523492
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.9994377806433477
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": "O-lan",
+    "action": "take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": \"O-lan\", \"action\": \"take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "take the small package from my bosom and give it to him",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\"}",
+    "actor": "wang_lung",
+    "direction": null
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "o_lan": {
+     "speak": 0.0915817841887474,
+     "act": 0.8784725069999695,
+     "silent": 0.018186595290899277,
+     "wait": 0.011759139597415924
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9882408604025841
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "o_lan": {
+     "speak": 0.05253680795431137,
+     "act": 0.9378042221069336,
+     "silent": 0.0055634453892707825,
+     "wait": 0.004095511510968208
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9959044884890318
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "o_lan": {
+     "speak": 0.0935790166258812,
+     "act": 0.8967069983482361,
+     "silent": 0.004697445314377546,
+     "wait": 0.00501653179526329
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9949834682047367
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": "Wang Lung",
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": \"Wang Lung\", \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "o_lan": {
+     "speak": 0.1608768105506897,
+     "act": 0.8066782355308533,
+     "silent": 0.021470453590154648,
+     "wait": 0.010974610224366188
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9890253897756338
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "o_lan": {
+     "speak": 0.4906063973903656,
+     "act": 0.49056047201156616,
+     "silent": 0.01480500865727663,
+     "wait": 0.004028254188597202
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9959717458114028
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "o_lan": {
+     "speak": 0.09485431015491486,
+     "act": 0.8960812091827393,
+     "silent": 0.006028082221746445,
+     "wait": 0.0030363118276000023
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9969636881724
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": "Wang Lung",
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": \"Wang Lung\", \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "o_lan": {
+     "speak": 0.1238255500793457,
+     "act": 0.8664424419403076,
+     "silent": 0.007482553832232952,
+     "wait": 0.0022494057193398476
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9977505942806602
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "slowly take the small package from my bosom and give it to him"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"slowly take the small package from my bosom and give it to him\"}",
+   "item": {
+    "kind": "act",
+    "text": "slowly take the small package from my bosom and give it to him",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "o_lan": {
+     "speak": 0.6736224293708801,
+     "act": 0.3186294734477997,
+     "silent": 0.00748784514144063,
+     "wait": 0.00026028414140455425
+    }
+   },
+   "urgency": {
+    "o_lan": 0.9997397158585954
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have them, I have been thinking that I might set them in earrings, or keep them for our younger daughter when she is wed."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have them, I have been thinking that I might set them in earrings, or keep them for our younger daughter when she is wed.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have them, I have been thinking that I might set them in earrings, or keep them for our younger daughter when she is wed.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\"}",
+    "actor": "o_lan",
+    "direction": null
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "o_lan"
+ },
+ "transcript": [
+  "Wang Lung (to O-lan): \"Mind your own business, what's it to you where I take the money?\"",
+  "[action] (to Wang Lung) continue washing his clothes in silence",
+  "Wang Lung (to O-lan): \"Give me back the two pearls you keep, I need them now.\"",
+  "O-lan: \"I have them, I thought perhaps to set them in earrings, or keep them for Jade when she is married\"",
+  "Wang Lung (to O-lan): \"Foolish, pearls are for fair women, not for you, you have a worn body and many children to care for, what use to you such things?\"",
+  "[action] slowly take the small package from my bosom and give it to him",
+  "Wang Lung (to Wang Lung): \"I had thought to set them in earrings, sir, as I am a married woman, and not for anyone else\"",
+  "Wang Lung (to O-lan): \"Now give them to me and stop your foolish talk.\"",
+  "[action] slowly take the small package from my bosom and give it to him",
+  "Wang Lung (to O-lan): \"What's wrong with you, why do you keep them so long, now hand them over quickly.\"",
+  "[action] slowly take the small package from my bosom and give it to him",
+  "[action] take the small package from my bosom and give it to him",
+  "[action] (to Wang Lung) slowly take the small package from my bosom and give it to him",
+  "[action] (to Wang Lung) slowly take the small package from my bosom and give it to him",
+  "[action] slowly take the small package from my bosom and give it to him",
+  "[action] (to Wang Lung) slowly take the small package from my bosom and give it to him",
+  "[action] (to Wang Lung) slowly take the small package from my bosom and give it to him",
+  "[action] slowly take the small package from my bosom and give it to him",
+  "[action] (to Wang Lung) slowly take the small package from my bosom and give it to him",
+  "O-lan (to Wang Lung): \"I have them, I have been thinking that I might set them in earrings, or keep them for our younger daughter when she is wed.\""
+ ],
+ "seconds": 108.2513382434845
+}

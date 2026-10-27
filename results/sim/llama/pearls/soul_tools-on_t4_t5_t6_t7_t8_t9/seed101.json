@@ -1,0 +1,1353 @@
+{
+ "scene": "pearls",
+ "seed": 101,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": true,
+  "t9": true,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4943755567073822,
+     "act": 0.1088850200176239,
+     "silent": 0.016697559505701065,
+     "wait": 0.38004180788993835
+    },
+    "o_lan": {
+     "speak": 0.09584881365299225,
+     "act": 0.17910005152225494,
+     "silent": 0.016650250181555748,
+     "wait": 0.7084008455276489
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6199581921100616,
+    "o_lan": 0.2915991544723511
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "Wang Lung expresses his desire to O-lan."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\" : [], \"gist\": \"Wang Lung expresses his desire to O-lan.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung expresses his desire to O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Let us go,\"}",
+     "{\"intend\": \"speak\", \"to\" : [], \"gist\": \"Wang Lung expresses his desire to O-lan.\"}"
+    ],
+    "probs": [
+     0.24508501589298248,
+     0.7549149990081787
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "shown": "I want O-lan to hand over the two small white pearls so I can give them to Lotus as a gift.",
+    "intend_probs": {
+     "speak": 0.4943755567073822,
+     "act": 0.1088850200176239,
+     "silent": 0.016697559505701065
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.709082305431366,
+     "act": 0.051793359220027924,
+     "silent": 0.007009318098425865,
+     "wait": 0.23211508989334106
+    },
+    "o_lan": {
+     "speak": 0.08059155941009521,
+     "act": 0.14795811474323273,
+     "silent": 0.020013663917779922,
+     "wait": 0.751436710357666
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7678849101066589,
+    "o_lan": 0.24856328964233398
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan speaks directly to Wang Lung."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan speaks directly to Wang Lung.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan speaks directly to Wang Lung.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan speaks about the situation in the household.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan points to her shoes.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan speaks directly to Wang Lung.\"}"
+    ],
+    "probs": [
+     0.21336759626865387,
+     0.12941399216651917,
+     0.6572184562683105
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand my situation and see that I am struggling to make ends meet, and to consider my needs as well.",
+    "plan": "I want Wang Lung to understand my situation and see that I am struggling to make ends meet, and to consider my needs as well.",
+    "shown": "I want Wang Lung to understand my situation and see that I am struggling to make ends meet, and to consider my needs as well.",
+    "intend_probs": {
+     "speak": 0.4636061191558838,
+     "act": 0.07044634968042374,
+     "silent": 0.006550644524395466
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.533706545829773,
+     "act": 0.09160257130861282,
+     "silent": 0.012396714650094509,
+     "wait": 0.3622942268848419
+    },
+    "o_lan": {
+     "speak": 0.7823459506034851,
+     "act": 0.01835615560412407,
+     "silent": 0.0019322432344779372,
+     "wait": 0.1973656415939331
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6377057731151581,
+    "o_lan": 0.8026343584060669
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have kept the two small white pearls which you let me keep---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have kept the two small white pearls which you let me keep---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have kept the two small white pearls which you let me keep---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan mentions the pearls and her careful use of money.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan reminds Wang Lung of her thrift and her keeping of the pearls.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have kept the two small white pearls which you let me keep---\"}"
+    ],
+    "probs": [
+     0.21194155514240265,
+     0.21194155514240265,
+     0.5761168599128723
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to remind Wang Lung that I have been careful with our money, that I still keep the two small white pearls he let me keep.",
+    "plan": "I want to remind Wang Lung that I have been careful with our money, that I still keep the two small white pearls he let me keep.",
+    "shown": "I want to remind Wang Lung that I have been careful with our money, that I still keep the two small white pearls he let me keep.",
+    "intend_probs": {
+     "speak": 0.7189684510231018,
+     "act": 0.040560126304626465,
+     "silent": 0.007044288795441389
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4496784508228302,
+     "act": 0.08856543153524399,
+     "silent": 0.011985424906015396,
+     "wait": 0.44977065920829773
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5502293407917023
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Here is the money,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Here is the money,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Here is the money,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung asks for the pearls.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Now, but since it is only for a jewel---\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Here is the money,\"}"
+    ],
+    "probs": [
+     0.250031441450119,
+     0.22065196931362152,
+     0.5293165445327759
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want the two small white pearls from O-lan so I can buy a gold pin for Lotus, and I'll ask her again.",
+    "plan": "I want the two small white pearls from O-lan so I can buy a gold pin for Lotus, and I'll ask her again.",
+    "shown": "I want the two small white pearls from O-lan so I can buy a gold pin for Lotus, and I'll ask her again.",
+    "intend_probs": {
+     "speak": 0.5034323930740356,
+     "act": 0.09785551577806473,
+     "silent": 0.011686640791594982
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "o_lan": {
+     "speak": 0.6539751887321472,
+     "act": 0.0683751180768013,
+     "silent": 0.0072004604153335094,
+     "wait": 0.270449161529541
+    }
+   },
+   "urgency": {
+    "o_lan": 0.729550838470459
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Why do you take the money from the wall?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Why do you take the money from the wall?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Why do you take the money from the wall?",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"What do you do with it?\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan expresses gratitude to Wang Lung.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Why do you take the money from the wall?\"}"
+    ],
+    "probs": [
+     0.01790478639304638,
+     0.004527038428932428,
+     0.9775681495666504
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to know why Wang Lung is taking the money from the wall, and I will ask him.",
+    "plan": "I want to know why Wang Lung is taking the money from the wall, and I will ask him.",
+    "shown": "I want to know why Wang Lung is taking the money from the wall, and I will ask him.",
+    "intend_probs": {
+     "speak": 0.2693994641304016,
+     "act": 0.0771772712469101,
+     "silent": 0.007174494210630655
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5634685158729553,
+     "act": 0.12575499713420868,
+     "silent": 0.00910902302712202,
+     "wait": 0.3016674518585205
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6983325481414795
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung takes money from wall"
+   },
+   "raw": "{\"intend\": \"act\", \"to\" : [], \"action\" : \"Wang Lung takes money from wall\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung takes money from wall",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung and O-lan enter the hut\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung puts money in O-lan's apron\"}",
+     "{\"intend\": \"act\", \"to\" : [], \"action\" : \"Wang Lung takes money from wall\"}"
+    ],
+    "probs": [
+     0.4378235340118408,
+     0.562176525592804
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want to give O-lan the impression that I'm concerned about her, but I want to be free to go buy a gold pin for Lotus.",
+    "plan": "I want to give O-lan the impression that I'm concerned about her, but I want to be free to go buy a gold pin for Lotus.",
+    "shown": "I want to give O-lan the impression that I'm concerned about her, but I want to be free to go buy a gold pin for Lotus.",
+    "intend_probs": {
+     "speak": 0.5249142646789551,
+     "act": 0.1033773422241211,
+     "silent": 0.010895637795329094
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4874880313873291,
+     "act": 0.14861555397510529,
+     "silent": 0.007398896384984255,
+     "wait": 0.35649755597114563
+    },
+    "o_lan": {
+     "speak": 0.22597908973693848,
+     "act": 0.07339831441640854,
+     "silent": 0.004136998206377029,
+     "wait": 0.6964856386184692
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6435024440288544,
+    "o_lan": 0.30351436138153076
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "If you will give me the two white pearls, I will buy a gold pin for the head of my woman, and she will be as any other woman in the town."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"If you will give me the two white pearls, I will buy a gold pin for the head of my woman, and she will be as any other woman in the town.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "If you will give me the two white pearls, I will buy a gold pin for the head of my woman, and she will be as any other woman in the town.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"I want those two small white pearls of mine,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"If you will give me the two white pearls, I will buy a gold pin for the head of my woman, and she will be as any other woman in the town.\"}"
+    ],
+    "probs": [
+     0.10669060051441193,
+     0.8933094143867493
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the two small white pearls, which I'll use to buy a gold pin for Lotus, my true love.",
+    "plan": "I want O-lan to give me the two small white pearls, which I'll use to buy a gold pin for Lotus, my true love.",
+    "shown": "I want O-lan to give me the two small white pearls, which I'll use to buy a gold pin for Lotus, my true love.",
+    "intend_probs": {
+     "speak": 0.45800265669822693,
+     "act": 0.1867387741804123,
+     "silent": 0.006389495451003313
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3066779673099518,
+     "act": 0.06515000015497208,
+     "silent": 0.00998559407889843,
+     "wait": 0.6181864142417908
+    }
+   },
+   "urgency": {
+    "o_lan": 0.38181358575820923
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "The woman in the house has a gold pin on her head. Why must you buy one?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"The woman in the house has a gold pin on her head. Why must you buy one?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "The woman in the house has a gold pin on her head. Why must you buy one?",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Are you angry with me?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"There is only one pair of white pearls---\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"The woman in the house has a gold pin on her head. Why must you buy one?\"}"
+    ],
+    "probs": [
+     0.083732970058918,
+     0.12183073908090591,
+     0.7944363355636597
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want to understand why Wang Lung must have the pearls, and I will ask him directly, but with caution.",
+    "plan": "I want to understand why Wang Lung must have the pearls, and I will ask him directly, but with caution.",
+    "shown": "I want to understand why Wang Lung must have the pearls, and I will ask him directly, but with caution.",
+    "intend_probs": {
+     "speak": 0.3360220789909363,
+     "act": 0.04899770766496658,
+     "silent": 0.018016653135418892
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5977165699005127,
+     "act": 0.0713893473148346,
+     "silent": 0.0109474565833807,
+     "wait": 0.31994664669036865
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6800533533096313
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Give me the pearls, and I will be a generous husband."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls, and I will be a generous husband.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Give me the pearls, and I will be a generous husband.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the two white pearls and I will be a generous husband.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung insists on the pearls.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls, and I will be a generous husband.\"}"
+    ],
+    "probs": [
+     0.11526632308959961,
+     0.03302435576915741,
+     0.8517093658447266
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus, and I'll say, \"Give me the pearls, and I'll be a generous husband.\"",
+    "plan": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus, and I'll say, \"Give me the pearls, and I'll be a generous husband.",
+    "shown": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus, and I'll say, \"Give me the pearls, and I'll be a generous husband.",
+    "intend_probs": {
+     "speak": 0.7059230804443359,
+     "act": 0.057951487600803375,
+     "silent": 0.006921072024852037
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3183462619781494,
+     "act": 0.07103057205677032,
+     "silent": 0.01584416627883911,
+     "wait": 0.5947790741920471
+    }
+   },
+   "urgency": {
+    "o_lan": 0.4052209258079529
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I will not give you the pearls, not even to buy the pin for the head of that woman. I will keep them until---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will not give you the pearls, not even to buy the pin for the head of that woman. I will keep them until---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will not give you the pearls, not even to buy the pin for the head of that woman. I will keep them until---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {
+    "pearls": "wang_lung"
+   },
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will not give you the pearls,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"The pearls are mine, but if you will buy a silver pin for my hair, I will give you the two white pearls.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will not give you the pearls, not even to buy the pin for the head of that woman. I will keep them until---\"}"
+    ],
+    "probs": [
+     0.23862655460834503,
+     0.11271920055150986,
+     0.6486542224884033
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand that the pearls are mine to keep, and I will not trade them for something that will make him a generous husband.",
+    "plan": "I want Wang Lung to understand that the pearls are mine to keep, and I will not trade them for something that will make him a generous husband.",
+    "shown": "I want Wang Lung to understand that the pearls are mine to keep, and I will not trade them for something that will make him a generous husband.",
+    "intend_probs": {
+     "speak": 0.41725632548332214,
+     "act": 0.08810856938362122,
+     "silent": 0.04713256657123566
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6809942126274109,
+     "act": 0.06393885612487793,
+     "silent": 0.0021877156104892492,
+     "wait": 0.25287923216819763
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7471207678318024
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Give me the pearls,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Give me the pearls,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"But it is for a woman of pleasure!\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"How shall you keep them, and you with child?\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls,\"}"
+    ],
+    "probs": [
+     0.0692385882139206,
+     0.2738439440727234,
+     0.6569174528121948
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus's head.",
+    "plan": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus's head.",
+    "shown": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus's head.",
+    "intend_probs": {
+     "speak": 0.5914067625999451,
+     "act": 0.08971724659204483,
+     "silent": 0.005735112354159355
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3960408866405487,
+     "act": 0.1134602352976799,
+     "silent": 0.04168292135000229,
+     "wait": 0.4488159418106079
+    }
+   },
+   "urgency": {
+    "o_lan": 0.5511840581893921
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I will not give them to you until---until there is a son in the house."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will not give them to you until---until there is a son in the house.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will not give them to you until---until there is a son in the house.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan explains that the pearls were hers alone and that she will not give them up.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will not give them to you until---until there is a son in the house.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will keep them until I am old, until I am an old woman and you are old too.\"}"
+    ],
+    "probs": [
+     0.07994112372398376,
+     0.4600294232368469,
+     0.4600294232368469
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand that the pearls are mine and that I will not be easily swayed by his desire for material possessions.",
+    "plan": "I want Wang Lung to understand that the pearls are mine and that I will not be easily swayed by his desire for material possessions.",
+    "shown": "I want Wang Lung to understand that the pearls are mine and that I will not be easily swayed by his desire for material possessions.",
+    "intend_probs": {
+     "speak": 0.3892955183982849,
+     "act": 0.1257016956806183,
+     "silent": 0.04618839547038078
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4025227427482605,
+     "act": 0.11538449674844742,
+     "silent": 0.025744350627064705,
+     "wait": 0.4563484489917755
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5436515510082245
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung and O-lan go to the house."
+   },
+   "raw": "{\"intend\": \"act\", \"to\" : [], \"action\": \"Wang Lung and O-lan go to the house.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung and O-lan go to the house.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung demands the pearls loudly.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"Wang Lung takes eggs from nest\"}",
+     "{\"intend\": \"act\", \"to\" : [], \"action\": \"Wang Lung and O-lan go to the house.\"}"
+    ],
+    "probs": [
+     0.18129490315914154,
+     0.38380128145217896,
+     0.4349038302898407
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus at the tea house in the town.",
+    "plan": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus at the tea house in the town.",
+    "shown": "I want O-lan to give me the two small white pearls so I can buy a gold pin for Lotus at the tea house in the town.",
+    "intend_probs": {
+     "speak": 0.40122684836387634,
+     "act": 0.11497508734464645,
+     "silent": 0.02906845696270466
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.15214723348617554,
+     "act": 0.46869057416915894,
+     "silent": 0.014152081683278084,
+     "wait": 0.3650101125240326
+    },
+    "o_lan": {
+     "speak": 0.06779854744672775,
+     "act": 0.2179427295923233,
+     "silent": 0.04287945479154587,
+     "wait": 0.6713793277740479
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6349898874759674,
+    "o_lan": 0.32862067222595215
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan gestures to her belly."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan gestures to her belly.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan gestures to her belly.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan locks the door to the room where she sleeps.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan holds the pearls and speaks firmly.\"}",
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan gestures to her belly.\"}"
+    ],
+    "probs": [
+     0.07585818320512772,
+     0.9241418242454529
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand that I will not give up the pearls until I am assured of a son's birth.",
+    "plan": "I want Wang Lung to understand that I will not give up the pearls until I am assured of a son's birth.",
+    "shown": "I want Wang Lung to understand that I will not give up the pearls until I am assured of a son's birth.",
+    "intend_probs": {
+     "speak": 0.07995429635047913,
+     "act": 0.21731406450271606,
+     "silent": 0.033297788351774216
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4199419915676117,
+     "act": 0.13635742664337158,
+     "silent": 0.02369413897395134,
+     "wait": 0.42000648379325867
+    },
+    "o_lan": {
+     "speak": 0.2184177041053772,
+     "act": 0.1324988156557083,
+     "silent": 0.055189844220876694,
+     "wait": 0.5938935875892639
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5799935162067413,
+    "o_lan": 0.4061064124107361
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "If there is to be a son in the house, I will give you the pearls. Not until then. Not until then."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"If there is to be a son in the house, I will give you the pearls. Not until then. Not until then.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "If there is to be a son in the house, I will give you the pearls. Not until then. Not until then.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"There is a son in the house,\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan tells Wang Lung she has been carrying the pearls for the sake of their future.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"If there is to be a son in the house, I will give you the pearls. Not until then. Not until then.\"}"
+    ],
+    "probs": [
+     0.007526909466832876,
+     0.006642474327236414,
+     0.9858306050300598
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand that I value our family's future and our legacy over his desires for status and wealth.",
+    "plan": "I want Wang Lung to understand that I value our family's future and our legacy over his desires for status and wealth.",
+    "shown": "I want Wang Lung to understand that I value our family's future and our legacy over his desires for status and wealth.",
+    "intend_probs": {
+     "speak": 0.2739138603210449,
+     "act": 0.11769835650920868,
+     "silent": 0.0807994157075882
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.38347673416137695,
+     "act": 0.2052636444568634,
+     "silent": 0.027777202427387238,
+     "wait": 0.3834824562072754
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6165175437927246
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Give me the pearls, and I will put them in a golden setting and put them in the hair of my wife. She is ashamed in the town because she has not this ornament."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls, and I will put them in a golden setting and put them in the hair of my wife. She is ashamed in the town because she has not this ornament.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Give me the pearls, and I will put them in a golden setting and put them in the hair of my wife. She is ashamed in the town because she has not this ornament.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I will give you another gold pin for your hair, if you will give me the two small pearls. It is but a little thing to me and I will never see it again.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls, and I will take the black-eyed girl to my bosom and call her my daughter. I will give her gold to her mouth and she shall be a great lady in the land.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Give me the pearls, and I will put them in a golden setting and put them in the hair of my wife. She is ashamed in the town because she has not this ornament.\"}"
+    ],
+    "probs": [
+     0.12048742920160294,
+     0.09383571892976761,
+     0.7856768369674683
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want the two small white pearls from O-lan, and I will try to persuade her to give them to me with a promise.",
+    "plan": "I want the two small white pearls from O-lan, and I will try to persuade her to give them to me with a promise.",
+    "shown": "I want the two small white pearls from O-lan, and I will try to persuade her to give them to me with a promise.",
+    "intend_probs": {
+     "speak": 0.6436940431594849,
+     "act": 0.08613509684801102,
+     "silent": 0.0048591094091534615
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "o_lan": {
+     "speak": 0.25160953402519226,
+     "act": 0.09933691471815109,
+     "silent": 0.07728828489780426,
+     "wait": 0.5717652440071106
+    }
+   },
+   "urgency": {
+    "o_lan": 0.4282347559928894
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan remains firm in her decision"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan remains firm in her decision\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan remains firm in her decision",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan stands firm\"}",
+     "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan presses her belly against Wang Lung's stomach.\"}",
+     "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan remains firm in her decision\"}"
+    ],
+    "probs": [
+     0.18213814496994019,
+     0.09749152511358261,
+     0.720370352268219
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand my condition and take care of me properly, so I will stand firm in my decision.",
+    "plan": "I want Wang Lung to understand my condition and take care of me properly, so I will stand firm in my decision.",
+    "shown": "I want Wang Lung to understand my condition and take care of me properly, so I will stand firm in my decision.",
+    "intend_probs": {
+     "speak": 0.24695426225662231,
+     "act": 0.09859874844551086,
+     "silent": 0.08692878484725952
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7382580041885376,
+     "act": 0.04751772806048393,
+     "silent": 0.0012661817017942667,
+     "wait": 0.21295806765556335
+    },
+    "o_lan": {
+     "speak": 0.23441195487976074,
+     "act": 0.14106230437755585,
+     "silent": 0.06654078513383865,
+     "wait": 0.5579850077629089
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7870419323444366,
+    "o_lan": 0.44201499223709106
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I will not take the house until I have the two white pearls. You shall have to walk in your own house before you give them to me."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I will not take the house until I have the two white pearls. You shall have to walk in your own house before you give them to me.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will not take the house until I have the two white pearls. You shall have to walk in your own house before you give them to me.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I suppose you will never give me the pearls, and I will have to content myself with the shame of being a husband without a golden pin for his wife's head.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I will not take the house until I have the two white pearls. You shall have to walk in your own house before you give them to me.\"}"
+    ],
+    "probs": [
+     0.3775406777858734,
+     0.622459352016449
+    ],
+    "chosen": 1
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the two white pearls, so I can buy the gold pin for Lotus and make my wife jealous.",
+    "plan": "I want O-lan to give me the two white pearls, so I can buy the gold pin for Lotus and make my wife jealous.",
+    "shown": "I want O-lan to give me the two white pearls, so I can buy the gold pin for Lotus and make my wife jealous.",
+    "intend_probs": {
+     "speak": 0.42092999815940857,
+     "act": 0.19884417951107025,
+     "silent": 0.008735757321119308
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "o_lan": {
+     "speak": 0.24649770557880402,
+     "act": 0.14154548943042755,
+     "silent": 0.05200450122356415,
+     "wait": 0.5599523186683655
+    }
+   },
+   "urgency": {
+    "o_lan": 0.4400476813316345
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have said. If I have a son---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have said. If I have a son---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have said. If I have a son---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"The house is already mine.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I will give them to you, but only then.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have said. If I have a son---\"}"
+    ],
+    "probs": [
+     0.04309873655438423,
+     0.09124002605676651,
+     0.8656612634658813
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want Wang Lung to understand that I am willing to give him the pearls if I have a son, but only then.",
+    "plan": "I want Wang Lung to understand that I am willing to give him the pearls if I have a son, but only then.",
+    "shown": "I want Wang Lung to understand that I am willing to give him the pearls if I have a son, but only then.",
+    "intend_probs": {
+     "speak": 0.2275962233543396,
+     "act": 0.10685920715332031,
+     "silent": 0.05042434483766556
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.395891934633255,
+     "act": 0.22200480103492737,
+     "silent": 0.0160805806517601,
+     "wait": 0.36602267622947693
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6339773237705231
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "There will never be a son in my house. My father and my two big sons are enough for me. Give me the pearls."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"There will never be a son in my house. My father and my two big sons are enough for me. Give me the pearls.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "There will never be a son in my house. My father and my two big sons are enough for me. Give me the pearls.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"speech\": \"I will not take the house until I have the two white pearls. You shall have to walk in your own house before you give them to me.\"}"
+   ],
+   "choice": {
+    "candidates": [
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I will give you a hundred eggs from my own nest when you bring me the pearls. Here is the money, and I will give it to you now.\"}",
+     "{\"intend\": \"speak\", \"to\": [], \"speech\": \"We will put the bed in the western room, and I will take the great room for my shop.\"}",
+     "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"There will never be a son in my house. My father and my two big sons are enough for me. Give me the pearls.\"}"
+    ],
+    "probs": [
+     0.2877883017063141,
+     0.17455241084098816,
+     0.5376592874526978
+    ],
+    "chosen": 2
+   },
+   "plan": {
+    "raw": "I want O-lan to give me the two white pearls now so I can buy a present for Lotus, and I'll say whatever it takes to persuade her.",
+    "plan": "I want O-lan to give me the two white pearls now so I can buy a present for Lotus, and I'll say whatever it takes to persuade her.",
+    "shown": "I want O-lan to give me the two white pearls now so I can buy a present for Lotus, and I'll say whatever it takes to persuade her.",
+    "intend_probs": {
+     "speak": 0.7221167087554932,
+     "act": 0.05023767799139023,
+     "silent": 0.0025010602548718452
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "wang_lung"
+ },
+ "transcript": [
+  "[says] Wang Lung expresses his desire to O-lan.",
+  "[action] O-lan speaks directly to Wang Lung.",
+  "O-lan (to Wang Lung): \"I have kept the two small white pearls which you let me keep---\"",
+  "Wang Lung (to O-lan): \"Here is the money,\"",
+  "O-lan (to Wang Lung): \"Why do you take the money from the wall?\"",
+  "[action] Wang Lung takes money from wall",
+  "Wang Lung (to O-lan): \"If you will give me the two white pearls, I will buy a gold pin for the head of my woman, and she will be as any other woman in the town.\"",
+  "O-lan (to Wang Lung): \"The woman in the house has a gold pin on her head. Why must you buy one?\"",
+  "Wang Lung (to O-lan): \"Give me the pearls, and I will be a generous husband.\"",
+  "O-lan (to Wang Lung): \"I will not give you the pearls, not even to buy the pin for the head of that woman. I will keep them until---\"",
+  "Wang Lung (to O-lan): \"Give me the pearls,\"",
+  "O-lan (to Wang Lung): \"I will not give them to you until---until there is a son in the house.\"",
+  "[action] Wang Lung and O-lan go to the house.",
+  "[action] (to Wang Lung) O-lan gestures to her belly.",
+  "O-lan (to Wang Lung): \"If there is to be a son in the house, I will give you the pearls. Not until then. Not until then.\"",
+  "Wang Lung (to O-lan): \"Give me the pearls, and I will put them in a golden setting and put them in the hair of my wife. She is ashamed in the town because she has not this ornament.\"",
+  "[action] O-lan remains firm in her decision",
+  "Wang Lung (to O-lan): \"I will not take the house until I have the two white pearls. You shall have to walk in your own house before you give them to me.\"",
+  "O-lan (to Wang Lung): \"I have said. If I have a son---\"",
+  "Wang Lung (to O-lan): \"There will never be a son in my house. My father and my two big sons are enough for me. Give me the pearls.\""
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want O-lan to hand over the two small white pearls so I can give them to Lotus as a gift.",
+   "plan": "I want O-lan to hand over the two small white pearls so I can give them to Lotus as a gift."
+  },
+  "o_lan": {
+   "raw": "I want Wang Lung to notice me, to speak to me, to acknowledge my presence, and perhaps to return the pearls he let me keep.",
+   "plan": "I want Wang Lung to notice me, to speak to me, to acknowledge my presence, and perhaps to return the pearls he let me keep."
+  }
+ },
+ "seconds": 230.45703315734863
+}

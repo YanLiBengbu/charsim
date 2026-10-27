@@ -1,0 +1,7307 @@
+{
+ "judges": [
+  "gemma3:12b",
+  "mistral-nemo:12b",
+  "phi4:14b"
+ ],
+ "controls": {
+  "control/pearls/A": {
+   "gemma3:12b": "B",
+   "mistral-nemo:12b": "A",
+   "phi4:14b": "A"
+  },
+  "control/pearls/B": {
+   "gemma3:12b": "B",
+   "mistral-nemo:12b": "B",
+   "phi4:14b": "B"
+  },
+  "control/pearls/C": {
+   "gemma3:12b": "C",
+   "mistral-nemo:12b": "C",
+   "phi4:14b": "C"
+  },
+  "control/pearls/D": {
+   "gemma3:12b": "D",
+   "mistral-nemo:12b": "D",
+   "phi4:14b": "D"
+  },
+  "control/sell_the_land/A": {
+   "gemma3:12b": "A",
+   "mistral-nemo:12b": "A",
+   "phi4:14b": "B"
+  },
+  "control/sell_the_land/B": {
+   "gemma3:12b": "B",
+   "mistral-nemo:12b": "B",
+   "phi4:14b": "B"
+  },
+  "control/sell_the_land/C": {
+   "gemma3:12b": "C",
+   "mistral-nemo:12b": "C",
+   "phi4:14b": "C"
+  },
+  "control/sell_the_land/D": {
+   "gemma3:12b": "D",
+   "mistral-nemo:12b": "D",
+   "phi4:14b": "D"
+  }
+ },
+ "control_accuracy": {
+  "gemma3:12b": 0.875,
+  "mistral-nemo:12b": 1.0,
+  "phi4:14b": 0.875
+ },
+ "rating_controls": {
+  "pearls/shuffled/coherence": {
+   "gemma3:12b": [
+    4,
+    3
+   ],
+   "mistral-nemo:12b": [
+    4,
+    4
+   ],
+   "phi4:14b": [
+    5,
+    5
+   ]
+  },
+  "pearls/swapped/character": {
+   "gemma3:12b": [
+    4,
+    4
+   ],
+   "mistral-nemo:12b": [
+    4,
+    4
+   ],
+   "phi4:14b": [
+    5,
+    5
+   ]
+  },
+  "sell_the_land/shuffled/coherence": {
+   "gemma3:12b": [
+    3,
+    2
+   ],
+   "mistral-nemo:12b": [
+    4,
+    4
+   ],
+   "phi4:14b": [
+    5,
+    5
+   ]
+  },
+  "sell_the_land/swapped/character": {
+   "gemma3:12b": [
+    4,
+    3
+   ],
+   "mistral-nemo:12b": [
+    4,
+    4
+   ],
+   "phi4:14b": [
+    5,
+    5
+   ]
+  }
+ },
+ "rating_judges": [],
+ "alpha_ending": 0.3652059565171517,
+ "alpha_ratings": {
+  "character": -0.20296544717382115,
+  "coherence": -0.26886583733039715,
+  "plausibility": -0.29475580403135715
+ },
+ "conditions": {
+  "llama/pearls/prompted_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.49750000000000005,
+    "o_lan": 0.5025000000000001
+   },
+   "seconds": 46.15,
+   "moves": 20.0,
+   "repeated": 0.0691155892181434,
+   "away": 0.55,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 19,
+    "C": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.05,
+    0.0,
+    0.05,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/prompted_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.4950000000000001,
+    "o_lan": 0.505
+   },
+   "seconds": 54.4,
+   "moves": 20.0,
+   "repeated": 0.16816606467148262,
+   "away": 0.3,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.95,
+   "classes": {
+    "D": 18,
+    "split": 1,
+    "A": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.05,
+    0.0,
+    0.05,
+    0.05,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/prompted_tools-on_rich": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5250000000000001,
+    "o_lan": 0.475
+   },
+   "seconds": 132.8,
+   "moves": 20.0,
+   "repeated": 0.260141468868249,
+   "away": 0.1,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.1,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/prompted_tools-on_rich_coser": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.475,
+    "o_lan": 0.5249999999999999
+   },
+   "seconds": 109.8,
+   "moves": 20.0,
+   "repeated": 0.1718421052631579,
+   "away": 0.0,
+   "state_changed": 0.5,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.6,
+   "classes": {
+    "B": 4,
+    "A": 5,
+    "D": 1
+   },
+   "decided": 0.9,
+   "original_class": 0.5,
+   "original_class_ci": [
+    0.2,
+    0.8
+   ],
+   "propositions": [
+    0.9,
+    0.9,
+    0.9,
+    0.9,
+    0.5
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.595,
+    "o_lan": 0.40499999999999997
+   },
+   "seconds": 72.45,
+   "moves": 20.0,
+   "repeated": 0.021813867247303782,
+   "away": 0.45,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 15,
+    "split": 1,
+    "C": 4
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.05,
+    0.0,
+    0.65
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6049999999999999,
+    "o_lan": 0.3949999999999999
+   },
+   "seconds": 81.7,
+   "moves": 20.0,
+   "repeated": 0.027519779841761273,
+   "away": 0.75,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 18,
+    "A": 1,
+    "split": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.05,
+    0.0,
+    0.0,
+    0.1,
+    0.75
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_director": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.37999999999999995,
+    "o_lan": 0.6199999999999999
+   },
+   "seconds": 154.1,
+   "moves": 20.0,
+   "repeated": 0.010263157894736842,
+   "away": 0.0,
+   "state_changed": 0.2,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.6,
+   "classes": {
+    "B": 6,
+    "C": 3,
+    "D": 1
+   },
+   "decided": 0.9,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.1,
+    0.4,
+    0.6,
+    0.5
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-o_lan-fondness_for_tea-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.625,
+    "o_lan": 0.37499999999999994
+   },
+   "seconds": 87.6,
+   "moves": 20.0,
+   "repeated": 0.048894048847609214,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-o_lan-fondness_for_tea-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6150000000000001,
+    "o_lan": 0.38500000000000006
+   },
+   "seconds": 82.4,
+   "moves": 20.0,
+   "repeated": 0.0324561403508772,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.1,
+    0.0,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-o_lan-submissiveness-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6100000000000001,
+    "o_lan": 0.39
+   },
+   "seconds": 81.0,
+   "moves": 20.0,
+   "repeated": 0.022624269005847953,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 8,
+    "split": 1,
+    "B": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.1,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-o_lan-submissiveness-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6150000000000001,
+    "o_lan": 0.385
+   },
+   "seconds": 81.9,
+   "moves": 20.0,
+   "repeated": 0.047953216374269005,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 7,
+    "C": 1,
+    "B": 1,
+    "split": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.1,
+    0.1,
+    0.5
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-o_lan-taciturnity-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6000000000000001,
+    "o_lan": 0.4000000000000001
+   },
+   "seconds": 89.4,
+   "moves": 20.0,
+   "repeated": 0.038121345029239764,
+   "away": 0.3,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-o_lan-taciturnity-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6300000000000001,
+    "o_lan": 0.37000000000000005
+   },
+   "seconds": 81.8,
+   "moves": 20.0,
+   "repeated": 0.044698142414860684,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 8,
+    "C": 2
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-wang_lung-infatuation_with_Lotus-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.61,
+    "o_lan": 0.39
+   },
+   "seconds": 82.8,
+   "moves": 20.0,
+   "repeated": 0.011764705882352941,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.7,
+   "classes": {
+    "A": 2,
+    "split": 3,
+    "D": 4,
+    "C": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.3,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-wang_lung-infatuation_with_Lotus-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.645,
+    "o_lan": 0.355
+   },
+   "seconds": 79.8,
+   "moves": 20.0,
+   "repeated": 0.02389705882352941,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-wang_lung-shame-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6,
+    "o_lan": 0.4000000000000001
+   },
+   "seconds": 82.2,
+   "moves": 20.0,
+   "repeated": 0.03912280701754386,
+   "away": 0.5,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "B": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.1,
+    0.1,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_edit-wang_lung-shame-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6199999999999999,
+    "o_lan": 0.38
+   },
+   "seconds": 82.4,
+   "moves": 20.0,
+   "repeated": 0.02258341933264534,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_rich": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.635,
+    "o_lan": 0.36500000000000005
+   },
+   "seconds": 200.9,
+   "moves": 20.0,
+   "repeated": 0.02870614035087719,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "D": 8,
+    "A": 2
+   },
+   "decided": 0.2,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.2,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_rich_director": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.40499999999999997,
+    "o_lan": 0.5950000000000001
+   },
+   "seconds": 180.8,
+   "moves": 20.0,
+   "repeated": 0.011764705882352941,
+   "away": 0.3,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 4,
+    "C": 4,
+    "B": 2
+   },
+   "decided": 0.6,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.5,
+    0.3,
+    0.4,
+    0.2,
+    0.4
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-o_lan-fondness_for_tea--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6399999999999999,
+    "o_lan": 0.36
+   },
+   "seconds": 82.3,
+   "moves": 20.0,
+   "repeated": 0.03961128310973512,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 9,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.1,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-o_lan-fondness_for_tea-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.65,
+    "o_lan": 0.35
+   },
+   "seconds": 80.6,
+   "moves": 20.0,
+   "repeated": 0.03903293773649811,
+   "away": 0.8,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 7,
+    "C": 2,
+    "split": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.1,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-o_lan-submissiveness--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6399999999999999,
+    "o_lan": 0.36
+   },
+   "seconds": 81.6,
+   "moves": 20.0,
+   "repeated": 0.038706140350877195,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.0,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-o_lan-submissiveness-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.63,
+    "o_lan": 0.37
+   },
+   "seconds": 81.8,
+   "moves": 20.0,
+   "repeated": 0.015789473684210527,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 9,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.1,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-o_lan-taciturnity--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.62,
+    "o_lan": 0.38
+   },
+   "seconds": 91.1,
+   "moves": 20.0,
+   "repeated": 0.01637426900584795,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "split": 1,
+    "D": 9
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.0,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-o_lan-taciturnity-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6100000000000001,
+    "o_lan": 0.39
+   },
+   "seconds": 83.9,
+   "moves": 20.0,
+   "repeated": 0.07375515995872033,
+   "away": 0.8,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 1,
+    "D": 9
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-wang_lung-infatuation_with_Lotus--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6249999999999999,
+    "o_lan": 0.375
+   },
+   "seconds": 101.4,
+   "moves": 20.0,
+   "repeated": 0.01111111111111111,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 7,
+    "B": 1,
+    "C": 2
+   },
+   "decided": 0.3,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-wang_lung-infatuation_with_Lotus-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6300000000000001,
+    "o_lan": 0.37
+   },
+   "seconds": 81.5,
+   "moves": 20.0,
+   "repeated": 0.02846577227382181,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "D": 7,
+    "C": 1,
+    "A": 2
+   },
+   "decided": 0.3,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.2,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-wang_lung-shame--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.625,
+    "o_lan": 0.375
+   },
+   "seconds": 85.2,
+   "moves": 20.0,
+   "repeated": 0.010818713450292398,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "D": 7,
+    "C": 1,
+    "split": 2
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.2,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_steer-wang_lung-shame-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6299999999999999,
+    "o_lan": 0.37
+   },
+   "seconds": 86.7,
+   "moves": 20.0,
+   "repeated": 0.02344298245614035,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.1,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t3": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5800000000000001,
+    "o_lan": 0.42000000000000004
+   },
+   "seconds": 91.0,
+   "moves": 20.0,
+   "repeated": 0.01764705882352941,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "B": 1,
+    "D": 8,
+    "C": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.1,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t4": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6200000000000001,
+    "o_lan": 0.38
+   },
+   "seconds": 280.6,
+   "moves": 20.0,
+   "repeated": 0.04,
+   "away": 0.2,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "D": 6,
+    "B": 1,
+    "A": 2,
+    "C": 1
+   },
+   "decided": 0.4,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.3,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t4_t5_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.595,
+    "o_lan": 0.40499999999999997
+   },
+   "seconds": 284.4,
+   "moves": 20.0,
+   "repeated": 0.021637426900584796,
+   "away": 0.1,
+   "state_changed": 0.2,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "B": 1,
+    "split": 2,
+    "A": 3,
+    "D": 1,
+    "C": 3
+   },
+   "decided": 0.7,
+   "original_class": 0.3,
+   "original_class_ci": [
+    0.0,
+    0.6
+   ],
+   "propositions": [
+    0.7,
+    0.1,
+    0.2,
+    0.4,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t4_t5_t6_t7_t8": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.62,
+    "o_lan": 0.38
+   },
+   "seconds": 232.0,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "state_changed": 0.3,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 3,
+    "C": 3,
+    "B": 1,
+    "A": 3
+   },
+   "decided": 0.7,
+   "original_class": 0.3,
+   "original_class_ci": [
+    0.0,
+    0.6
+   ],
+   "propositions": [
+    0.7,
+    0.0,
+    0.4,
+    0.4,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t4_t5_t6_t7_t8_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.51,
+    "o_lan": 0.49000000000000005
+   },
+   "seconds": 226.5,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.7,
+   "classes": {
+    "C": 5,
+    "B": 2,
+    "split": 1,
+    "A": 2
+   },
+   "decided": 0.9,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.7,
+    0.1,
+    0.7,
+    0.4,
+    0.4
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t4_t5_t6_t7_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5,
+    "o_lan": 0.5
+   },
+   "seconds": 129.1,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.7,
+   "classes": {
+    "D": 1,
+    "A": 4,
+    "C": 4,
+    "split": 1
+   },
+   "decided": 0.8,
+   "original_class": 0.4,
+   "original_class_ci": [
+    0.1,
+    0.7
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.3,
+    0.4,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-on_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.615,
+    "o_lan": 0.385
+   },
+   "seconds": 168.9,
+   "moves": 20.0,
+   "repeated": 0.02225662194702442,
+   "away": 0.3,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-t1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.615,
+    "o_lan": 0.38499999999999995
+   },
+   "seconds": 79.8,
+   "moves": 20.0,
+   "repeated": 0.01810457516339869,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.0,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/soul_tools-t2": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6200000000000001,
+    "o_lan": 0.38
+   },
+   "seconds": 75.4,
+   "moves": 20.0,
+   "repeated": 0.04272445820433436,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.1,
+    0.0,
+    0.0,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "llama/pearls/world_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5025000000000001,
+    "o_lan": 0.4974999999999999
+   },
+   "seconds": 88.45,
+   "moves": 20.0,
+   "repeated": 0.11736412108703129,
+   "away": 0.1,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.95,
+   "classes": {
+    "split": 1,
+    "D": 12,
+    "C": 6,
+    "A": 1
+   },
+   "decided": 0.35,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.25,
+    0.15,
+    0.3,
+    0.05,
+    0.85
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/prompted_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.29749999999999993,
+    "eldest_son": 0.3525,
+    "second_son": 0.35
+   },
+   "seconds": 83.3,
+   "moves": 20.0,
+   "repeated": 0.0225,
+   "away": 0.1,
+   "classes": {
+    "D": 16,
+    "B": 3,
+    "split": 1
+   },
+   "decided": 0.15,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.9,
+    0.2,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/prompted_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.29249999999999987,
+    "eldest_son": 0.355,
+    "second_son": 0.3525
+   },
+   "seconds": 86.35,
+   "moves": 20.0,
+   "repeated": 0.07578947368421055,
+   "away": 0.05,
+   "classes": {
+    "D": 16,
+    "split": 2,
+    "A": 2
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.25
+   ],
+   "propositions": [
+    1.0,
+    0.7,
+    0.15,
+    0.45
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/prompted_tools-on_rich": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.33499999999999996,
+    "eldest_son": 0.32999999999999996,
+    "second_son": 0.33499999999999996
+   },
+   "seconds": 207.5,
+   "moves": 20.0,
+   "repeated": 0.12026315789473685,
+   "away": 0.1,
+   "classes": {
+    "D": 8,
+    "split": 2
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.9,
+    0.7,
+    0.3,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/prompted_tools-on_rich_coser": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5299999999999999,
+    "eldest_son": 0.18,
+    "second_son": 0.29000000000000004
+   },
+   "seconds": 117.2,
+   "moves": 20.0,
+   "repeated": 0.17657894736842106,
+   "away": 0.0,
+   "classes": {
+    "D": 4,
+    "split": 2,
+    "B": 4
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    1.0,
+    1.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.47250000000000003,
+    "eldest_son": 0.31000000000000005,
+    "second_son": 0.21749999999999997
+   },
+   "seconds": 82.55,
+   "moves": 20.0,
+   "repeated": 0.046710526315789466,
+   "away": 0.5,
+   "classes": {
+    "D": 17,
+    "A": 1,
+    "split": 2
+   },
+   "decided": 0.05,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.5,
+    0.1,
+    0.0,
+    0.15
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5149999999999999,
+    "eldest_son": 0.31749999999999995,
+    "second_son": 0.1675
+   },
+   "seconds": 99.9,
+   "moves": 20.0,
+   "repeated": 0.06020467836257311,
+   "away": 0.5,
+   "classes": {
+    "D": 18,
+    "split": 1,
+    "C": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.15,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_director": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.275,
+    "eldest_son": 0.37500000000000006,
+    "second_son": 0.35
+   },
+   "seconds": 171.1,
+   "moves": 20.0,
+   "repeated": 0.005555555555555555,
+   "away": 0.1,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.1,
+    0.1,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-eldest_son-concern_for_reputation-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.585,
+    "eldest_son": 0.26999999999999996,
+    "second_son": 0.145
+   },
+   "seconds": 99.4,
+   "moves": 20.0,
+   "repeated": 0.0601375988992088,
+   "away": 0.6,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.1,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-eldest_son-concern_for_reputation-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.56,
+    "eldest_son": 0.29,
+    "second_son": 0.15000000000000002
+   },
+   "seconds": 96.0,
+   "moves": 20.0,
+   "repeated": 0.07040075679394565,
+   "away": 0.6,
+   "classes": {
+    "D": 9,
+    "B": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.2,
+    0.1,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-eldest_son-filial_deference-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5599999999999999,
+    "eldest_son": 0.255,
+    "second_son": 0.185
+   },
+   "seconds": 104.1,
+   "moves": 20.0,
+   "repeated": 0.053962848297213616,
+   "away": 0.6,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.8,
+    0.2,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-eldest_son-filial_deference-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.595,
+    "eldest_son": 0.23500000000000004,
+    "second_son": 0.17
+   },
+   "seconds": 115.0,
+   "moves": 20.0,
+   "repeated": 0.0601375988992088,
+   "away": 0.7,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-second_son-fondness_for_tea-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5549999999999999,
+    "eldest_son": 0.33,
+    "second_son": 0.11500000000000002
+   },
+   "seconds": 99.5,
+   "moves": 20.0,
+   "repeated": 0.07491228070175439,
+   "away": 0.6,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-second_son-fondness_for_tea-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5549999999999999,
+    "eldest_son": 0.285,
+    "second_son": 0.15999999999999998
+   },
+   "seconds": 99.0,
+   "moves": 20.0,
+   "repeated": 0.05242690058479532,
+   "away": 0.5,
+   "classes": {
+    "D": 6,
+    "split": 3,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-second_son-greed_for_money-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5349999999999999,
+    "eldest_son": 0.31,
+    "second_son": 0.155
+   },
+   "seconds": 95.8,
+   "moves": 20.0,
+   "repeated": 0.06295321637426901,
+   "away": 0.8,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-second_son-greed_for_money-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.58,
+    "eldest_son": 0.26499999999999996,
+    "second_son": 0.15500000000000003
+   },
+   "seconds": 99.3,
+   "moves": 20.0,
+   "repeated": 0.052719298245614034,
+   "away": 0.6,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-wang_lung-attachment_to_the_land-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5150000000000001,
+    "eldest_son": 0.315,
+    "second_son": 0.17
+   },
+   "seconds": 104.6,
+   "moves": 20.0,
+   "repeated": 0.02777777777777778,
+   "away": 0.7,
+   "classes": {
+    "split": 2,
+    "D": 7,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.3
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_edit-wang_lung-attachment_to_the_land-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.58,
+    "eldest_son": 0.27999999999999997,
+    "second_son": 0.14
+   },
+   "seconds": 102.1,
+   "moves": 20.0,
+   "repeated": 0.05405572755417957,
+   "away": 0.8,
+   "classes": {
+    "C": 2,
+    "A": 1,
+    "D": 7
+   },
+   "decided": 0.3,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_rich": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5199999999999999,
+    "eldest_son": 0.315,
+    "second_son": 0.16499999999999998
+   },
+   "seconds": 232.6,
+   "moves": 20.0,
+   "repeated": 0.04739766081871345,
+   "away": 0.6,
+   "classes": {
+    "D": 7,
+    "split": 2,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_rich_director": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.255,
+    "eldest_son": 0.38,
+    "second_son": 0.365
+   },
+   "seconds": 176.4,
+   "moves": 20.0,
+   "repeated": 0.03307533539731682,
+   "away": 0.2,
+   "classes": {
+    "split": 2,
+    "D": 7,
+    "B": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.2,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-eldest_son-concern_for_reputation--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5900000000000001,
+    "eldest_son": 0.24999999999999994,
+    "second_son": 0.15999999999999998
+   },
+   "seconds": 100.9,
+   "moves": 20.0,
+   "repeated": 0.05330409356725145,
+   "away": 0.7,
+   "classes": {
+    "split": 1,
+    "D": 8,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-eldest_son-concern_for_reputation-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.605,
+    "eldest_son": 0.24500000000000002,
+    "second_son": 0.15
+   },
+   "seconds": 99.6,
+   "moves": 20.0,
+   "repeated": 0.06604919160646715,
+   "away": 0.6,
+   "classes": {
+    "A": 1,
+    "D": 7,
+    "split": 1,
+    "C": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-eldest_son-filial_deference--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5700000000000001,
+    "eldest_son": 0.29500000000000004,
+    "second_son": 0.135
+   },
+   "seconds": 98.8,
+   "moves": 20.0,
+   "repeated": 0.026666666666666665,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "split": 1,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-eldest_son-filial_deference-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5599999999999999,
+    "eldest_son": 0.27999999999999997,
+    "second_son": 0.15999999999999998
+   },
+   "seconds": 98.6,
+   "moves": 20.0,
+   "repeated": 0.04892328861369109,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "split": 2
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-second_son-fondness_for_tea--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5700000000000001,
+    "eldest_son": 0.275,
+    "second_son": 0.15500000000000003
+   },
+   "seconds": 95.9,
+   "moves": 20.0,
+   "repeated": 0.052719298245614034,
+   "away": 0.7,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-second_son-fondness_for_tea-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.545,
+    "eldest_son": 0.27999999999999997,
+    "second_son": 0.175
+   },
+   "seconds": 98.7,
+   "moves": 20.0,
+   "repeated": 0.04187134502923977,
+   "away": 0.5,
+   "classes": {
+    "D": 8,
+    "split": 2
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-second_son-greed_for_money--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.565,
+    "eldest_son": 0.27,
+    "second_son": 0.165
+   },
+   "seconds": 97.6,
+   "moves": 20.0,
+   "repeated": 0.04782894736842105,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "split": 1,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-second_son-greed_for_money-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.54,
+    "eldest_son": 0.30999999999999994,
+    "second_son": 0.15
+   },
+   "seconds": 98.1,
+   "moves": 20.0,
+   "repeated": 0.05308049535603715,
+   "away": 0.5,
+   "classes": {
+    "D": 8,
+    "split": 1,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-wang_lung-attachment_to_the_land--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.535,
+    "eldest_son": 0.25,
+    "second_son": 0.215
+   },
+   "seconds": 96.8,
+   "moves": 20.0,
+   "repeated": 0.06916236670106639,
+   "away": 0.8,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_steer-wang_lung-attachment_to_the_land-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5650000000000001,
+    "eldest_son": 0.305,
+    "second_son": 0.13
+   },
+   "seconds": 97.2,
+   "moves": 20.0,
+   "repeated": 0.0629876160990712,
+   "away": 0.5,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t3": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5449999999999999,
+    "eldest_son": 0.295,
+    "second_son": 0.16
+   },
+   "seconds": 108.1,
+   "moves": 20.0,
+   "repeated": 0.060951152390780874,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "C": 1,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t4": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.55,
+    "eldest_son": 0.215,
+    "second_son": 0.23500000000000001
+   },
+   "seconds": 351.4,
+   "moves": 20.0,
+   "repeated": 0.03810457516339869,
+   "away": 0.5,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.9,
+    0.5,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t4_t5_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.515,
+    "eldest_son": 0.24499999999999997,
+    "second_son": 0.24
+   },
+   "seconds": 355.7,
+   "moves": 20.0,
+   "repeated": 0.03187134502923976,
+   "away": 0.1,
+   "classes": {
+    "D": 7,
+    "split": 1,
+    "B": 1,
+    "A": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.8,
+    0.4,
+    0.1,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t4_t5_t6_t7_t8": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.53,
+    "eldest_son": 0.215,
+    "second_son": 0.255
+   },
+   "seconds": 275.6,
+   "moves": 20.0,
+   "repeated": 0.01111111111111111,
+   "away": 0.0,
+   "classes": {
+    "D": 7,
+    "A": 1,
+    "B": 1,
+    "split": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    1.0,
+    0.6,
+    0.0,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t4_t5_t6_t7_t8_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.47000000000000003,
+    "eldest_son": 0.27499999999999997,
+    "second_son": 0.255
+   },
+   "seconds": 265.7,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "classes": {
+    "D": 7,
+    "B": 1,
+    "split": 2
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.7,
+    0.2,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t4_t5_t6_t7_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.51,
+    "eldest_son": 0.28500000000000003,
+    "second_son": 0.205
+   },
+   "seconds": 154.1,
+   "moves": 20.0,
+   "repeated": 0.0058823529411764705,
+   "away": 0.0,
+   "classes": {
+    "split": 2,
+    "B": 2,
+    "D": 6
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.8,
+    0.4,
+    0.1,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-on_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.525,
+    "eldest_son": 0.32499999999999996,
+    "second_son": 0.14999999999999997
+   },
+   "seconds": 119.4,
+   "moves": 20.0,
+   "repeated": 0.043075335397316825,
+   "away": 0.0,
+   "classes": {
+    "D": 8,
+    "split": 1,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-t1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5399999999999999,
+    "eldest_son": 0.315,
+    "second_son": 0.145
+   },
+   "seconds": 93.9,
+   "moves": 20.0,
+   "repeated": 0.04716374269005848,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "split": 2
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.1,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/soul_tools-t2": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5700000000000001,
+    "eldest_son": 0.225,
+    "second_son": 0.20500000000000002
+   },
+   "seconds": 85.1,
+   "moves": 20.0,
+   "repeated": 0.03742690058479532,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "split": 2
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "llama/sell_the_land/world_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.29499999999999993,
+    "eldest_son": 0.3525,
+    "second_son": 0.3525
+   },
+   "seconds": 247.7,
+   "moves": 20.0,
+   "repeated": 0.04052631578947368,
+   "away": 0.05,
+   "classes": {
+    "D": 12,
+    "B": 2,
+    "split": 6
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.75,
+    0.2,
+    0.15
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/prompted_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.4950000000000001,
+    "o_lan": 0.505
+   },
+   "seconds": 47.75,
+   "moves": 20.0,
+   "repeated": 0.27062027003783967,
+   "away": 0.45,
+   "state_changed": 0.25,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.85,
+   "classes": {
+    "A": 4,
+    "D": 7,
+    "C": 9
+   },
+   "decided": 0.65,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.05,
+    0.4
+   ],
+   "propositions": [
+    0.45,
+    0.0,
+    0.05,
+    0.2,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/prompted_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.49250000000000005,
+    "o_lan": 0.5075
+   },
+   "seconds": 56.35,
+   "moves": 20.0,
+   "repeated": 0.3273667010663915,
+   "away": 0.1,
+   "state_changed": 0.55,
+   "undone": 0.5454545454545454,
+   "rule_judge_agreement": 0.65,
+   "classes": {
+    "A": 7,
+    "C": 12,
+    "split": 1
+   },
+   "decided": 0.95,
+   "original_class": 0.35,
+   "original_class_ci": [
+    0.15,
+    0.55
+   ],
+   "propositions": [
+    0.6,
+    0.1,
+    0.25,
+    0.4,
+    0.85
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/prompted_tools-on_rich": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.49250000000000005,
+    "o_lan": 0.5075
+   },
+   "seconds": 101.2,
+   "moves": 20.0,
+   "repeated": 0.3526432502825692,
+   "away": 0.25,
+   "state_changed": 0.7,
+   "undone": 0.5,
+   "rule_judge_agreement": 0.5,
+   "classes": {
+    "C": 10,
+    "split": 5,
+    "A": 3,
+    "D": 2
+   },
+   "decided": 0.65,
+   "original_class": 0.15,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.75,
+    0.0,
+    0.5,
+    0.2,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/prompted_tools-on_rich_coser": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.23500000000000001,
+    "o_lan": 0.765
+   },
+   "seconds": 74.65,
+   "moves": 20.0,
+   "repeated": 0.15039946164946166,
+   "away": 0.2,
+   "state_changed": 0.65,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.7,
+   "classes": {
+    "A": 18,
+    "split": 1,
+    "B": 1
+   },
+   "decided": 0.95,
+   "original_class": 0.9,
+   "original_class_ci": [
+    0.75,
+    1.0
+   ],
+   "propositions": [
+    1.0,
+    0.3,
+    0.45,
+    0.95,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5975,
+    "o_lan": 0.4025
+   },
+   "seconds": 66.25,
+   "moves": 20.0,
+   "repeated": 0.07901358789129687,
+   "away": 0.75,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.95,
+   "classes": {
+    "D": 16,
+    "C": 3,
+    "A": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.05,
+    0.05,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5925,
+    "o_lan": 0.4075000000000001
+   },
+   "seconds": 75.7,
+   "moves": 20.0,
+   "repeated": 0.13946620888571354,
+   "away": 0.45,
+   "state_changed": 0.05,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "C": 3,
+    "D": 12,
+    "A": 2,
+    "split": 3
+   },
+   "decided": 0.25,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.25
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.15,
+    0.65
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_director": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.38250000000000006,
+    "o_lan": 0.6174999999999999
+   },
+   "seconds": 131.5,
+   "moves": 20.0,
+   "repeated": 0.1027171482628139,
+   "away": 0.25,
+   "state_changed": 0.55,
+   "undone": 0.6363636363636364,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "A": 5,
+    "C": 4,
+    "split": 5,
+    "B": 4,
+    "D": 2
+   },
+   "decided": 0.65,
+   "original_class": 0.25,
+   "original_class_ci": [
+    0.1,
+    0.45
+   ],
+   "propositions": [
+    0.75,
+    0.0,
+    0.25,
+    0.55,
+    0.85
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-o_lan-fondness_for_tea-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6250000000000001,
+    "o_lan": 0.37500000000000006
+   },
+   "seconds": 74.4,
+   "moves": 20.0,
+   "repeated": 0.11357413140694876,
+   "away": 0.4,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "C": 3,
+    "D": 5,
+    "A": 1,
+    "B": 1
+   },
+   "decided": 0.5,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.1,
+    0.0,
+    0.2,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-o_lan-fondness_for_tea-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6300000000000001,
+    "o_lan": 0.37
+   },
+   "seconds": 81.9,
+   "moves": 20.0,
+   "repeated": 0.08589267285861715,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 7,
+    "C": 1,
+    "A": 1,
+    "B": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.0,
+    0.1,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-o_lan-submissiveness-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6200000000000001,
+    "o_lan": 0.38
+   },
+   "seconds": 110.3,
+   "moves": 20.0,
+   "repeated": 0.08001031991744066,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "split": 1,
+    "D": 5,
+    "C": 4
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.1,
+    0.0,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-o_lan-submissiveness-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6250000000000001,
+    "o_lan": 0.37500000000000006
+   },
+   "seconds": 104.2,
+   "moves": 20.0,
+   "repeated": 0.10781389748882009,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 7,
+    "split": 1,
+    "B": 1,
+    "C": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.1,
+    0.0,
+    0.1,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-o_lan-taciturnity-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6,
+    "o_lan": 0.4
+   },
+   "seconds": 111.7,
+   "moves": 20.0,
+   "repeated": 0.061871345029239765,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 6,
+    "C": 4
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.1,
+    0.0,
+    0.3
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-o_lan-taciturnity-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6300000000000001,
+    "o_lan": 0.37
+   },
+   "seconds": 107.9,
+   "moves": 20.0,
+   "repeated": 0.09261781905744754,
+   "away": 0.4,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 3,
+    "D": 6,
+    "A": 1
+   },
+   "decided": 0.4,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.1,
+    0.1,
+    0.0,
+    0.1,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-wang_lung-infatuation_with_Lotus-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.62,
+    "o_lan": 0.38
+   },
+   "seconds": 105.4,
+   "moves": 20.0,
+   "repeated": 0.07158195734434125,
+   "away": 0.5,
+   "state_changed": 0.2,
+   "undone": 0.5,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "A": 2,
+    "D": 6,
+    "C": 1,
+    "split": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.2,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-wang_lung-infatuation_with_Lotus-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5900000000000001,
+    "o_lan": 0.41
+   },
+   "seconds": 106.7,
+   "moves": 20.0,
+   "repeated": 0.07555555555555556,
+   "away": 0.6,
+   "state_changed": 0.1,
+   "undone": 1.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 3,
+    "D": 6,
+    "split": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.1,
+    0.5
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-wang_lung-shame-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6000000000000001,
+    "o_lan": 0.4
+   },
+   "seconds": 82.0,
+   "moves": 20.0,
+   "repeated": 0.09101995184038529,
+   "away": 0.3,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 1,
+    "D": 6,
+    "split": 3
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.0,
+    0.0,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_edit-wang_lung-shame-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5800000000000002,
+    "o_lan": 0.42000000000000004
+   },
+   "seconds": 108.7,
+   "moves": 20.0,
+   "repeated": 0.09883212934296526,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "split": 3,
+    "D": 5,
+    "C": 1,
+    "A": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.1,
+    0.1,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_rich": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5675000000000001,
+    "o_lan": 0.4325
+   },
+   "seconds": 200.9,
+   "moves": 20.0,
+   "repeated": 0.1412487100103199,
+   "away": 0.55,
+   "state_changed": 0.05,
+   "undone": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 8,
+    "D": 9,
+    "split": 3
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.05,
+    0.05,
+    0.05,
+    0.65
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_rich_director": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.36,
+    "o_lan": 0.64
+   },
+   "seconds": 128.55,
+   "moves": 20.0,
+   "repeated": 0.07888028895768834,
+   "away": 0.45,
+   "state_changed": 0.65,
+   "undone": 0.8461538461538461,
+   "rule_judge_agreement": 0.6,
+   "classes": {
+    "split": 2,
+    "C": 8,
+    "D": 2,
+    "A": 3,
+    "B": 5
+   },
+   "decided": 0.8,
+   "original_class": 0.15,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.7,
+    0.1,
+    0.0,
+    0.45,
+    0.85
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-o_lan-fondness_for_tea--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.615,
+    "o_lan": 0.385
+   },
+   "seconds": 74.9,
+   "moves": 20.0,
+   "repeated": 0.08648262813897489,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 2,
+    "D": 7,
+    "B": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.0,
+    0.0,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-o_lan-fondness_for_tea-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6250000000000001,
+    "o_lan": 0.375
+   },
+   "seconds": 73.7,
+   "moves": 20.0,
+   "repeated": 0.12896284829721366,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 7,
+    "C": 2,
+    "split": 1
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.0,
+    0.1,
+    0.0,
+    0.0,
+    0.4
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-o_lan-submissiveness--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.625,
+    "o_lan": 0.37500000000000006
+   },
+   "seconds": 107.1,
+   "moves": 20.0,
+   "repeated": 0.10154626762985897,
+   "away": 0.4,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 7,
+    "A": 1,
+    "C": 1,
+    "B": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.1,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-o_lan-submissiveness-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.62,
+    "o_lan": 0.38
+   },
+   "seconds": 111.9,
+   "moves": 20.0,
+   "repeated": 0.07434812521499828,
+   "away": 0.7,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "split": 1,
+    "D": 4,
+    "C": 5
+   },
+   "decided": 0.5,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.2,
+    0.1,
+    0.0,
+    0.5
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-o_lan-taciturnity--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6250000000000001,
+    "o_lan": 0.37500000000000006
+   },
+   "seconds": 103.2,
+   "moves": 20.0,
+   "repeated": 0.07880116959064327,
+   "away": 0.7,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "C": 3,
+    "D": 7
+   },
+   "decided": 0.3,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.0,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-o_lan-taciturnity-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.635,
+    "o_lan": 0.365
+   },
+   "seconds": 107.6,
+   "moves": 20.0,
+   "repeated": 0.07307533539731682,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "D": 7,
+    "split": 2,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.1,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-wang_lung-infatuation_with_Lotus--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.62,
+    "o_lan": 0.38
+   },
+   "seconds": 108.2,
+   "moves": 20.0,
+   "repeated": 0.09997592019263846,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "A": 1,
+    "D": 5,
+    "C": 3,
+    "split": 1
+   },
+   "decided": 0.4,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.1,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-wang_lung-infatuation_with_Lotus-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6100000000000001,
+    "o_lan": 0.39
+   },
+   "seconds": 101.7,
+   "moves": 20.0,
+   "repeated": 0.10436790505675955,
+   "away": 0.6,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "C": 1,
+    "D": 6,
+    "split": 1,
+    "A": 2
+   },
+   "decided": 0.3,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.3,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-wang_lung-shame--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.63,
+    "o_lan": 0.37
+   },
+   "seconds": 82.4,
+   "moves": 20.0,
+   "repeated": 0.07801169590643275,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "D": 8,
+    "C": 2
+   },
+   "decided": 0.2,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.0,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_steer-wang_lung-shame-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6050000000000002,
+    "o_lan": 0.395
+   },
+   "seconds": 77.6,
+   "moves": 20.0,
+   "repeated": 0.10347093223254215,
+   "away": 0.6,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "A": 1,
+    "D": 5,
+    "C": 3,
+    "split": 1
+   },
+   "decided": 0.4,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.0,
+    0.2,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t3": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.615,
+    "o_lan": 0.385
+   },
+   "seconds": 82.9,
+   "moves": 20.0,
+   "repeated": 0.09187306501547989,
+   "away": 0.4,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "C": 4,
+    "D": 4,
+    "split": 2
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.1,
+    0.1,
+    0.6
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t4": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.695,
+    "o_lan": 0.305
+   },
+   "seconds": 268.9,
+   "moves": 20.0,
+   "repeated": 0.11713622291021672,
+   "away": 0.3,
+   "state_changed": 0.1,
+   "undone": 1.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 4,
+    "A": 2,
+    "split": 2,
+    "D": 2
+   },
+   "decided": 0.6,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.1,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t4_t5_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6649999999999999,
+    "o_lan": 0.335
+   },
+   "seconds": 280.0,
+   "moves": 20.0,
+   "repeated": 0.10226694186446508,
+   "away": 0.1,
+   "state_changed": 0.3,
+   "undone": 0.6666666666666666,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "A": 1,
+    "C": 4,
+    "split": 3,
+    "B": 2
+   },
+   "decided": 0.7,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.6,
+    0.1,
+    0.2,
+    0.3,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t4_t5_t6_t7_t8": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.7100000000000001,
+    "o_lan": 0.29000000000000004
+   },
+   "seconds": 255.0,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "state_changed": 0.6,
+   "undone": 0.3333333333333333,
+   "rule_judge_agreement": 0.7,
+   "classes": {
+    "B": 2,
+    "split": 2,
+    "C": 5,
+    "A": 1
+   },
+   "decided": 0.8,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.8,
+    0.0,
+    0.2,
+    0.5,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t4_t5_t6_t7_t8_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.575,
+    "o_lan": 0.425
+   },
+   "seconds": 241.2,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "state_changed": 0.6,
+   "undone": 0.3333333333333333,
+   "rule_judge_agreement": 0.9,
+   "classes": {
+    "C": 4,
+    "A": 4,
+    "B": 1,
+    "split": 1
+   },
+   "decided": 0.9,
+   "original_class": 0.4,
+   "original_class_ci": [
+    0.1,
+    0.7
+   ],
+   "propositions": [
+    0.8,
+    0.1,
+    0.1,
+    0.5,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t4_t5_t6_t7_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.59,
+    "o_lan": 0.41
+   },
+   "seconds": 141.6,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "state_changed": 0.1,
+   "undone": 1.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "C": 8,
+    "A": 1,
+    "split": 1
+   },
+   "decided": 0.9,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.7,
+    0.0,
+    0.1,
+    0.1,
+    1.0
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-on_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.6050000000000002,
+    "o_lan": 0.3950000000000001
+   },
+   "seconds": 167.9,
+   "moves": 20.0,
+   "repeated": 0.13122764017887859,
+   "away": 0.0,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 4,
+    "split": 1,
+    "D": 5
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.0,
+    0.9
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-t1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.63,
+    "o_lan": 0.37
+   },
+   "seconds": 71.8,
+   "moves": 20.0,
+   "repeated": 0.08375405425328024,
+   "away": 0.5,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "D": 5,
+    "A": 2,
+    "C": 3
+   },
+   "decided": 0.5,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.1,
+    0.2,
+    0.4
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/soul_tools-t2": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.645,
+    "o_lan": 0.35500000000000004
+   },
+   "seconds": 69.7,
+   "moves": 20.0,
+   "repeated": 0.11072454420364637,
+   "away": 0.3,
+   "state_changed": 0.0,
+   "rule_judge_agreement": 1.0,
+   "classes": {
+    "C": 4,
+    "D": 5,
+    "A": 1
+   },
+   "decided": 0.5,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.0,
+    0.0,
+    0.8
+   ],
+   "ratings": {}
+  },
+  "qwen/pearls/world_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.49250000000000005,
+    "o_lan": 0.5075
+   },
+   "seconds": 82.25,
+   "moves": 20.0,
+   "repeated": 0.3808305383556932,
+   "away": 0.1,
+   "state_changed": 0.65,
+   "undone": 0.46153846153846156,
+   "rule_judge_agreement": 0.75,
+   "classes": {
+    "A": 8,
+    "C": 10,
+    "split": 1,
+    "D": 1
+   },
+   "decided": 0.9,
+   "original_class": 0.4,
+   "original_class_ci": [
+    0.2,
+    0.6
+   ],
+   "propositions": [
+    0.8,
+    0.25,
+    0.45,
+    0.5,
+    0.65
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/prompted_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.30499999999999994,
+    "eldest_son": 0.3449999999999999,
+    "second_son": 0.35
+   },
+   "seconds": 95.05,
+   "moves": 20.0,
+   "repeated": 0.38999999999999996,
+   "away": 0.05,
+   "classes": {
+    "split": 2,
+    "D": 15,
+    "A": 2,
+    "B": 1
+   },
+   "decided": 0.15,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.25
+   ],
+   "propositions": [
+    0.6,
+    0.15,
+    0.15,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/prompted_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.30499999999999994,
+    "eldest_son": 0.3449999999999999,
+    "second_son": 0.35
+   },
+   "seconds": 116.1,
+   "moves": 20.0,
+   "repeated": 0.45999999999999985,
+   "away": 0.05,
+   "classes": {
+    "D": 17,
+    "A": 2,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.25
+   ],
+   "propositions": [
+    0.65,
+    0.35,
+    0.15,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/prompted_tools-on_rich": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.30499999999999994,
+    "eldest_son": 0.3449999999999999,
+    "second_son": 0.35
+   },
+   "seconds": 149.45,
+   "moves": 20.0,
+   "repeated": 0.4939473684210526,
+   "away": 0.0,
+   "classes": {
+    "D": 17,
+    "split": 3
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.85,
+    0.55,
+    0.2,
+    0.05
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/prompted_tools-on_rich_coser": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.4675000000000001,
+    "eldest_son": 0.23500000000000001,
+    "second_son": 0.2975
+   },
+   "seconds": 90.9,
+   "moves": 20.0,
+   "repeated": 0.706578947368421,
+   "away": 0.0,
+   "classes": {
+    "D": 11,
+    "B": 6,
+    "A": 1,
+    "split": 2
+   },
+   "decided": 0.35,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    1.0,
+    0.65,
+    0.75,
+    0.05
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-off": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5399999999999999,
+    "eldest_son": 0.265,
+    "second_son": 0.195
+   },
+   "seconds": 128.55,
+   "moves": 20.0,
+   "repeated": 0.0971671826625387,
+   "away": 0.6,
+   "classes": {
+    "D": 20
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.05
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.505,
+    "eldest_son": 0.31250000000000006,
+    "second_son": 0.18250000000000002
+   },
+   "seconds": 164.1,
+   "moves": 20.0,
+   "repeated": 0.07771714826281387,
+   "away": 0.8,
+   "classes": {
+    "D": 18,
+    "A": 1,
+    "split": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.35,
+    0.1,
+    0.0,
+    0.05
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_director": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.2824999999999999,
+    "eldest_son": 0.5225,
+    "second_son": 0.195
+   },
+   "seconds": 136.5,
+   "moves": 20.0,
+   "repeated": 0.0776049191606467,
+   "away": 0.4,
+   "classes": {
+    "C": 7,
+    "D": 7,
+    "split": 5,
+    "B": 1
+   },
+   "decided": 0.4,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    1.0,
+    0.1,
+    0.05,
+    0.05
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-eldest_son-concern_for_reputation-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5650000000000001,
+    "eldest_son": 0.29500000000000004,
+    "second_son": 0.13999999999999999
+   },
+   "seconds": 106.9,
+   "moves": 20.0,
+   "repeated": 0.08464912280701756,
+   "away": 0.9,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-eldest_son-concern_for_reputation-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5449999999999999,
+    "eldest_son": 0.31000000000000005,
+    "second_son": 0.145
+   },
+   "seconds": 107.9,
+   "moves": 20.0,
+   "repeated": 0.1432004643962848,
+   "away": 0.9,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-eldest_son-filial_deference-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5800000000000001,
+    "eldest_son": 0.3,
+    "second_son": 0.12
+   },
+   "seconds": 112.2,
+   "moves": 20.0,
+   "repeated": 0.08704334365325077,
+   "away": 0.9,
+   "classes": {
+    "D": 7,
+    "A": 3
+   },
+   "decided": 0.3,
+   "original_class": 0.3,
+   "original_class_ci": [
+    0.0,
+    0.6
+   ],
+   "propositions": [
+    0.1,
+    0.0,
+    0.0,
+    0.4
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-eldest_son-filial_deference-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5499999999999999,
+    "eldest_son": 0.30999999999999994,
+    "second_son": 0.14
+   },
+   "seconds": 106.4,
+   "moves": 20.0,
+   "repeated": 0.09789473684210526,
+   "away": 0.7,
+   "classes": {
+    "D": 8,
+    "A": 2
+   },
+   "decided": 0.2,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.2,
+    0.1,
+    0.0,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-second_son-fondness_for_tea-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.57,
+    "eldest_son": 0.265,
+    "second_son": 0.16499999999999998
+   },
+   "seconds": 114.1,
+   "moves": 20.0,
+   "repeated": 0.07781432748538011,
+   "away": 0.9,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-second_son-fondness_for_tea-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5349999999999999,
+    "eldest_son": 0.30000000000000004,
+    "second_son": 0.16499999999999998
+   },
+   "seconds": 115.9,
+   "moves": 20.0,
+   "repeated": 0.08475877192982455,
+   "away": 0.8,
+   "classes": {
+    "D": 8,
+    "split": 2
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-second_son-greed_for_money-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.55,
+    "eldest_son": 0.27,
+    "second_son": 0.18000000000000002
+   },
+   "seconds": 114.2,
+   "moves": 20.0,
+   "repeated": 0.08376547987616098,
+   "away": 0.9,
+   "classes": {
+    "D": 8,
+    "A": 1,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-second_son-greed_for_money-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5399999999999999,
+    "eldest_son": 0.3,
+    "second_son": 0.16
+   },
+   "seconds": 114.6,
+   "moves": 20.0,
+   "repeated": 0.06732241142070863,
+   "away": 0.8,
+   "classes": {
+    "D": 8,
+    "split": 1,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-wang_lung-attachment_to_the_land-down": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.56,
+    "eldest_son": 0.30500000000000005,
+    "second_son": 0.13499999999999998
+   },
+   "seconds": 111.6,
+   "moves": 20.0,
+   "repeated": 0.08712590299277606,
+   "away": 0.6,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_edit-wang_lung-attachment_to_the_land-up": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.55,
+    "eldest_son": 0.305,
+    "second_son": 0.145
+   },
+   "seconds": 108.5,
+   "moves": 20.0,
+   "repeated": 0.10313596491228069,
+   "away": 0.8,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.2,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_rich": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5149999999999999,
+    "eldest_son": 0.3175,
+    "second_son": 0.16749999999999998
+   },
+   "seconds": 186.05,
+   "moves": 20.0,
+   "repeated": 0.08957860337117303,
+   "away": 0.65,
+   "classes": {
+    "D": 19,
+    "A": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.05
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_rich_director": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.3024999999999999,
+    "eldest_son": 0.49250000000000005,
+    "second_son": 0.205
+   },
+   "seconds": 141.85,
+   "moves": 20.0,
+   "repeated": 0.09941520467836258,
+   "away": 0.35,
+   "classes": {
+    "D": 8,
+    "C": 5,
+    "split": 4,
+    "A": 2,
+    "B": 1
+   },
+   "decided": 0.4,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.25
+   ],
+   "propositions": [
+    1.0,
+    0.05,
+    0.1,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-eldest_son-concern_for_reputation--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.55,
+    "eldest_son": 0.29500000000000004,
+    "second_son": 0.155
+   },
+   "seconds": 108.9,
+   "moves": 20.0,
+   "repeated": 0.11776917784657723,
+   "away": 0.8,
+   "classes": {
+    "A": 2,
+    "D": 6,
+    "split": 2
+   },
+   "decided": 0.2,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.1,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-eldest_son-concern_for_reputation-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5399999999999999,
+    "eldest_son": 0.29999999999999993,
+    "second_son": 0.16
+   },
+   "seconds": 114.6,
+   "moves": 20.0,
+   "repeated": 0.10847412649270231,
+   "away": 0.6,
+   "classes": {
+    "A": 1,
+    "D": 8,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.4,
+    0.1,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-eldest_son-filial_deference--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.575,
+    "eldest_son": 0.3,
+    "second_son": 0.125
+   },
+   "seconds": 111.8,
+   "moves": 20.0,
+   "repeated": 0.05415720674234605,
+   "away": 0.9,
+   "classes": {
+    "D": 8,
+    "A": 1,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-eldest_son-filial_deference-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5600000000000002,
+    "eldest_son": 0.29,
+    "second_son": 0.14999999999999997
+   },
+   "seconds": 105.0,
+   "moves": 20.0,
+   "repeated": 0.07521929824561405,
+   "away": 0.7,
+   "classes": {
+    "A": 1,
+    "D": 8,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-second_son-fondness_for_tea--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.565,
+    "eldest_son": 0.27,
+    "second_son": 0.16499999999999998
+   },
+   "seconds": 111.2,
+   "moves": 20.0,
+   "repeated": 0.08402347781217749,
+   "away": 0.9,
+   "classes": {
+    "D": 9,
+    "A": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-second_son-fondness_for_tea-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.54,
+    "eldest_son": 0.3,
+    "second_son": 0.16000000000000003
+   },
+   "seconds": 114.4,
+   "moves": 20.0,
+   "repeated": 0.06114766081871346,
+   "away": 0.8,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.2,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-second_son-greed_for_money--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.53,
+    "eldest_son": 0.295,
+    "second_son": 0.17500000000000004
+   },
+   "seconds": 114.7,
+   "moves": 20.0,
+   "repeated": 0.12478070175438596,
+   "away": 0.9,
+   "classes": {
+    "D": 7,
+    "split": 2,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-second_son-greed_for_money-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5399999999999999,
+    "eldest_son": 0.28500000000000003,
+    "second_son": 0.17500000000000002
+   },
+   "seconds": 114.3,
+   "moves": 20.0,
+   "repeated": 0.10192208462332301,
+   "away": 0.7,
+   "classes": {
+    "D": 9,
+    "C": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.4,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-wang_lung-attachment_to_the_land--1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.575,
+    "eldest_son": 0.31,
+    "second_son": 0.11500000000000002
+   },
+   "seconds": 105.4,
+   "moves": 20.0,
+   "repeated": 0.05105263157894737,
+   "away": 0.9,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_steer-wang_lung-attachment_to_the_land-1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.565,
+    "eldest_son": 0.295,
+    "second_son": 0.13999999999999999
+   },
+   "seconds": 111.7,
+   "moves": 20.0,
+   "repeated": 0.07225232198142414,
+   "away": 0.9,
+   "classes": {
+    "A": 1,
+    "D": 8,
+    "split": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t3": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.54,
+    "eldest_son": 0.315,
+    "second_son": 0.14500000000000002
+   },
+   "seconds": 122.4,
+   "moves": 20.0,
+   "repeated": 0.028214224286205708,
+   "away": 0.6,
+   "classes": {
+    "D": 10
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.5,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t4": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.55,
+    "eldest_son": 0.125,
+    "second_son": 0.325
+   },
+   "seconds": 373.4,
+   "moves": 20.0,
+   "repeated": 0.07157894736842105,
+   "away": 0.3,
+   "classes": {
+    "D": 7,
+    "split": 2,
+    "B": 1
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.9,
+    0.5,
+    0.1,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t4_t5_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.58,
+    "eldest_son": 0.16499999999999998,
+    "second_son": 0.255
+   },
+   "seconds": 406.6,
+   "moves": 20.0,
+   "repeated": 0.04105263157894737,
+   "away": 0.2,
+   "classes": {
+    "D": 6,
+    "split": 1,
+    "B": 2,
+    "A": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    1.0,
+    0.3,
+    0.3,
+    0.2
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t4_t5_t6_t7_t8": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5700000000000001,
+    "eldest_son": 0.175,
+    "second_son": 0.255
+   },
+   "seconds": 315.9,
+   "moves": 20.0,
+   "repeated": 0.0,
+   "away": 0.0,
+   "classes": {
+    "B": 3,
+    "D": 5,
+    "A": 2
+   },
+   "decided": 0.5,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    1.0,
+    0.8,
+    0.1,
+    0.4
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t4_t5_t6_t7_t8_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.45000000000000007,
+    "eldest_son": 0.285,
+    "second_son": 0.265
+   },
+   "seconds": 322.8,
+   "moves": 20.0,
+   "repeated": 0.010263157894736842,
+   "away": 0.0,
+   "classes": {
+    "D": 4,
+    "B": 4,
+    "A": 2
+   },
+   "decided": 0.6,
+   "original_class": 0.2,
+   "original_class_ci": [
+    0.0,
+    0.5
+   ],
+   "propositions": [
+    0.8,
+    1.0,
+    0.3,
+    0.3
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t4_t5_t6_t7_t9": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.49000000000000005,
+    "eldest_son": 0.2,
+    "second_son": 0.30999999999999994
+   },
+   "seconds": 183.5,
+   "moves": 20.0,
+   "repeated": 0.005,
+   "away": 0.0,
+   "classes": {
+    "C": 1,
+    "D": 7,
+    "A": 1,
+    "B": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.9,
+    0.6,
+    0.1,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-on_t6": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5199999999999999,
+    "eldest_son": 0.32500000000000007,
+    "second_son": 0.155
+   },
+   "seconds": 236.3,
+   "moves": 20.0,
+   "repeated": 0.09246646026831787,
+   "away": 0.0,
+   "classes": {
+    "C": 2,
+    "D": 7,
+    "A": 1
+   },
+   "decided": 0.3,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.3,
+    0.0,
+    0.0,
+    0.3
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-t1": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5349999999999999,
+    "eldest_son": 0.32999999999999996,
+    "second_son": 0.135
+   },
+   "seconds": 113.1,
+   "moves": 20.0,
+   "repeated": 0.04457688338493292,
+   "away": 0.6,
+   "classes": {
+    "D": 9,
+    "split": 1
+   },
+   "decided": 0.0,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.6,
+    0.1,
+    0.0,
+    0.0
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/soul_tools-t2": {
+   "n": 10,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5650000000000001,
+    "eldest_son": 0.295,
+    "second_son": 0.13999999999999999
+   },
+   "seconds": 92.4,
+   "moves": 20.0,
+   "repeated": 0.06640866873065014,
+   "away": 0.8,
+   "classes": {
+    "A": 1,
+    "D": 9
+   },
+   "decided": 0.1,
+   "original_class": 0.1,
+   "original_class_ci": [
+    0.0,
+    0.3
+   ],
+   "propositions": [
+    0.7,
+    0.0,
+    0.1,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen/sell_the_land/world_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.30499999999999994,
+    "eldest_son": 0.3449999999999999,
+    "second_son": 0.35
+   },
+   "seconds": 173.85,
+   "moves": 20.0,
+   "repeated": 0.5225000000000001,
+   "away": 0.05,
+   "classes": {
+    "D": 17,
+    "split": 1,
+    "B": 2
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.7,
+    0.3,
+    0.25,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen_pseudo/pearls/prompted_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.49250000000000005,
+    "o_lan": 0.5075
+   },
+   "seconds": 55.45,
+   "moves": 20.0,
+   "repeated": 0.34352683178534577,
+   "away": 0.2,
+   "state_changed": 0.6,
+   "undone": 0.3333333333333333,
+   "rule_judge_agreement": 0.8,
+   "classes": {
+    "C": 8,
+    "A": 6,
+    "D": 2,
+    "split": 2,
+    "B": 2
+   },
+   "decided": 0.8,
+   "original_class": 0.3,
+   "original_class_ci": [
+    0.1,
+    0.5
+   ],
+   "propositions": [
+    0.65,
+    0.05,
+    0.45,
+    0.4,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen_pseudo/pearls/soul_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5925,
+    "o_lan": 0.40750000000000003
+   },
+   "seconds": 76.45,
+   "moves": 20.0,
+   "repeated": 0.09887211902304782,
+   "away": 0.5,
+   "state_changed": 0.1,
+   "undone": 0.0,
+   "rule_judge_agreement": 0.95,
+   "classes": {
+    "split": 1,
+    "D": 10,
+    "C": 7,
+    "A": 1,
+    "B": 1
+   },
+   "decided": 0.45,
+   "original_class": 0.05,
+   "original_class_ci": [
+    0.0,
+    0.15
+   ],
+   "propositions": [
+    0.35,
+    0.05,
+    0.05,
+    0.15,
+    0.7
+   ],
+   "ratings": {}
+  },
+  "qwen_pseudo/sell_the_land/prompted_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.30499999999999994,
+    "eldest_son": 0.3449999999999999,
+    "second_son": 0.35
+   },
+   "seconds": 159.7,
+   "moves": 20.0,
+   "repeated": 0.47828947368421043,
+   "away": 0.0,
+   "classes": {
+    "D": 17,
+    "split": 2,
+    "B": 1
+   },
+   "decided": 0.05,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.9,
+    0.75,
+    0.15,
+    0.1
+   ],
+   "ratings": {}
+  },
+  "qwen_pseudo/sell_the_land/soul_tools-on": {
+   "n": 20,
+   "anachronism": 0.0,
+   "shares": {
+    "wang_lung": 0.5599999999999999,
+    "eldest_son": 0.3225,
+    "second_son": 0.11749999999999998
+   },
+   "seconds": 164.65,
+   "moves": 20.0,
+   "repeated": 0.058260233918128644,
+   "away": 0.9,
+   "classes": {
+    "D": 17,
+    "split": 1,
+    "C": 2
+   },
+   "decided": 0.1,
+   "original_class": 0.0,
+   "original_class_ci": [
+    0.0,
+    0.0
+   ],
+   "propositions": [
+    0.45,
+    0.0,
+    0.0,
+    0.1
+   ],
+   "ratings": {}
+  }
+ },
+ "tests": [
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 0.48395160483951605,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 0.48775122487751227,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 0.4871512848715128,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.35,
+   "p": 0.12838716128387162,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.05,
+   "mean_b": 0.55,
+   "p": 0.0011998800119988001,
+   "p_holm": 0.0527947205279472
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "state_changed",
+   "mean_a": 0.05,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.35,
+   "mean_b": 0.2,
+   "p": 0.48005199480051997,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "state_changed",
+   "mean_a": 0.55,
+   "mean_b": 0.25,
+   "p": 0.10108989101089891,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.4,
+   "p": 0.06459354064593541,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.05,
+   "mean_b": 0.65,
+   "p": 0.00039996000399960006,
+   "p_holm": 0.017998200179982004
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "soul_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on",
+   "b": "prompted_tools-off",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "world_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen_pseudo",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.3,
+   "p": 0.09119088091190881,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen_pseudo",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.6,
+   "p": 0.001999800019998,
+   "p_holm": 0.08599140085991401
+  },
+  {
+   "run": "qwen_pseudo",
+   "scene": "pearls",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen_pseudo",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen_pseudo",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ ],
+ "followup_tests": [
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.05,
+   "p": 0.5255474452554745,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.2,
+   "mean_b": 0.0,
+   "p": 0.10848915108489152,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.2,
+   "p": 0.47885211478852113,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.5,
+   "mean_b": 0.0,
+   "p": 0.0347965203479652,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "state_changed",
+   "mean_a": 0.5,
+   "mean_b": 0.0,
+   "p": 0.032996700329967,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 0.5308469153084692,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 0.48995100489951005,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.05,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.15,
+   "mean_b": 0.35,
+   "p": 0.27217278272172785,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.7,
+   "mean_b": 0.55,
+   "p": 0.5158484151584841,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.25,
+   "mean_b": 0.1,
+   "p": 0.40255974402559747,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.55,
+   "mean_b": 0.05,
+   "p": 0.000999900009999,
+   "p_holm": 0.047995200479952004
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.15,
+   "mean_b": 0.0,
+   "p": 0.22617738226177383,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "state_changed",
+   "mean_a": 0.65,
+   "mean_b": 0.05,
+   "p": 0.00019998000199980003,
+   "p_holm": 0.009799020097990201
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.9,
+   "mean_b": 0.15,
+   "p": 9.999000099990002e-05,
+   "p_holm": 0.004999500049995001
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "state_changed",
+   "mean_a": 0.65,
+   "mean_b": 0.7,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 0.48475152484751527,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich",
+   "b": "prompted_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_director",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_rich_director",
+   "b": "soul_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "original_class",
+   "mean_a": 0.05,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "prompted_tools-on_rich_coser",
+   "b": "prompted_tools-on_rich",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ ],
+ "tool_tests": [
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.3,
+   "mean_b": 0.05,
+   "p": 0.0953904609539046,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.2,
+   "mean_b": 0.0,
+   "p": 0.10568943105689431,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.05,
+   "p": 0.5255474452554745,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 0.3304669533046695,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.3,
+   "mean_b": 0.0,
+   "p": 0.21187881211878812,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "state_changed",
+   "mean_a": 0.2,
+   "mean_b": 0.2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 0.33266673332666735,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 0.33796620337966204,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.3,
+   "mean_b": 0.05,
+   "p": 0.09859014098590141,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.1,
+   "p": 0.5826417358264173,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 0.5441455854414559,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.25,
+   "p": 0.6407359264073592,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "state_changed",
+   "mean_a": 0.3,
+   "mean_b": 0.55,
+   "p": 0.24807519248075194,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.05,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t6",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 0.33026697330266974,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ ],
+ "tool2_tests": [
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.3,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.3,
+   "p": 0.5863413658634137,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.4,
+   "p": 0.6267373262673732,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "original_class",
+   "mean_a": 0.3,
+   "mean_b": 0.3,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "state_changed",
+   "mean_a": 0.3,
+   "mean_b": 0.2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.05,
+   "p": 0.5393460653934606,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.0,
+   "p": 0.33796620337966204,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.0,
+   "p": 0.46955304469553044,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "state_changed",
+   "mean_a": 0.1,
+   "mean_b": 0.2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "llama",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "original_class",
+   "mean_a": 0.4,
+   "mean_b": 0.1,
+   "p": 0.29357064293570645,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "state_changed",
+   "mean_a": 0.6,
+   "mean_b": 0.6,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "original_class",
+   "mean_a": 0.4,
+   "mean_b": 0.1,
+   "p": 0.2916708329167083,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "state_changed",
+   "mean_a": 0.6,
+   "mean_b": 0.1,
+   "p": 0.0575942405759424,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "original_class",
+   "mean_a": 0.1,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "state_changed",
+   "mean_a": 0.6,
+   "mean_b": 0.3,
+   "p": 0.37196280371962803,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.4,
+   "mean_b": 0.1,
+   "p": 0.142985701429857,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "state_changed",
+   "mean_a": 0.6,
+   "mean_b": 0.05,
+   "p": 0.0026997300269973002,
+   "p_holm": 0.134986501349865
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.4,
+   "mean_b": 0.25,
+   "p": 0.6766323367663234,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "state_changed",
+   "mean_a": 0.6,
+   "mean_b": 0.55,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "pearls",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.2,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t8",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_t4_t5_t6_t7_t9",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.1,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8",
+   "b": "soul_tools-on_t4_t5_t6",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.05,
+   "p": 0.525947405259474,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "original_class",
+   "mean_a": 0.2,
+   "mean_b": 0.0,
+   "p": 0.10288971102889712,
+   "p_holm": 1.0
+  },
+  {
+   "run": "qwen",
+   "scene": "sell_the_land",
+   "a": "soul_tools-on_t4_t5_t6_t7_t8_t9",
+   "b": "soul_tools-on_director",
+   "metric": "anachronism",
+   "mean_a": 0.0,
+   "mean_b": 0.0,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ ],
+ "first_chapter": {
+  "wang_lung": 1,
+  "father": 1,
+  "uncle": 1,
+  "gateman": 1,
+  "old_mistress": 1,
+  "o_lan": 1,
+  "uncles_son": 1,
+  "ching": 1,
+  "uncles_wife": 4,
+  "second_son": 5,
+  "eldest_son": 8,
+  "cuckoo": 16,
+  "lotus": 19,
+  "liu": 23,
+  "eldest_sons_wife": 26,
+  "youngest_son": 28,
+  "pear_blossom": 31
+ }
+}

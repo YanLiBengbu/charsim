@@ -1,0 +1,1127 @@
+{
+ "scene": "pearls",
+ "seed": 109,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": false,
+  "t9": true,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3053354322910309,
+     "act": 0.25536441802978516,
+     "silent": 0.018402060493826866,
+     "wait": 0.42089810967445374
+    },
+    "o_lan": {
+     "speak": 0.026760201901197433,
+     "act": 0.13894128799438477,
+     "silent": 0.03478197008371353,
+     "wait": 0.799516499042511
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5791018903255463,
+    "o_lan": 0.200483500957489
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "It is only because I have a heart---I am a man of flesh and blood---"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"It is only because I have a heart---I am a man of flesh and blood---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "It is only because I have a heart---I am a man of flesh and blood---",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "shown": "I want to show O-lan the pearls I gave her, but I feel ashamed and must apologize for my harshness and my love for Lotus.",
+    "intend_probs": {
+     "speak": 0.3053354322910309,
+     "act": 0.25536441802978516,
+     "silent": 0.018402060493826866
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "o_lan": {
+     "speak": 0.02505088970065117,
+     "act": 0.12434268742799759,
+     "silent": 0.03979576751589775,
+     "wait": 0.8108106255531311
+    }
+   },
+   "urgency": {
+    "o_lan": 0.1891893744468689
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have only this---"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"Wang Lung\"], \"speech\": \"I have only this---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have only this---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will not speak, but I hold the pearls close, feeling their coolness against my skin, and wait for his anger to pass, as it always does.",
+    "plan": "I will not speak, but I hold the pearls close, feeling their coolness against my skin, and wait for his anger to pass, as it always does.",
+    "shown": "I will not speak, but I hold the pearls close, feeling their coolness against my skin, and wait for his anger to pass, as it always does.",
+    "intend_probs": {
+     "speak": 0.016377318650484085,
+     "act": 0.04429763928055763,
+     "silent": 0.04956555739045143
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.22452405095100403,
+     "act": 0.3804416060447693,
+     "silent": 0.014683333225548267,
+     "wait": 0.3803509771823883
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6196490228176117
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"O-lan\"] , \"action\": \"Wang Lung gives O-lan the pearls.\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" ,\"to\": [\"O-lan\"], \"action\": \"gives O-lan pearls and asks forgiveness\"}",
+    "{\"intend\": \"act\" , \"to\": [\"O-lan\"] , \"action\": \"gives O-lan pearls\"}",
+    "{\"intend\": \"act\" , \"to\": [\"O-lan\"] , \"action\": \"Wang Lung gives O-lan the pearls.\"}"
+   ],
+   "dropped": "act",
+   "plan": {
+    "raw": "I want to show O-lan I still love her, so I'll give her the pearls and apologize, then go buy a gold pin for Lotus.",
+    "plan": "I want to show O-lan I still love her, so I'll give her the pearls and apologize, then go buy a gold pin for Lotus.",
+    "shown": "I want to show O-lan I still love her, so I'll give her the pearls and apologize, then go buy a gold pin for Lotus.",
+    "intend_probs": {
+     "speak": 0.15426166355609894,
+     "act": 0.5689961910247803,
+     "silent": 0.008073876611888409
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1167122945189476,
+     "act": 0.5712863802909851,
+     "silent": 0.006308856885880232,
+     "wait": 0.30569255352020264
+    },
+    "o_lan": {
+     "speak": 0.01861593872308731,
+     "act": 0.06426049768924713,
+     "silent": 0.030017882585525513,
+     "wait": 0.8871057033538818
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6943074464797974,
+    "o_lan": 0.11289429664611816
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "If I had the money,"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"If I had the money,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "If I had the money,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to show Lotus a gold pin, but first I must speak kindly to O-lan, for my heart is torn between her and the tea house.",
+    "plan": "I want to show Lotus a gold pin, but first I must speak kindly to O-lan, for my heart is torn between her and the tea house.",
+    "shown": "I want to show Lotus a gold pin, but first I must speak kindly to O-lan, for my heart is torn between her and the tea house.",
+    "intend_probs": {
+     "speak": 0.4426884949207306,
+     "act": 0.16286224126815796,
+     "silent": 0.0038164169527590275
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "o_lan": {
+     "speak": 0.01658674329519272,
+     "act": 0.05044543370604515,
+     "silent": 0.03879234567284584,
+     "wait": 0.8941754698753357
+    }
+   },
+   "urgency": {
+    "o_lan": 0.1058245301246643
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan hides pearls"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"O-lan hides pearls\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hides pearls",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will hold the pearls close and speak no more, for my husband is a man of flesh and blood, and I must be silent, as always.",
+    "plan": "I will hold the pearls close and speak no more, for my husband is a man of flesh and blood, and I must be silent, as always.",
+    "shown": "I will hold the pearls close and speak no more, for my husband is a man of flesh and blood, and I must be silent, as always.",
+    "intend_probs": {
+     "speak": 0.03164264187216759,
+     "act": 0.12207925319671631,
+     "silent": 0.050247203558683395
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4123668968677521,
+     "act": 0.1719811111688614,
+     "silent": 0.0031194824259728193,
+     "wait": 0.4125324785709381
+    },
+    "o_lan": {
+     "speak": 0.02192978747189045,
+     "act": 0.21402262151241302,
+     "silent": 0.017206860706210136,
+     "wait": 0.74684077501297
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5874675214290619,
+    "o_lan": 0.25315922498703003
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung goes to O-lan's room."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung goes to O-lan's room.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung goes to O-lan's room.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to give Lotus a gold pin, but I need the pearls O-lan hides. I will ask her to give them to me, though my heart feels torn between her and the girl at the tea house.",
+    "plan": "I want to give Lotus a gold pin, but I need the pearls O-lan hides. I will ask her to give them to me, though my heart feels torn between her and the girl at the tea house.",
+    "shown": "I want to give Lotus a gold pin, but I need the pearls O-lan hides. I will ask her to give them to me, though my heart feels torn between her and the girl at the tea house.",
+    "intend_probs": {
+     "speak": 0.4431122839450836,
+     "act": 0.1630944460630417,
+     "silent": 0.002610650146380067
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.506113588809967,
+     "act": 0.14504031836986542,
+     "silent": 0.0009698608191683888,
+     "wait": 0.34787625074386597
+    },
+    "o_lan": {
+     "speak": 0.025320684537291527,
+     "act": 0.21273989975452423,
+     "silent": 0.019504863768815994,
+     "wait": 0.7424345016479492
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.652123749256134,
+    "o_lan": 0.2575654983520508
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "Wang Lung finds the pearls hidden in O-lan's clothing."
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung finds the pearls hidden in O-lan's clothing.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung finds the pearls hidden in O-lan's clothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [], \"action\": \"Wang Lung hides pearls\"}"
+   ],
+   "plan": {
+    "raw": "I want to give Lotus a gold pin, but first I must take the pearls from O-lan and give them to her, though my heart feels heavy with shame.",
+    "plan": "I want to give Lotus a gold pin, but first I must take the pearls from O-lan and give them to her, though my heart feels heavy with shame.",
+    "shown": "I want to give Lotus a gold pin, but first I must take the pearls from O-lan and give them to her, though my heart feels heavy with shame.",
+    "intend_probs": {
+     "speak": 0.13869628310203552,
+     "act": 0.45319664478302,
+     "silent": 0.008237525820732117
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.12705715000629425,
+     "act": 0.4804115295410156,
+     "silent": 0.01844651997089386,
+     "wait": 0.3740847706794739
+    },
+    "o_lan": {
+     "speak": 0.030311059206724167,
+     "act": 0.15400561690330505,
+     "silent": 0.03365461900830269,
+     "wait": 0.7820287346839905
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6259152293205261,
+    "o_lan": 0.21797126531600952
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan is silent about the pearls"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"O-lan is silent about the pearls\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan is silent about the pearls",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will not speak, but let the pearls remain where they are, for they are mine, and I will not let him take them now.",
+    "plan": "I will not speak, but let the pearls remain where they are, for they are mine, and I will not let him take them now.",
+    "shown": "I will not speak, but let the pearls remain where they are, for they are mine, and I will not let him take them now.",
+    "intend_probs": {
+     "speak": 0.019557833671569824,
+     "act": 0.11261565238237381,
+     "silent": 0.03580985963344574
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.12464577704668045,
+     "act": 0.537106990814209,
+     "silent": 0.01250868383795023,
+     "wait": 0.3257385492324829
+    },
+    "o_lan": {
+     "speak": 0.019047368317842484,
+     "act": 0.15954533219337463,
+     "silent": 0.011289465241134167,
+     "wait": 0.8101178407669067
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6742614507675171,
+    "o_lan": 0.18988215923309326
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "There is a little gold box in my room. Take the pearls and put them there. I will never use them---I will never wear them---and they are better in your house, where they can be used as they were meant to be."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"There is a little gold box in my room. Take the pearls and put them there. I will never use them---I will never wear them---and they are better in your house, where they can be used as they were meant to be.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "There is a little gold box in my room. Take the pearls and put them there. I will never use them---I will never wear them---and they are better in your house, where they can be used as they were meant to be.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {
+    "pearls": "wang_lung"
+   },
+   "plan": {
+    "raw": "I want Lotus's favor, but I have no gift. I take the pearls from O-lan, but she hides them well. I must make her give them to me now, or I will lose her forever.",
+    "plan": "I want Lotus's favor, but I have no gift. I take the pearls from O-lan, but she hides them well. I must make her give them to me now, or I will lose her forever.",
+    "shown": "I want Lotus's favor, but I have no gift. I take the pearls from O-lan, but she hides them well. I must make her give them to me now, or I will lose her forever.",
+    "intend_probs": {
+     "speak": 0.22030983865261078,
+     "act": 0.411790132522583,
+     "silent": 0.004550662823021412
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "o_lan": {
+     "speak": 0.016871126368641853,
+     "act": 0.1568010151386261,
+     "silent": 0.03006858564913273,
+     "wait": 0.796259343624115
+    }
+   },
+   "urgency": {
+    "o_lan": 0.203740656375885
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan places pearls in gold box"
+   },
+   "raw": "{\"intend\": \"act\" ,\"to\": [],\"action\": \"O-lan places pearls in gold box\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan places pearls in gold box",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will place the pearls in the gold box as he asked, though my heart aches, for I know he does not see how they comfort me when he is far away.",
+    "plan": "I will place the pearls in the gold box as he asked, though my heart aches, for I know he does not see how they comfort me when he is far away.",
+    "shown": "I will place the pearls in the gold box as he asked, though my heart aches, for I know he does not see how they comfort me when he is far away.",
+    "intend_probs": {
+     "speak": 0.01899249665439129,
+     "act": 0.4572879374027252,
+     "silent": 0.005605822429060936
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1623454988002777,
+     "act": 0.44122326374053955,
+     "silent": 0.007089595310389996,
+     "wait": 0.3893416225910187
+    },
+    "o_lan": {
+     "speak": 0.023356420919299126,
+     "act": 0.2849081754684448,
+     "silent": 0.00831706915050745,
+     "wait": 0.683418333530426
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6106583774089813,
+    "o_lan": 0.316581666469574
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan hides gold box"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"O-lan hides gold box\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hides gold box",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I place the pearls in the gold box as he asked, my hands steady, my heart quiet, trusting that he will not look again, and that my silence will keep us both safe.",
+    "plan": "I place the pearls in the gold box as he asked, my hands steady, my heart quiet, trusting that he will not look again, and that my silence will keep us both safe.",
+    "shown": "I place the pearls in the gold box as he asked, my hands steady, my heart quiet, trusting that he will not look again, and that my silence will keep us both safe.",
+    "intend_probs": {
+     "speak": 0.018245868384838104,
+     "act": 0.1964407116174698,
+     "silent": 0.00845328625291586
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.1967315971851349,
+     "act": 0.34769314527511597,
+     "silent": 0.00919562578201294,
+     "wait": 0.446379691362381
+    },
+    "o_lan": {
+     "speak": 0.016181115061044693,
+     "act": 0.1963905692100525,
+     "silent": 0.010752897709608078,
+     "wait": 0.7766753435134888
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.553620308637619,
+    "o_lan": 0.22332465648651123
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I will go into the city, then, and buy jewels and rubies and such things as are for the head. Wear them and I will look at them often and think of your face."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"I will go into the city, then, and buy jewels and rubies and such things as are for the head. Wear them and I will look at them often and think of your face.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will go into the city, then, and buy jewels and rubies and such things as are for the head. Wear them and I will look at them often and think of your face.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to show her I still care, so I'll speak gently, ask her to keep the pearls, and promise to treat her better, even if my heart is torn between Lotus and her.",
+    "plan": "I want to show her I still care, so I'll speak gently, ask her to keep the pearls, and promise to treat her better, even if my heart is torn between Lotus and her.",
+    "shown": "I want to show her I still care, so I'll speak gently, ask her to keep the pearls, and promise to treat her better, even if my heart is torn between Lotus and her.",
+    "intend_probs": {
+     "speak": 0.48436227440834045,
+     "act": 0.08414937555789948,
+     "silent": 0.0041495515033602715
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "o_lan": {
+     "speak": 0.02266625501215458,
+     "act": 0.2150145322084427,
+     "silent": 0.011882029473781586,
+     "wait": 0.7504372596740723
+    }
+   },
+   "urgency": {
+    "o_lan": 0.24956274032592773
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan puts pearls away in box"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"] , \"action\": \"O-lan puts pearls away in box\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan puts pearls away in box",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will not wear the pearls, nor speak of them again. I will keep them safe, as they are meant to be, and let my husband think of me when he sees the jewels he has bought.",
+    "plan": "I will not wear the pearls, nor speak of them again. I will keep them safe, as they are meant to be, and let my husband think of me when he sees the jewels he has bought.",
+    "shown": "I will not wear the pearls, nor speak of them again. I will keep them safe, as they are meant to be, and let my husband think of me when he sees the jewels he has bought.",
+    "intend_probs": {
+     "speak": 0.0214790441095829,
+     "act": 0.1756162792444229,
+     "silent": 0.0158530380576849
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.544258713722229,
+     "act": 0.0737164244055748,
+     "silent": 0.007647891994565725,
+     "wait": 0.3743770718574524
+    },
+    "o_lan": {
+     "speak": 0.02440410852432251,
+     "act": 0.1757606565952301,
+     "silent": 0.012125778011977673,
+     "wait": 0.7877094745635986
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6256229281425476,
+    "o_lan": 0.21229052543640137
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung leaves secretly.\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" ,\"to\": [] , \"action\": \"Wang Lung leaves\"}",
+    "{\"intend\": \"act\" , \"to\": [] , \"action\": \"Wang Lung leaves secretly.\"}"
+   ],
+   "dropped": "act",
+   "plan": {
+    "raw": "I want Lotus's favor, but I need O-lan's silence. I'll praise her quietly, then promise to buy more jewels, so she'll keep the pearls and let me go to the city, where I can win Lotus's heart.",
+    "plan": "I want Lotus's favor, but I need O-lan's silence. I'll praise her quietly, then promise to buy more jewels, so she'll keep the pearls and let me go to the city, where I can win Lotus's heart.",
+    "shown": "I want Lotus's favor, but I need O-lan's silence. I'll praise her quietly, then promise to buy more jewels, so she'll keep the pearls and let me go to the city, where I can win Lotus's heart.",
+    "intend_probs": {
+     "speak": 0.22472718358039856,
+     "act": 0.2885674238204956,
+     "silent": 0.010932683944702148
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2737638056278229,
+     "act": 0.24989871680736542,
+     "silent": 0.009515448473393917,
+     "wait": 0.46682208776474
+    },
+    "o_lan": {
+     "speak": 0.02151833102107048,
+     "act": 0.17651326954364777,
+     "silent": 0.010909438133239746,
+     "wait": 0.7910590171813965
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.53317791223526,
+    "o_lan": 0.20894098281860352
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I will not return,"
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"], \"speech\": \"I will not return,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I will not return,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Lotus's favor, but I cannot take O-lan's pearls. I will tell her I will not return from the city, so she will keep the gold box and the pearls, and I will go alone.",
+    "plan": "I want Lotus's favor, but I cannot take O-lan's pearls. I will tell her I will not return from the city, so she will keep the gold box and the pearls, and I will go alone.",
+    "shown": "I want Lotus's favor, but I cannot take O-lan's pearls. I will tell her I will not return from the city, so she will keep the gold box and the pearls, and I will go alone.",
+    "intend_probs": {
+     "speak": 0.2628992199897766,
+     "act": 0.41219383478164673,
+     "silent": 0.003976683132350445
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "o_lan": {
+     "speak": 0.024884220212697983,
+     "act": 0.12684166431427002,
+     "silent": 0.021217189729213715,
+     "wait": 0.8270569443702698
+    }
+   },
+   "urgency": {
+    "o_lan": 0.17294305562973022
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}.",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will not speak, but let my silence be a sign of trust, as I have always done, and let the pearls remain where they are, safe and unspoken.",
+    "plan": "I will not speak, but let my silence be a sign of trust, as I have always done, and let the pearls remain where they are, safe and unspoken.",
+    "shown": "I will not speak, but let my silence be a sign of trust, as I have always done, and let the pearls remain where they are, safe and unspoken.",
+    "intend_probs": {
+     "speak": 0.020699599757790565,
+     "act": 0.04970698431134224,
+     "silent": 0.04856432229280472
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2919999063014984,
+     "act": 0.37515732645988464,
+     "silent": 0.0019332116935402155,
+     "wait": 0.3309095501899719
+    },
+    "o_lan": {
+     "speak": 0.01430254802107811,
+     "act": 0.08253194391727448,
+     "silent": 0.015877237543463707,
+     "wait": 0.8872882723808289
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6690904498100281,
+    "o_lan": 0.11271172761917114
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Let me go to the city and buy jewels and rubies."
+   },
+   "raw": "{\"intend\": \"speak\" , \"to\": [\"O-lan\"] , \"speech\": \"Let me go to the city and buy jewels and rubies.\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Let me go to the city and buy jewels and rubies.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Lotus's favor, but I see O-lan's silence and the pearls in the box. I will take them, but first, I must ask her to let me go to the city.",
+    "plan": "I want Lotus's favor, but I see O-lan's silence and the pearls in the box. I will take them, but first, I must ask her to let me go to the city.",
+    "shown": "I want Lotus's favor, but I see O-lan's silence and the pearls in the box. I will take them, but first, I must ask her to let me go to the city.",
+    "intend_probs": {
+     "speak": 0.41921862959861755,
+     "act": 0.1288452446460724,
+     "silent": 0.0023305295035243034
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "o_lan": {
+     "speak": 0.01273009181022644,
+     "act": 0.07265506684780121,
+     "silent": 0.029499594122171402,
+     "wait": 0.8851152658462524
+    }
+   },
+   "urgency": {
+    "o_lan": 0.11488473415374756
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent"
+   },
+   "raw": "{\"intend\": \"silent\"}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will not speak, but let him go, for he must have his pride, and I will keep the pearls safe, as he asked, though my heart aches for him.",
+    "plan": "I will not speak, but let him go, for he must have his pride, and I will keep the pearls safe, as he asked, though my heart aches for him.",
+    "shown": "I will not speak, but let him go, for he must have his pride, and I will keep the pearls safe, as he asked, though my heart aches for him.",
+    "intend_probs": {
+     "speak": 0.00970522966235876,
+     "act": 0.10452179610729218,
+     "silent": 0.010691744275391102
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.45253393054008484,
+     "act": 0.14691969752311707,
+     "silent": 0.0012482396559789777,
+     "wait": 0.3992981016635895
+    },
+    "o_lan": {
+     "speak": 0.009742280468344688,
+     "act": 0.11693635582923889,
+     "silent": 0.009315780363976955,
+     "wait": 0.8640056252479553
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6007018983364105,
+    "o_lan": 0.13599437475204468
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan hides box"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [], \"action\": \"O-lan hides box\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan hides box",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "off_scene": [
+    "{\"intend\": \"act\" , \"to\": [\"Wang Lung\"], \"action\": \"O-lan hides pearls\"}"
+   ],
+   "plan": {
+    "raw": "I will keep the pearls safe, as he asked, and let him go, though my heart aches, for I have loved him all my life and always will.",
+    "plan": "I will keep the pearls safe, as he asked, and let him go, though my heart aches, for I have loved him all my life and always will.",
+    "shown": "I will keep the pearls safe, as he asked, and let him go, though my heart aches, for I have loved him all my life and always will.",
+    "intend_probs": {
+     "speak": 0.014762579463422298,
+     "act": 0.159071683883667,
+     "silent": 0.018367459997534752
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.46694156527519226,
+     "act": 0.14305202662944794,
+     "silent": 0.001212466973811388,
+     "wait": 0.3887939751148224
+    },
+    "o_lan": {
+     "speak": 0.01652316004037857,
+     "act": 0.17808301746845245,
+     "silent": 0.007294564042240381,
+     "wait": 0.7980993390083313
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6112060248851776,
+    "o_lan": 0.2019006609916687
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan takes the gold box"
+   },
+   "raw": "{\"intend\": \"act\" , \"to\": [] , \"action\": \"O-lan takes the gold box\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan takes the gold box",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "wang_lung"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I will not speak, but I will keep the box safe, for you have given me something more than jewels—trust, and the right to hold it close.",
+    "plan": "I will not speak, but I will keep the box safe, for you have given me something more than jewels—trust, and the right to hold it close.",
+    "shown": "I will not speak, but I will keep the box safe, for you have given me something more than jewels—trust, and the right to hold it close.",
+    "intend_probs": {
+     "speak": 0.011226709000766277,
+     "act": 0.21859125792980194,
+     "silent": 0.007231008727103472
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "wang_lung"
+ },
+ "transcript": [
+  "Wang Lung (to O-lan): \"It is only because I have a heart---I am a man of flesh and blood---\"",
+  "O-lan (to Wang Lung): \"I have only this---\"",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to O-lan): \"If I had the money,\"",
+  "[action] (to Wang Lung) O-lan hides pearls",
+  "[action] Wang Lung goes to O-lan's room.",
+  "[action] Wang Lung finds the pearls hidden in O-lan's clothing.",
+  "[action] O-lan is silent about the pearls",
+  "Wang Lung (to O-lan): \"There is a little gold box in my room. Take the pearls and put them there. I will never use them---I will never wear them---and they are better in your house, where they can be used as they were meant to be.\"",
+  "[action] O-lan places pearls in gold box",
+  "[action] (to Wang Lung) O-lan hides gold box",
+  "Wang Lung (to O-lan): \"I will go into the city, then, and buy jewels and rubies and such things as are for the head. Wear them and I will look at them often and think of your face.\"",
+  "[action] (to Wang Lung) O-lan puts pearls away in box",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to O-lan): \"I will not return,\"",
+  "[silence] O-lan says nothing.",
+  "Wang Lung (to O-lan): \"Let me go to the city and buy jewels and rubies.\"",
+  "[silence] O-lan says nothing.",
+  "[action] O-lan hides box",
+  "[action] O-lan takes the gold box"
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want to show O-lan the pearls I gave her, but I feel ashamed and must apologize for my harshness and my love for Lotus.",
+   "plan": "I want to show O-lan the pearls I gave her, but I feel ashamed and must apologize for my harshness and my love for Lotus."
+  },
+  "o_lan": {
+   "raw": "I will not speak, but I hold the pearls close, knowing he will not take them from me, for he is too proud to ask, and too proud to know he needs me.",
+   "plan": "I will not speak, but I hold the pearls close, knowing he will not take them from me, for he is too proud to ask, and too proud to know he needs me."
+  }
+ },
+ "seconds": 138.54916906356812
+}

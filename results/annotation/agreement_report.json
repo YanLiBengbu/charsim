@@ -1,0 +1,167 @@
+{
+ "models": [
+  "qwen2.5:14b",
+  "gemma3:12b"
+ ],
+ "adjudicator": "phi4:14b",
+ "speakers": {
+  "groups": 1290,
+  "tiers": {
+   "llm_agree": 1075,
+   "majority": 59,
+   "adjudicated": 78,
+   "unresolved": 78
+  },
+  "kappa_llm1_llm2": [
+   0.839,
+   1224
+  ],
+  "kappa_llm1_rule": [
+   0.592,
+   911
+  ],
+  "kappa_llm2_rule": [
+   0.57,
+   918
+  ],
+  "by_speaker": [
+   [
+    "\"wang_lung\"",
+    594
+   ],
+   [
+    "\"o_lan\"",
+    137
+   ],
+   [
+    "\"other\"",
+    100
+   ],
+   [
+    null,
+    78
+   ],
+   [
+    "\"eldest_son\"",
+    58
+   ],
+   [
+    "\"father\"",
+    56
+   ],
+   [
+    "\"uncle\"",
+    42
+   ],
+   [
+    "\"cuckoo\"",
+    37
+   ],
+   [
+    "\"lotus\"",
+    28
+   ],
+   [
+    "\"uncles_wife\"",
+    26
+   ],
+   [
+    "\"gateman\"",
+    23
+   ],
+   [
+    "\"uncles_son\"",
+    23
+   ],
+   [
+    "\"old_mistress\"",
+    22
+   ],
+   [
+    "\"ching\"",
+    17
+   ],
+   [
+    "\"second_son\"",
+    11
+   ],
+   [
+    "\"pear_blossom\"",
+    11
+   ],
+   [
+    "\"youngest_son\"",
+    9
+   ],
+   [
+    "\"liu\"",
+    7
+   ],
+   [
+    "\"none\"",
+    3
+   ],
+   [
+    "\"eldest_sons_wife\"",
+    3
+   ],
+   [
+    "[\"eldest_son\", \"second_son\"]",
+    2
+   ],
+   [
+    "[\"uncles_son\", \"uncles_wife\"]",
+    1
+   ],
+   [
+    "[\"eldest_son\", \"second_son\", \"youngest_son\"]",
+    1
+   ],
+   [
+    "[\"eldest_son\", \"wang_lung\"]",
+    1
+   ]
+  ],
+  "gold_ch26": {
+   "qwen2.5:14b": {
+    "labelled": 11,
+    "correct": 11
+   },
+   "gemma3:12b": {
+    "labelled": 11,
+    "correct": 11
+   },
+   "rule": {
+    "labelled": 11,
+    "correct": 10
+   },
+   "final": {
+    "labelled": 11,
+    "correct": 11
+   },
+   "phi4:14b": {
+    "labelled": 11,
+    "correct": 11
+   },
+   "quotations": 11
+  }
+ },
+ "beats": {
+  "items_model1": 2512,
+  "items_model2": 3495,
+  "matched": 1323,
+  "f1": 0.44
+ },
+ "events": {
+  "items_model1": 1742,
+  "items_model2": 2415,
+  "matched": 1038,
+  "f1": 0.499
+ },
+ "relations": {
+  "items_model1": 1266,
+  "items_model2": 1410,
+  "matched": 269,
+  "f1": 0.201
+ }
+}

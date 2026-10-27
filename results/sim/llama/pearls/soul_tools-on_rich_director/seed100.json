@@ -1,0 +1,861 @@
+{
+ "scene": "pearls",
+ "seed": 100,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": "director",
+  "cards": "rich"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3535385727882385,
+     "act": 0.07528260350227356,
+     "silent": 0.014817980118095875,
+     "wait": 0.5563608407974243
+    }
+   },
+   "urgency": {
+    "o_lan": 0.4436391592025757
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "Is there not enough---?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"Is there not enough---?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Is there not enough---?",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\n  \"next\": \"O-lan\",\n  \"direction\": \"Ask what you need now that you've spent all our silver.\"\n}",
+    "actor": "o_lan",
+    "direction": "Ask what you need now that you've spent all our silver."
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5065068006515503,
+     "act": 0.06881288439035416,
+     "silent": 0.028685158118605614,
+     "wait": 0.3959951102733612
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6040048897266388
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "I do not know---I do not know,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"I do not know---I do not know,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I do not know---I do not know,",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Ask why she's still washing your clothes with her own hands.\"}",
+    "actor": "wang_lung",
+    "direction": "Ask why she's still washing your clothes with her own hands."
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "o_lan": {
+     "speak": 0.07035254687070847,
+     "act": 0.1913563460111618,
+     "silent": 0.07035402208566666,
+     "wait": 0.6679370403289795
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3320629596710205
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan carefully repairs her clothing"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan carefully repairs her clothing\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan carefully repairs her clothing",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Notice how your clothes look, worn and faded.\"}",
+    "actor": "o_lan",
+    "direction": "Notice how your clothes look, worn and faded."
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "o_lan": {
+     "speak": 0.03663183003664017,
+     "act": 0.29458940029144287,
+     "silent": 0.04507972300052643,
+     "wait": 0.6236990094184875
+    }
+   },
+   "urgency": {
+    "o_lan": 0.37630099058151245
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan repairs the bed"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan repairs the bed\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan repairs the bed",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\n  \"next\": \"O-lan\",\n  \"direction\": \"Do you really need to take all the silver from the wall for her?\"\n}",
+    "actor": "o_lan",
+    "direction": "Do you really need to take all the silver from the wall for her?"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7396535873413086,
+     "act": 0.03334282338619232,
+     "silent": 0.009553533978760242,
+     "wait": 0.2174500823020935
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7825499176979065
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "speech": "Is anything wrong with the body?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"speech\": \"Is anything wrong with the body?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Is anything wrong with the body?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Ask O-lan why she's so quiet and still, looking so unhappy.\"}",
+    "actor": "wang_lung",
+    "direction": "Ask O-lan why she's so quiet and still, looking so unhappy."
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "o_lan": {
+     "speak": 0.18824554979801178,
+     "act": 0.06366082280874252,
+     "silent": 0.06359304487705231,
+     "wait": 0.6845005750656128
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3154994249343872
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Look at Wang Lung with concern over the state of his body.\"}",
+    "actor": "o_lan",
+    "direction": "Look at Wang Lung with concern over the state of his body."
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "o_lan": {
+     "speak": 0.043825551867485046,
+     "act": 0.13423937559127808,
+     "silent": 0.04923871532082558,
+     "wait": 0.7726963758468628
+    }
+   },
+   "urgency": {
+    "o_lan": 0.2273036241531372
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan's face goes white."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan's face goes white.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan's face goes white.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\n  \"next\": \"O-lan\",\n  \"direction\": \"Look up to meet your husband's eyes, seeing if he notices you.\"\n}",
+    "actor": "o_lan",
+    "direction": "Look up to meet your husband's eyes, seeing if he notices you."
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8288201689720154,
+     "act": 0.019875820726156235,
+     "silent": 0.004434328060597181,
+     "wait": 0.14686976373195648
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8531302362680435
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Is anything wrong---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Is anything wrong---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Is anything wrong---",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Ask your wife what's wrong, seeing her face has gone white.\"}",
+    "actor": "wang_lung",
+    "direction": "Ask your wife what's wrong, seeing her face has gone white."
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 0.2485906183719635,
+     "act": 0.07468045502901077,
+     "silent": 0.05126344785094261,
+     "wait": 0.6254655122756958
+    }
+   },
+   "urgency": {
+    "o_lan": 0.3745344877243042
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have given birth---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have given birth---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have given birth---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"ask if your money and silver are for the farm or another woman's pleasure.\"}",
+    "actor": "o_lan",
+    "direction": "ask if your money and silver are for the farm or another woman's pleasure."
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.2811901867389679,
+     "act": 0.10374818742275238,
+     "silent": 0.018027357757091522,
+     "wait": 0.597034215927124
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.402965784072876
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "You have given birth---how long is it since we last lay together?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"You have given birth---how long is it since we last lay together?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "You have given birth---how long is it since we last lay together?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Remember the pearls you let her keep.\"}",
+    "actor": "wang_lung",
+    "direction": "Remember the pearls you let her keep."
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "o_lan": {
+     "speak": 0.4664911925792694,
+     "act": 0.027937456965446472,
+     "silent": 0.010272976011037827,
+     "wait": 0.49529844522476196
+    }
+   },
+   "urgency": {
+    "o_lan": 0.504701554775238
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan nervously prepares food"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan nervously prepares food\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan nervously prepares food",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Ask if your husband is home to stay and forget about his love affairs.\"}",
+    "actor": "o_lan",
+    "direction": "Ask if your husband is home to stay and forget about his love affairs."
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.7967463135719299,
+     "act": 0.03500461205840111,
+     "silent": 0.011364070698618889,
+     "wait": 0.15688496828079224
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8431150317192078
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung sits on the bed"
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung sits on the bed\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung sits on the bed",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"ask her if she remembers the two small pearls now.\"}",
+    "actor": "wang_lung",
+    "direction": "ask her if she remembers the two small pearls now."
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "o_lan": {
+     "speak": 0.017622150480747223,
+     "act": 0.1147121712565422,
+     "silent": 0.019866077229380608,
+     "wait": 0.8477995991706848
+    }
+   },
+   "urgency": {
+    "o_lan": 0.15220040082931519
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"see what is in your husband's mind as he sits on the bed.\"}",
+    "actor": "o_lan",
+    "direction": "see what is in your husband's mind as he sits on the bed."
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "o_lan": {
+     "speak": 0.5624880194664001,
+     "act": 0.03171706572175026,
+     "silent": 0.01919950544834137,
+     "wait": 0.38659536838531494
+    }
+   },
+   "urgency": {
+    "o_lan": 0.6134046316146851
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "gist": "O-lan explains her condition to Wang Lung."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"gist\": \"O-lan explains her condition to Wang Lung.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan explains her condition to Wang Lung.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Find the courage to tell him why you're pale, not from childbirth.\"}",
+    "actor": "o_lan",
+    "direction": "Find the courage to tell him why you're pale, not from childbirth."
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.4681861996650696,
+     "act": 0.09219644218683243,
+     "silent": 0.026411255821585655,
+     "wait": 0.4132061004638672
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5867938995361328
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\"}.",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Do you think I should give all my silver to just any girl?\"}",
+    "actor": "wang_lung",
+    "direction": "Do you think I should give all my silver to just any girl?"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.44551533460617065,
+     "act": 0.0767240971326828,
+     "silent": 0.036229442805051804,
+     "wait": 0.44153112173080444
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5584688782691956
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "You have given birth---how long is it since we last lay together?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"You have given birth---how long is it since we last lay together?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "You have given birth---how long is it since we last lay together?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"Explain why you're not interested in your latest child with him.\"}",
+    "actor": "wang_lung",
+    "direction": "Explain why you're not interested in your latest child with him."
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "o_lan": {
+     "speak": 0.5016637444496155,
+     "act": 0.05690372735261917,
+     "silent": 0.02089640684425831,
+     "wait": 0.4205361604690552
+    }
+   },
+   "urgency": {
+    "o_lan": 0.5794638395309448
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have not lain with you since the last moon---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have not lain with you since the last moon---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have not lain with you since the last moon---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"press for what you need, not for gifts from strangers.\"}",
+    "actor": "o_lan",
+    "direction": "press for what you need, not for gifts from strangers."
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "o_lan": {
+     "speak": 0.6259480714797974,
+     "act": 0.027501845732331276,
+     "silent": 0.011448894627392292,
+     "wait": 0.3351012170314789
+    }
+   },
+   "urgency": {
+    "o_lan": 0.6648987829685211
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have been afraid of you,"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have been afraid of you,\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have been afraid of you,",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"Press for the truth about your husband's behavior and intentions now.\"}",
+    "actor": "o_lan",
+    "direction": "Press for the truth about your husband's behavior and intentions now."
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.8274491429328918,
+     "act": 0.021993551403284073,
+     "silent": 0.007139754015952349,
+     "wait": 0.1434175819158554
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.8565824180841446
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Did you know why you have been afraid of me?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"Did you know why you have been afraid of me?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Did you know why you have been afraid of me?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"Wang Lung\", \"direction\": \"ask if she knows what you want that's been troubling you so.\"}",
+    "actor": "wang_lung",
+    "direction": "ask if she knows what you want that's been troubling you so."
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3764485716819763,
+     "act": 0.02302301861345768,
+     "silent": 0.006587928626686335,
+     "wait": 0.5939404964447021
+    }
+   },
+   "urgency": {
+    "o_lan": 0.40605950355529785
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "I have not known---"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"I have not known---\"}",
+   "item": {
+    "kind": "speak",
+    "text": "I have not known---",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "director": {
+    "raw": "{\"next\": \"O-lan\", \"direction\": \"ask about the reason for his absence and his new manner.\"}",
+    "actor": "o_lan",
+    "direction": "ask about the reason for his absence and his new manner."
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "o_lan"
+ },
+ "transcript": [
+  "O-lan (to Wang Lung): \"Is there not enough---?\"",
+  "Wang Lung (to O-lan): \"I do not know---I do not know,\"",
+  "[action] (to Wang Lung) O-lan carefully repairs her clothing",
+  "[action] O-lan repairs the bed",
+  "Wang Lung: \"Is anything wrong with the body?\"",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[action] O-lan's face goes white.",
+  "Wang Lung (to O-lan): \"Is anything wrong---\"",
+  "O-lan (to Wang Lung): \"I have given birth---\"",
+  "Wang Lung (to O-lan): \"You have given birth---how long is it since we last lay together?\"",
+  "[action] O-lan nervously prepares food",
+  "[action] (to O-lan) Wang Lung sits on the bed",
+  "[silence] O-lan says nothing.",
+  "[says] (to Wang Lung) O-lan explains her condition to Wang Lung.",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to O-lan): \"You have given birth---how long is it since we last lay together?\"",
+  "O-lan (to Wang Lung): \"I have not lain with you since the last moon---\"",
+  "O-lan (to Wang Lung): \"I have been afraid of you,\"",
+  "Wang Lung (to O-lan): \"Did you know why you have been afraid of me?\"",
+  "O-lan (to Wang Lung): \"I have not known---\""
+ ],
+ "seconds": 164.80741810798645
+}

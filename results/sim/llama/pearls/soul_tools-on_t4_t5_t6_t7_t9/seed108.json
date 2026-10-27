@@ -1,0 +1,1113 @@
+{
+ "scene": "pearls",
+ "seed": 108,
+ "config": {
+  "mode": "soul",
+  "tools": "on",
+  "t3_to_agents": false,
+  "edits": {},
+  "steer": {},
+  "souls": [
+   "o_lan",
+   "wang_lung"
+  ],
+  "max_turns": 20,
+  "temperature": 0.8,
+  "baseline": null,
+  "t4": true,
+  "t5": true,
+  "t6": true,
+  "t7": true,
+  "t8": false,
+  "t9": true,
+  "cards": "base",
+  "state_texts": "config/state_texts2.json"
+ },
+ "turns": [
+  {
+   "turn": 0,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6907173991203308,
+     "act": 0.08251183480024338,
+     "silent": 0.0024915137328207493,
+     "wait": 0.2242792546749115
+    },
+    "o_lan": {
+     "speak": 0.487009197473526,
+     "act": 0.07544967532157898,
+     "silent": 0.0033129178918898106,
+     "wait": 0.43422821164131165
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7757207453250885,
+    "o_lan": 0.5657717883586884
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "Now, tell me why you have not brought a dish of water for me at the day's end for a long time?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"speech\": \"Now, tell me why you have not brought a dish of water for me at the day's end for a long time?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "Now, tell me why you have not brought a dish of water for me at the day's end for a long time?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "shown": "I want O-lan's attention and affection, so I'll ask her to stop washing my clothes and come talk to me by the pool.",
+    "intend_probs": {
+     "speak": 0.6907173991203308,
+     "act": 0.08251183480024338,
+     "silent": 0.0024915137328207493
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 1,
+   "probs": {
+    "o_lan": {
+     "speak": 0.37412500381469727,
+     "act": 0.07367612421512604,
+     "silent": 0.007763605564832687,
+     "wait": 0.5444353222846985
+    }
+   },
+   "urgency": {
+    "o_lan": 0.4555646777153015
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "O-lan explains that she forgot to bring water."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan explains that she forgot to bring water.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan explains that she forgot to bring water.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to know why Wang Lung is angry with me and what I have done wrong so that I can correct my mistake.",
+    "plan": "I want to know why Wang Lung is angry with me and what I have done wrong so that I can correct my mistake.",
+    "shown": "I want to know why Wang Lung is angry with me and what I have done wrong so that I can correct my mistake.",
+    "intend_probs": {
+     "speak": 0.19189749658107758,
+     "act": 0.05354582890868187,
+     "silent": 0.015337875112891197
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 2,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.6152879595756531,
+     "act": 0.1555529534816742,
+     "silent": 0.0028489218093454838,
+     "wait": 0.22631028294563293
+    },
+    "o_lan": {
+     "speak": 0.3240372836589813,
+     "act": 0.0638093650341034,
+     "silent": 0.0067244223318994045,
+     "wait": 0.60542893409729
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7736897170543671,
+    "o_lan": 0.39457106590270996
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"speak\" \"to\": [\"O-lan\"], \"speech\": \"You have forgotten to bring me water at the day's end for a long time. Why is this?\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to bring me a dish of water so I can have a moment's peace before I go back to Lotus.",
+    "plan": "I want O-lan to bring me a dish of water so I can have a moment's peace before I go back to Lotus.",
+    "shown": "I want O-lan to bring me a dish of water so I can have a moment's peace before I go back to Lotus.",
+    "intend_probs": {
+     "speak": 0.5090610980987549,
+     "act": 0.1268051713705063,
+     "silent": 0.019445324316620827
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 3,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.576676070690155,
+     "act": 0.09211313724517822,
+     "silent": 0.009706896729767323,
+     "wait": 0.3215039372444153
+    },
+    "o_lan": {
+     "speak": 0.25006479024887085,
+     "act": 0.06317340582609177,
+     "silent": 0.007542071398347616,
+     "wait": 0.6792197227478027
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6784960627555847,
+    "o_lan": 0.32078027725219727
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "There is no water, is there, my wife?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"There is no water, is there, my wife?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "There is no water, is there, my wife?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to bring me the water I've been asking for, and I'll give her a pearl from the jewels as a small apology.",
+    "plan": "I want O-lan to bring me the water I've been asking for, and I'll give her a pearl from the jewels as a small apology.",
+    "shown": "I want O-lan to bring me the water I've been asking for, and I'll give her a pearl from the jewels as a small apology.",
+    "intend_probs": {
+     "speak": 0.7691103219985962,
+     "act": 0.05571628734469414,
+     "silent": 0.003561318852007389
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 4,
+   "probs": {
+    "o_lan": {
+     "speak": 0.3450646698474884,
+     "act": 0.06780140101909637,
+     "silent": 0.019418684765696526,
+     "wait": 0.5677152872085571
+    }
+   },
+   "urgency": {
+    "o_lan": 0.43228471279144287
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan starts to explain herself."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan starts to explain herself.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan starts to explain herself.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to understand that I am not forgetful, but I am afraid of his anger and do not want to suffer his wrath.",
+    "plan": "I want Wang Lung to understand that I am not forgetful, but I am afraid of his anger and do not want to suffer his wrath.",
+    "shown": "I want Wang Lung to understand that I am not forgetful, but I am afraid of his anger and do not want to suffer his wrath.",
+    "intend_probs": {
+     "speak": 0.348623663187027,
+     "act": 0.08752945810556412,
+     "silent": 0.060118697583675385
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 5,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5501091480255127,
+     "act": 0.10834313929080963,
+     "silent": 0.007847847416996956,
+     "wait": 0.3336998224258423
+    },
+    "o_lan": {
+     "speak": 0.5294099450111389,
+     "act": 0.10425177216529846,
+     "silent": 0.00244960468262434,
+     "wait": 0.3638887405395508
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6663001775741577,
+    "o_lan": 0.6361112594604492
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung speaks harshly to O-lan."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung speaks harshly to O-lan.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung speaks harshly to O-lan.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to get me water, and to pretend I didn't notice the pearls around her neck when I'm done with her.",
+    "plan": "I want O-lan to get me water, and to pretend I didn't notice the pearls around her neck when I'm done with her.",
+    "shown": "I want O-lan to get me water, and to pretend I didn't notice the pearls around her neck when I'm done with her.",
+    "intend_probs": {
+     "speak": 0.35135766863822937,
+     "act": 0.20392125844955444,
+     "silent": 0.013034980744123459
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 6,
+   "probs": {
+    "o_lan": {
+     "speak": 0.47974956035614014,
+     "act": 0.08255399018526077,
+     "silent": 0.01840556599199772,
+     "wait": 0.4192908704280853
+    }
+   },
+   "urgency": {
+    "o_lan": 0.5807091295719147
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "O-lan explains that the children have been ill and she has been too tired to carry water."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"O-lan explains that the children have been ill and she has been too tired to carry water.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "O-lan explains that the children have been ill and she has been too tired to carry water.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to understand my struggles and forgive me, so I will explain the reasons behind my forgetfulness with humility.",
+    "plan": "I want Wang Lung to understand my struggles and forgive me, so I will explain the reasons behind my forgetfulness with humility.",
+    "shown": "I want Wang Lung to understand my struggles and forgive me, so I will explain the reasons behind my forgetfulness with humility.",
+    "intend_probs": {
+     "speak": 0.7380245327949524,
+     "act": 0.027800526469945908,
+     "silent": 0.0013807290233671665
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 7,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5680690407752991,
+     "act": 0.09042332321405411,
+     "silent": 0.025905482470989227,
+     "wait": 0.31560218334198
+    },
+    "o_lan": {
+     "speak": 0.7515419721603394,
+     "act": 0.02342100255191326,
+     "silent": 0.0027942629531025887,
+     "wait": 0.22224275767803192
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.68439781665802,
+    "o_lan": 0.7777572423219681
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "speech": "How is it that you have forgotten water in my parched throat after all these years?"
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"speech\": \"How is it that you have forgotten water in my parched throat after all these years?\"}",
+   "item": {
+    "kind": "speak",
+    "text": "How is it that you have forgotten water in my parched throat after all these years?",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to tell me the truth about why she's neglected me lately, and I'll scold her more until she speaks.",
+    "plan": "I want O-lan to tell me the truth about why she's neglected me lately, and I'll scold her more until she speaks.",
+    "shown": "I want O-lan to tell me the truth about why she's neglected me lately, and I'll scold her more until she speaks.",
+    "intend_probs": {
+     "speak": 0.6579874753952026,
+     "act": 0.08113227039575577,
+     "silent": 0.010979349724948406
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 8,
+   "probs": {
+    "o_lan": {
+     "speak": 0.705687403678894,
+     "act": 0.031004218384623528,
+     "silent": 0.003697521286085248,
+     "wait": 0.2596108317375183
+    }
+   },
+   "urgency": {
+    "o_lan": 0.7403891682624817
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want from Wang Lung a calm understanding, but I am afraid of his anger and will say nothing more.",
+    "plan": "I want from Wang Lung a calm understanding, but I am afraid of his anger and will say nothing more.",
+    "shown": "I want from Wang Lung a calm understanding, but I am afraid of his anger and will say nothing more.",
+    "intend_probs": {
+     "speak": 0.04307509958744049,
+     "act": 0.09030531346797943,
+     "silent": 0.27761635184288025
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 9,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.5891523361206055,
+     "act": 0.12946641445159912,
+     "silent": 0.007302889600396156,
+     "wait": 0.2740783095359802
+    },
+    "o_lan": {
+     "speak": 0.02576720342040062,
+     "act": 0.10377243161201477,
+     "silent": 0.10346942394971848,
+     "wait": 0.7669909596443176
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7259216904640198,
+    "o_lan": 0.23300904035568237
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [],
+    "gist": "Wang Lung orders O-lan to bring water immediately."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [], \"gist\": \"Wang Lung orders O-lan to bring water immediately.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung orders O-lan to bring water immediately.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to bring me a dish of water so I can be satisfied and return to my thoughts about Lotus.",
+    "plan": "I want O-lan to bring me a dish of water so I can be satisfied and return to my thoughts about Lotus.",
+    "shown": "I want O-lan to bring me a dish of water so I can be satisfied and return to my thoughts about Lotus.",
+    "intend_probs": {
+     "speak": 0.5453191995620728,
+     "act": 0.11994650959968567,
+     "silent": 0.008688081987202168
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 10,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.47645851969718933,
+     "act": 0.17941710352897644,
+     "silent": 0.008931373246014118,
+     "wait": 0.3351929485797882
+    },
+    "o_lan": {
+     "speak": 0.04619510471820831,
+     "act": 0.19967743754386902,
+     "silent": 0.05709046497941017,
+     "wait": 0.6970369815826416
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6648070514202118,
+    "o_lan": 0.3029630184173584
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung harshly tells O-lan to bring water."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\" : [\"O-lan\"], \"gist\": \"Wang Lung harshly tells O-lan to bring water.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung harshly tells O-lan to bring water.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to bring me water, and to do so quickly, so that I can return to my thoughts of Lotus and the present I want to give her.",
+    "plan": "I want O-lan to bring me water, and to do so quickly, so that I can return to my thoughts of Lotus and the present I want to give her.",
+    "shown": "I want O-lan to bring me water, and to do so quickly, so that I can return to my thoughts of Lotus and the present I want to give her.",
+    "intend_probs": {
+     "speak": 0.4963699281215668,
+     "act": 0.20195722579956055,
+     "silent": 0.007829445414245129
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 11,
+   "probs": {
+    "o_lan": {
+     "speak": 0.038581281900405884,
+     "act": 0.15793675184249878,
+     "silent": 0.0955081656575203,
+     "wait": 0.7079737782478333
+    }
+   },
+   "urgency": {
+    "o_lan": 0.29202622175216675
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "Wang Lung"
+    ],
+    "action": "O-lan reluctantly shows Wang Lung the pearls."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"Wang Lung\"], \"action\": \"O-lan reluctantly shows Wang Lung the pearls.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan reluctantly shows Wang Lung the pearls.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to see the small white pearls between my breasts, to know that the jewels are safe and our family is secure.",
+    "plan": "I want Wang Lung to see the small white pearls between my breasts, to know that the jewels are safe and our family is secure.",
+    "shown": "I want Wang Lung to see the small white pearls between my breasts, to know that the jewels are safe and our family is secure.",
+    "intend_probs": {
+     "speak": 0.037683889269828796,
+     "act": 0.38421210646629333,
+     "silent": 0.019029434770345688
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 12,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.29262441396713257,
+     "act": 0.20105798542499542,
+     "silent": 0.02400948852300644,
+     "wait": 0.4823080897331238
+    },
+    "o_lan": {
+     "speak": 0.08793695271015167,
+     "act": 0.5060640573501587,
+     "silent": 0.011867484077811241,
+     "wait": 0.39413151144981384
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.5176919102668762,
+    "o_lan": 0.6058684885501862
+   },
+   "actor": "wang_lung",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "O-lan"
+    ],
+    "gist": "Wang Lung cries out to O-lan in frustration."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"O-lan\"], \"gist\": \"Wang Lung cries out to O-lan in frustration.\"}",
+   "item": {
+    "kind": "gist",
+    "text": "Wang Lung cries out to O-lan in frustration.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to bring me water immediately, and I will probably scold her some more for forgetting.",
+    "plan": "I want O-lan to bring me water immediately, and I will probably scold her some more for forgetting.",
+    "shown": "I want O-lan to bring me water immediately, and I will probably scold her some more for forgetting.",
+    "intend_probs": {
+     "speak": 0.22008901834487915,
+     "act": 0.31055036187171936,
+     "silent": 0.01751713640987873
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 13,
+   "probs": {
+    "o_lan": {
+     "speak": 0.10237414389848709,
+     "act": 0.49621593952178955,
+     "silent": 0.014941784553229809,
+     "wait": 0.38646817207336426
+    }
+   },
+   "urgency": {
+    "o_lan": 0.6135318279266357
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": []}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want to show Wang Lung that I have been working hard, taking care of the children, and sacrificing for our family.",
+    "plan": "I want to show Wang Lung that I have been working hard, taking care of the children, and sacrificing for our family.",
+    "shown": "I want to show Wang Lung that I have been working hard, taking care of the children, and sacrificing for our family.",
+    "intend_probs": {
+     "speak": 0.20628640055656433,
+     "act": 0.34009724855422974,
+     "silent": 0.016903404146432877
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 14,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.35141152143478394,
+     "act": 0.38027074933052063,
+     "silent": 0.006963739637285471,
+     "wait": 0.2613539397716522
+    },
+    "o_lan": {
+     "speak": 0.13544230163097382,
+     "act": 0.36822769045829773,
+     "silent": 0.023488827049732208,
+     "wait": 0.47284117341041565
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7386460602283478,
+    "o_lan": 0.5271588265895844
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan points to the children lying by the house."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan points to the children lying by the house.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan points to the children lying by the house.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to see that I have been working hard and sacrificing for him, and to calm down.",
+    "plan": "I want Wang Lung to see that I have been working hard and sacrificing for him, and to calm down.",
+    "shown": "I want Wang Lung to see that I have been working hard and sacrificing for him, and to calm down.",
+    "intend_probs": {
+     "speak": 0.07607374340295792,
+     "act": 0.28781968355178833,
+     "silent": 0.02669929526746273
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 15,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.35818806290626526,
+     "act": 0.31613466143608093,
+     "silent": 0.009545065462589264,
+     "wait": 0.31613218784332275
+    },
+    "o_lan": {
+     "speak": 0.08135906606912613,
+     "act": 0.2212131768465042,
+     "silent": 0.01597461849451065,
+     "wait": 0.6814531683921814
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6838678121566772,
+    "o_lan": 0.3185468316078186
+   },
+   "actor": "o_lan",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [],
+    "action": "O-lan gestures towards the children."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [], \"action\": \"O-lan gestures towards the children.\"}",
+   "item": {
+    "kind": "act",
+    "text": "O-lan gestures towards the children.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to understand that our children's illness is the reason for my forgetfulness and need his help.",
+    "plan": "I want Wang Lung to understand that our children's illness is the reason for my forgetfulness and need his help.",
+    "shown": "I want Wang Lung to understand that our children's illness is the reason for my forgetfulness and need his help.",
+    "intend_probs": {
+     "speak": 0.22709503769874573,
+     "act": 0.22056251764297485,
+     "silent": 0.023197373375296593
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 16,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.36792901158332825,
+     "act": 0.31236404180526733,
+     "silent": 0.0073449574410915375,
+     "wait": 0.3123618960380554
+    },
+    "o_lan": {
+     "speak": 0.14061912894248962,
+     "act": 0.20463064312934875,
+     "silent": 0.024373097345232964,
+     "wait": 0.6303771734237671
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6876381039619446,
+    "o_lan": 0.3696228265762329
+   },
+   "actor": "o_lan",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": [
+     "Wang Lung"
+    ]
+   },
+   "raw": "{\"intend\": \"silent\", \"to\": [\"Wang Lung\"]}",
+   "item": {
+    "kind": "silent",
+    "text": "O-lan says nothing.",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want Wang Lung to understand the children's illness is my reason for forgetting, and see the pearls as a reminder of my hard work.",
+    "plan": "I want Wang Lung to understand the children's illness is my reason for forgetting, and see the pearls as a reminder of my hard work.",
+    "shown": "I want Wang Lung to understand the children's illness is my reason for forgetting, and see the pearls as a reminder of my hard work.",
+    "intend_probs": {
+     "speak": 0.1875181794166565,
+     "act": 0.21247504651546478,
+     "silent": 0.02233528532087803
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 17,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.40474560856819153,
+     "act": 0.2926223576068878,
+     "silent": 0.010011590085923672,
+     "wait": 0.29262036085128784
+    },
+    "o_lan": {
+     "speak": 0.26269617676734924,
+     "act": 0.15938498079776764,
+     "silent": 0.021525705233216286,
+     "wait": 0.5563931465148926
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.7073796391487122,
+    "o_lan": 0.4436068534851074
+   },
+   "actor": "wang_lung",
+   "intend": "act",
+   "move": {
+    "intend": "act",
+    "to": [
+     "O-lan"
+    ],
+    "action": "Wang Lung picks up the children and carries them inside."
+   },
+   "raw": "{\"intend\": \"act\", \"to\": [\"O-lan\"], \"action\": \"Wang Lung picks up the children and carries them inside.\"}",
+   "item": {
+    "kind": "act",
+    "text": "Wang Lung picks up the children and carries them inside.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": [
+     "o_lan"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want O-lan to bring me water, but I feel ashamed of my harsh words and wish she would understand my frustration.",
+    "plan": "I want O-lan to bring me water, but I feel ashamed of my harsh words and wish she would understand my frustration.",
+    "shown": "I want O-lan to bring me water, but I feel ashamed of my harsh words and wish she would understand my frustration.",
+    "intend_probs": {
+     "speak": 0.4694417119026184,
+     "act": 0.15241776406764984,
+     "silent": 0.012509329244494438
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 18,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.3028966188430786,
+     "act": 0.27757543325424194,
+     "silent": 0.015657855197787285,
+     "wait": 0.403870165348053
+    },
+    "o_lan": {
+     "speak": 0.16203109920024872,
+     "act": 0.18324781954288483,
+     "silent": 0.015006855130195618,
+     "wait": 0.6397141814231873
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.596129834651947,
+    "o_lan": 0.36028581857681274
+   },
+   "actor": "o_lan",
+   "intend": "speak",
+   "move": {
+    "intend": "speak",
+    "to": [
+     "Wang Lung"
+    ],
+    "speech": "These are the children..."
+   },
+   "raw": "{\"intend\": \"speak\", \"to\": [\"Wang Lung\"], \"speech\": \"These are the children...\"}",
+   "item": {
+    "kind": "speak",
+    "text": "These are the children...",
+    "actor": "o_lan",
+    "chorus": null,
+    "to": [
+     "wang_lung"
+    ]
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want my husband to see the children and understand my devotion to our family, so I will gesture towards them.",
+    "plan": "I want my husband to see the children and understand my devotion to our family, so I will gesture towards them.",
+    "shown": "I want my husband to see the children and understand my devotion to our family, so I will gesture towards them.",
+    "intend_probs": {
+     "speak": 0.10232184082269669,
+     "act": 0.23476512730121613,
+     "silent": 0.02468433417379856
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  },
+  {
+   "turn": 19,
+   "probs": {
+    "wang_lung": {
+     "speak": 0.43544819951057434,
+     "act": 0.1735847443342209,
+     "silent": 0.023489048704504967,
+     "wait": 0.36747798323631287
+    }
+   },
+   "urgency": {
+    "wang_lung": 0.6325220167636871
+   },
+   "actor": "wang_lung",
+   "intend": "silent",
+   "move": {
+    "intend": "silent",
+    "to": []
+   },
+   "raw": "{\"intend\": \"act\" \"to\": [], \"action\": \"Wang Lung enters house with children\"}",
+   "item": {
+    "kind": "silent",
+    "text": "Wang Lung says nothing.",
+    "actor": "wang_lung",
+    "chorus": null,
+    "to": []
+   },
+   "state": {
+    "pearls": "o_lan"
+   },
+   "state_change": {},
+   "plan": {
+    "raw": "I want from O-lan the water I ordered, and I want her to keep her silence, but my frustration grows by the second.",
+    "plan": "I want from O-lan the water I ordered, and I want her to keep her silence, but my frustration grows by the second.",
+    "shown": "I want from O-lan the water I ordered, and I want her to keep her silence, but my frustration grows by the second.",
+    "intend_probs": {
+     "speak": 0.5000076293945312,
+     "act": 0.1952814757823944,
+     "silent": 0.020580517128109932
+    }
+   },
+   "shown_state": {
+    "pearls": "o_lan"
+   }
+  }
+ ],
+ "opening_lines": 129,
+ "final_state": {
+  "pearls": "o_lan"
+ },
+ "transcript": [
+  "Wang Lung (to O-lan): \"Now, tell me why you have not brought a dish of water for me at the day's end for a long time?\"",
+  "[says] O-lan explains that she forgot to bring water.",
+  "[silence] Wang Lung says nothing.",
+  "Wang Lung (to O-lan): \"There is no water, is there, my wife?\"",
+  "[action] O-lan starts to explain herself.",
+  "[says] (to O-lan) Wang Lung speaks harshly to O-lan.",
+  "[says] O-lan explains that the children have been ill and she has been too tired to carry water.",
+  "Wang Lung (to O-lan): \"How is it that you have forgotten water in my parched throat after all these years?\"",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[says] Wang Lung orders O-lan to bring water immediately.",
+  "[says] (to O-lan) Wang Lung harshly tells O-lan to bring water.",
+  "[action] (to Wang Lung) O-lan reluctantly shows Wang Lung the pearls.",
+  "[says] (to O-lan) Wang Lung cries out to O-lan in frustration.",
+  "[silence] O-lan says nothing.",
+  "[action] O-lan points to the children lying by the house.",
+  "[action] O-lan gestures towards the children.",
+  "[silence] (to Wang Lung) O-lan says nothing.",
+  "[action] (to O-lan) Wang Lung picks up the children and carries them inside.",
+  "O-lan (to Wang Lung): \"These are the children...\"",
+  "[silence] Wang Lung says nothing."
+ ],
+ "first_plans": {
+  "wang_lung": {
+   "raw": "I want O-lan's attention and affection, so I'll ask her to stop washing my clothes and come talk to me by the pool.",
+   "plan": "I want O-lan's attention and affection, so I'll ask her to stop washing my clothes and come talk to me by the pool."
+  },
+  "o_lan": {
+   "raw": "I want to speak to Wang Lung about the money he takes from the wall, to remind him of our life together.",
+   "plan": "I want to speak to Wang Lung about the money he takes from the wall, to remind him of our life together."
+  }
+ },
+ "seconds": 136.70490717887878
+}
